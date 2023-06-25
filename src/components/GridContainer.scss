@@ -1,0 +1,12 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(12, [col-start] 1fr);
+	gap: 20px;
+	position: relative;
+}
+
+@media screen and (max-width: 800px) {
+	.grid-container {
+		display: block;
+	}
+}
