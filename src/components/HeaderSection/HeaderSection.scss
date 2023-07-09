@@ -1,0 +1,39 @@
+.header-section {
+	width: 100%;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	grid-column: col-start 1 / span 12;
+}
+
+img.header-image,
+img.header-background {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+	object-fit: cover;
+}
+
+img.header-image {
+	z-index: -1;
+	opacity: 0.3;
+	filter: saturate(0.6) brightness(0.75);
+}
+
+.header-content {
+	text-align: center;
+	margin: 140px 0 100px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+
+	> i {
+		font-size: 28px;
+		display: block;
+		max-width: 600px;
+	}
+}

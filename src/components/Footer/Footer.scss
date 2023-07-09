@@ -1,0 +1,38 @@
+@import "../../styles/colors.scss";
+
+.footer {
+	background-color: $color-dark-grey;
+}
+
+.footer-content {
+	text-align: center;
+	color: $color-white;
+	padding: 40px 0;
+
+	.icon-list {
+		margin-top: 0;
+		padding: 0;
+		gap: 20px;
+
+		img {
+			height: 25px;
+		}
+	}
+
+	> div {
+		padding: 40px 0;
+
+		p {
+			font-weight: 400;
+			font-size: 18px;
+		}
+
+		p:first-of-type {
+			padding-bottom: 30px;
+		}
+	}
+
+	img.footer-logo {
+		height: 25px;
+	}
+}

@@ -1,0 +1,117 @@
+@import "../../styles/colors.scss";
+
+.events-section {
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+	gap: 40px;
+	padding: 60px 0;
+	background-color: $color-white;
+
+	.events-container {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 900px;
+		width: 100%;
+		gap: 30px;
+		justify-content: flex-start;
+		margin: 0 20px;
+
+		.events-card {
+			width: calc(25% - (30px * 0.75));
+			height: 230px;
+			position: relative;
+			color: white;
+			padding: 10px;
+			box-sizing: border-box;
+			cursor: pointer;
+			transition: 150ms ease-in-out;
+			background-color: $color-ieee-blue-8;
+			border-radius: 10px;
+			z-index: 1;
+			box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+
+			> div {
+				display: flex;
+				max-height: 100%;
+				flex-flow: row wrap;
+				align-content: start;
+				gap: 5px;
+				overflow: hidden;
+
+				h5 {
+					z-index: 2;
+					// border: 2px solid #fff;
+					padding: 3px;
+					border-radius: 5px;
+					background-color: rgba(0, 0, 0, 0.7);
+					font-size: 19px;
+					transition: 150ms ease-in-out;
+				}
+
+				h4 {
+					width: 100%;
+					font-size: 22px;
+				}
+
+				p {
+					width: 100%;
+					font-size: 18px;
+					display: none;
+				}
+			}
+
+			img {
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+				position: absolute;
+				top: 0;
+				left: 0;
+				filter: brightness(0.8);
+				border-radius: 10px;
+				transition: 300ms;
+			}
+		}
+
+		.events-card:hover {
+			transform: scale(1.05);
+			border-radius: 10px;
+			z-index: 2;
+
+			> div {
+				p {
+					display: block;
+				}
+
+				h5 {
+					padding-left: 0;
+					background-color: transparent;
+				}
+			}
+
+			img {
+				transform: translateY(calc(100% - 20px));
+				// box-shadow: 0px 0px 10px 3px $color-ieee-blue;
+				box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.6);
+				filter: brightness(1);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.events-section .events-container .events-card {
+		width: calc(33.333% - (30px * 0.66666));
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.events-section .events-container .events-card {
+		width: 90%;
+		margin: 5%;
+	}
+}

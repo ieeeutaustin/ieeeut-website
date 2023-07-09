@@ -1,8 +1,35 @@
 $color-white: #eee;
+$color-platinum: #e7e7e7;
+$color-light-grey: #ccc;
+$color-dark-grey: #4e4f52;
+$color-dark-grey-11: #58595c;
 $color-black: #111;
 
 $color-ieee-blue: #006298;
+$color-ieee-blue-9: #005584;
+$color-ieee-blue-8: #004971;
 $color-ieee-purple: #981d97;
 
-$color-ieee-blue-light: #38b9ff;
-$color-ieee-purple-light: #ff8cfd;
+$color-ieee-blue-light: #67dbff;
+$color-ieee-purple-light: #e274e1;
+
+.ieee-blue {
+	color: $color-ieee-blue;
+}
+.bg-ieee-blue {
+	background-color: $color-ieee-blue;
+}
+
+.ieee-blue-9 {
+	color: $color-ieee-blue-9;
+}
+.bg-ieee-blue-9 {
+	background-color: $color-ieee-blue-9;
+}
+
+.ieee-blue-8 {
+	color: $color-ieee-blue-8;
+}
+.bg-ieee-blue-8 {
+	background-color: $color-ieee-blue-8;
+}

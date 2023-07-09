@@ -1,8 +1,12 @@
 @import "../styles/colors.scss";
 
 * {
-	color: $color-white;
 	font-weight: 500;
+}
+
+*::selection {
+	color: #fff;
+	background-color: #00b5e2;
 }
 
 body {
@@ -15,16 +19,41 @@ h1 {
 	font-size: 90px;
 	font-weight: 800;
 	line-height: 70px;
+	margin: 0;
+	padding: 0;
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 42px;
+	margin: 0;
+	padding: 0;
 }
 
 h3 {
 	font-size: 32px;
+	margin: 0;
+	padding: 0;
+}
+
+h4 {
+	font-size: 28px;
+	margin: 0;
+	padding: 0;
+}
+
+h5 {
+	font-size: 22px;
+	margin: 0;
+	padding: 0;
 }
 
 p {
-	font-size: 14px;
+	font-size: 22px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	pointer-events: none;
 }

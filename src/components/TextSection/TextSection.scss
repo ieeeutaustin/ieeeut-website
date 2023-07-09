@@ -1,0 +1,170 @@
+@import "../../styles/colors.scss";
+
+.text-section {
+	max-height: min-content;
+	grid-auto-rows: min-content;
+	color: $color-black;
+	background-color: $color-white;
+
+	img {
+		object-fit: cover;
+		box-sizing: border-box;
+		height: 100%;
+	}
+
+	.button {
+		width: max-content;
+	}
+
+	> div {
+		margin: 60px 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 18px;
+
+		h3 {
+			margin-top: 20px;
+
+			img {
+				height: 23px;
+				margin: 0 5px;
+				display: inline-block;
+			}
+
+			img:first-of-type {
+				margin-left: 0;
+			}
+		}
+
+		> div {
+			display: flex;
+			gap: 20px;
+		}
+	}
+
+	> div.white {
+		color: $color-white;
+	}
+}
+
+.text-section.left {
+	> div {
+		grid-row: 1;
+	}
+
+	> img {
+		grid-row: 1;
+		width: calc(100% + 20px);
+		border-left: 20px solid $color-ieee-blue;
+		margin-left: -20px;
+	}
+}
+
+.text-section.left.cols-6 {
+	> div {
+		grid-column: col-start 2 / span 6;
+	}
+
+	img {
+		grid-column: col-start 9 / span 4;
+	}
+}
+
+.text-section.left.cols-5 {
+	> div {
+		grid-column: col-start 2 / span 5;
+	}
+
+	img {
+		grid-column: col-start 8 / span 5;
+	}
+}
+
+.text-section.left.cols-4 {
+	> div {
+		grid-column: col-start 2 / span 4;
+	}
+
+	img {
+		grid-column: col-start 7 / span 6;
+	}
+}
+
+.text-section.right {
+	> div {
+		grid-row: 1;
+	}
+
+	> img {
+		grid-row: 1;
+		width: calc(100% + 20px);
+		border-right: 20px solid $color-ieee-blue;
+		margin-right: -20px;
+	}
+}
+
+.text-section.right.cols-6 {
+	> div {
+		grid-column: col-start 6 / span 6;
+	}
+
+	img {
+		grid-column: col-start 1 / span 4;
+	}
+}
+
+.text-section.right.cols-5 {
+	> div {
+		grid-column: col-start 7 / span 5;
+	}
+
+	img {
+		grid-column: col-start 1 / span 5;
+	}
+}
+
+.text-section.right.cols-4 {
+	> div {
+		grid-column: col-start 8 / span 4;
+	}
+
+	img {
+		grid-column: col-start 1 / span 6;
+	}
+}
+
+.text-section.center {
+	* {
+		text-align: center;
+	}
+
+	p {
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	> div {
+		grid-column: col-start 5 / span 4;
+		grid-row: 1;
+		z-index: 1;
+	}
+
+	> img {
+		grid-column: col-start 1 / span 12;
+		grid-row: 1;
+		width: 100%;
+		z-index: 0;
+	}
+}
+
+.text-section.center.cols-6 {
+	> div {
+		grid-column: col-start 4 / span 6;
+	}
+
+	> img {
+		grid-column: col-start 1 / span 12;
+	}
+}

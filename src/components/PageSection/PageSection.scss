@@ -1,0 +1,9 @@
+@import "../../styles/colors.scss";
+
+.page-section {
+	color: $color-black;
+
+	* {
+		color: $color-black;
+	}
+}
