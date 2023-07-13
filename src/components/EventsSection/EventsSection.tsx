@@ -76,7 +76,7 @@ export default function EventsSection(props: any) {
 					<div
 						className="events-card"
 						key={event.title}
-						onClick={(click) => {
+						onClick={() => {
 							clickHandler(event?.url);
 						}}
 					>
@@ -89,7 +89,7 @@ export default function EventsSection(props: any) {
 					</div>
 				))}
 			</div>
-			<Button link="/events">See More</Button>
+			<Button link="/events">All Events</Button>
 		</div>
 	);
 }
