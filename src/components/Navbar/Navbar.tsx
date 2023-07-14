@@ -40,7 +40,7 @@ export default function Navbar() {
 								<a href="/">Home</a>
 							</li>
 							<li>
-								<a href="/contact">Events</a>
+								<a href="/events">Events</a>
 							</li>
 							<li className="navbar-dropitem">
 								<a href="/students">

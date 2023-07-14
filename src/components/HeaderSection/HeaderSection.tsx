@@ -13,7 +13,7 @@ export default function HeaderSection(props: {
 			<div className="header-section">
 				<div className="header-content">
 					<h1>{props.title}</h1>
-					{props.desc ? <i>{props.desc}</i> : ""}
+					{props.desc ? <p>{props.desc}</p> : ""}
 					{props.children}
 				</div>
 			</div>

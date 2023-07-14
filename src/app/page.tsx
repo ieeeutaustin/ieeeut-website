@@ -160,7 +160,7 @@ export default function Home() {
 					Slack workspace and completing our membership portal.
 				</p>
 			</TextSection> */}
-			<EventsSection />
+			<EventsSection full={false} />
 			<Footer />
 		</>
 	);

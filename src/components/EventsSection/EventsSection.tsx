@@ -3,7 +3,9 @@ import "./EventsSection.scss";
 import Button from "../Button/Button";
 
 export default function EventsSection(props: any) {
-	const events = [
+	const full: boolean = props.full;
+
+	let events = [
 		{
 			title: "Pease Park Litter Pickup",
 			desc: "Volunteer with us to help clean up Pease Park!",
@@ -68,9 +70,12 @@ export default function EventsSection(props: any) {
 		window.open(url, "_blank");
 	};
 
+	if (!full) events = events.slice(0, 8);
+	else events = events.slice(0, 24);
+
 	return (
 		<div className="events-section">
-			<h2>Events</h2>
+			{full ? "" : <h2>Events</h2>}
 			<div className="events-container">
 				{events.map((event) => (
 					<div
@@ -80,16 +85,21 @@ export default function EventsSection(props: any) {
 							clickHandler(event?.url);
 						}}
 					>
-						<div>
-							<h5>{`${event.date}`}</h5>
-							<h4>{`${event.title}`}</h4>
-							<p>{event.desc}</p>
+						<div className="events-card-content">
+							<div className="events-card-front">
+								<img src={event.image} alt="" />
+								<h5>{`${event.date}`}</h5>
+							</div>
+							<div className="events-card-back">
+								<h5>{`${event.date}`}</h5>
+								<h4>{`${event.title}`}</h4>
+								<p>{event.desc}</p>
+							</div>
 						</div>
-						<img src={event.image} alt="" />
 					</div>
 				))}
 			</div>
-			<Button link="/events">All Events</Button>
+			{full ? "" : <Button link="/events">All Events</Button>}
 		</div>
 	);
 }

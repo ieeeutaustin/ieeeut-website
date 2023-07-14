@@ -25,79 +25,94 @@
 			height: 230px;
 			position: relative;
 			color: white;
-			padding: 10px;
+			// padding: 10px;
 			box-sizing: border-box;
 			cursor: pointer;
 			transition: 150ms ease-in-out;
-			background-color: $color-ieee-blue-8;
-			border-radius: 10px;
-			z-index: 1;
-			box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+			// background-color: $color-ieee-blue-8;
 
-			> div {
-				display: flex;
-				max-height: 100%;
-				flex-flow: row wrap;
-				align-content: start;
-				gap: 5px;
-				overflow: hidden;
-
-				h5 {
-					z-index: 2;
-					// border: 2px solid #fff;
-					padding: 3px;
-					border-radius: 5px;
-					background-color: rgba(0, 0, 0, 0.7);
-					font-size: 19px;
-					transition: 150ms ease-in-out;
-				}
-
-				h4 {
-					width: 100%;
-					font-size: 22px;
-				}
-
-				p {
-					width: 100%;
-					font-size: 18px;
-					display: none;
-				}
-			}
-
-			img {
-				height: 100%;
-				width: 100%;
-				object-fit: cover;
+			.events-card-content {
 				position: absolute;
-				top: 0;
-				left: 0;
-				filter: brightness(0.8);
+				width: 100%;
+				height: 100%;
+				transition: transform 500ms ease-in-out;
+				transform-style: preserve-3d;
 				border-radius: 10px;
-				transition: 300ms;
-			}
-		}
+				box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 
-		.events-card:hover {
-			transform: scale(1.05);
-			border-radius: 10px;
-			z-index: 2;
+				.events-card-front {
+					position: absolute;
+					backface-visibility: hidden;
+					height: 100%;
+					width: 100%;
 
-			> div {
-				p {
-					display: block;
+					img {
+						height: 100%;
+						width: 100%;
+						object-fit: cover;
+						position: absolute;
+						top: 0;
+						left: 0;
+						filter: brightness(0.8);
+						border-radius: 10px;
+						transition: 300ms;
+					}
+
+					h5 {
+						position: absolute;
+						top: 7px;
+						left: 7px;
+						padding: 3px;
+						border-radius: 5px;
+						background-color: rgba(0, 0, 0, 0.7);
+						font-size: 19px;
+						transition: 150ms ease-in-out;
+					}
 				}
 
-				h5 {
-					padding-left: 0;
-					background-color: transparent;
+				.events-card-back {
+					display: flex;
+					position: absolute;
+					height: 100%;
+					max-height: 100%;
+					flex-flow: row wrap;
+					align-content: start;
+					gap: 5px;
+					overflow: hidden;
+					background-color: $color-ieee-blue-8;
+					transform: rotateY(180deg);
+					backface-visibility: hidden;
+					padding: 10px;
+					box-sizing: border-box;
+					border-radius: 10px;
+
+					h5 {
+						border: 2px solid #fff;
+						padding: 3px 5px;
+						border-radius: 5px;
+						font-size: 19px;
+						transition: 150ms ease-in-out;
+					}
+
+					h4 {
+						width: 100%;
+						font-size: 22px;
+					}
+
+					p {
+						width: 100%;
+						font-size: 18px;
+					}
 				}
 			}
 
-			img {
-				transform: translateY(calc(100% - 20px));
-				// box-shadow: 0px 0px 10px 3px $color-ieee-blue;
-				box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.6);
-				filter: brightness(1);
+			&:hover {
+				transform: scale(1.05);
+
+				.events-card-content {
+					transform: rotateY(180deg);
+					transition: transform 0.5s;
+				}
 			}
 		}
 	}
