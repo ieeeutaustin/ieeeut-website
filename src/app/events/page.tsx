@@ -3,6 +3,10 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import EventsSection from "@/components/EventsSection/EventsSection";
 
+export const metadata = {
+	title: "Events"
+};
+
 export default function Home() {
 	return (
 		<>

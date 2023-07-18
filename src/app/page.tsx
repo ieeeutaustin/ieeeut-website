@@ -24,7 +24,7 @@ export default function Home() {
 					We bring ECE students of all years together to learn from
 					each other and build a community within the department
 				</p>
-				<Button>Learn More</Button>
+				<Button link="/about">Learn More</Button>
 			</TextSection>
 			<GallerySection
 				images={[
@@ -108,7 +108,9 @@ export default function Home() {
 					Add our Google Calendar to yours so you can see all of our
 					events!
 				</p>
-				<Button>Add to Google Calendar</Button>
+				<Button link="https://calendar.google.com/calendar/u/0?cid=Y183NWNmZGJlZGFjNTY2MGZjOTA2MTRlZTRiNTliNzExOTE0MjU1MGIwYmM5MWJlNTgyNmFiNDBlNzQ4MmQ2YjBjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">
+					Add to Google Calendar
+				</Button>
 				<h3>
 					<img src="./icons/instagram.svg" />
 					Instagram

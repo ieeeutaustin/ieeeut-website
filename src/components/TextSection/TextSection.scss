@@ -19,7 +19,7 @@
 	> div {
 		margin: 60px 0;
 		padding: 0;
-		display: flex;
+		display: inline-flex;
 		flex-direction: column;
 		gap: 18px;
 
@@ -40,6 +40,7 @@
 		> div {
 			display: flex;
 			gap: 20px;
+			flex-wrap: nowrap;
 		}
 	}
 
@@ -139,14 +140,15 @@
 		text-align: center;
 	}
 
+	h2,
 	p {
-		max-width: 500px;
+		max-width: 450px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	> div {
-		grid-column: col-start 5 / span 4;
+		grid-column: col-start 1 / span 12;
 		grid-row: 1;
 		z-index: 1;
 	}
@@ -166,5 +168,31 @@
 
 	> img {
 		grid-column: col-start 1 / span 12;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.text-section.left,
+	.text-section.right,
+	.text-section.center {
+		> img {
+			border: none;
+			width: 101vw;
+			height: 30vh;
+			margin-left: -6%;
+		}
+	}
+
+	.text-section {
+		overflow: hidden;
+
+		&.center {
+			position: relative;
+
+			> img {
+				position: absolute;
+				height: 100%;
+			}
+		}
 	}
 }

@@ -2,7 +2,9 @@
 
 .icon-list {
 	display: flex;
+	flex-wrap: wrap;
 	max-width: 500px;
+	width: 70%;
 	margin: 30px auto 0 auto;
 	justify-content: center;
 	gap: 30px;

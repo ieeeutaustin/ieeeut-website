@@ -7,6 +7,16 @@
 	grid-column: col-start 2 / span 6;
 }
 
+img.hero-side-image {
+	margin: auto;
+	grid-column: col-start 9 / span 3;
+	border-radius: 40px;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	box-shadow: 0 0 10px 0 #000;
+}
+
 img.hero-image,
 img.hero-background {
 	width: 100%;
@@ -38,7 +48,39 @@ img.hero-image {
 		max-width: 600px;
 	}
 
+	> div {
+		display: flex;
+	}
+
 	.button + .button {
 		margin-left: 30px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.grid-container {
+		display: block;
+		padding: 0 5vw;
+	}
+
+	.hero-section {
+		.hero-content {
+			width: 100%;
+			text-align: center;
+
+			> div {
+				justify-content: center;
+				flex-wrap: wrap;
+				gap: 20px;
+
+				.button.sponsor {
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	img.hero-side-image {
+		display: none;
 	}
 }

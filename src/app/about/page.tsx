@@ -2,10 +2,12 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 import Navbar from "@/components/Navbar/Navbar";
 import TextSection from "@/components/TextSection/TextSection";
 import Button from "@/components/Button/Button";
-import FlexSection from "@/components/FlexSection/FlexSection";
-import IconList from "@/components/IconList/IconList";
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
 import Footer from "@/components/Footer/Footer";
+
+export const metadata = {
+	title: "About"
+};
 
 export default function About() {
 	return (

@@ -48,10 +48,20 @@
 .sponsor,
 .sponsor * {
 	transition: 100ms ease-in-out;
+	text-align: center;
+	white-space: nowrap;
 }
 
 .member > span > span {
 	color: $color-ieee-blue-light;
+}
+
+.member:hover > span > span {
+	color: $color-ieee-blue;
+}
+
+.sponsor:hover > span > span {
+	color: $color-ieee-purple;
 }
 
 .sponsor > span > span {

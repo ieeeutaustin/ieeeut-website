@@ -17,7 +17,6 @@
 		max-width: 900px;
 		width: 100%;
 		gap: 30px;
-		justify-content: flex-start;
 		margin: 0 20px;
 
 		.events-card {
@@ -25,20 +24,18 @@
 			height: 230px;
 			position: relative;
 			color: white;
-			// padding: 10px;
 			box-sizing: border-box;
 			cursor: pointer;
-			transition: 150ms ease-in-out;
-			// background-color: $color-ieee-blue-8;
+			transition: 250ms ease-in-out;
 
 			.events-card-content {
 				position: absolute;
 				width: 100%;
 				height: 100%;
-				transition: transform 500ms ease-in-out;
+				transition: 400ms ease-in-out;
 				transform-style: preserve-3d;
 				border-radius: 10px;
-				box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+				box-shadow: 0 0 10px 0 #666;
 
 				.events-card-front {
 					position: absolute;
@@ -119,14 +116,39 @@
 }
 
 @media only screen and (max-width: 800px) {
-	.events-section .events-container .events-card {
-		width: calc(33.333% - (30px * 0.66666));
+	.events-section {
+		.events-container {
+			width: 90vw;
+			margin: 0 5vw;
+
+			.events-card {
+				width: calc(33.333% - (30px * 0.66666));
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.events-section {
+		.events-container {
+			width: 90vw;
+			margin: 0 5vw;
+
+			.events-card {
+				width: calc(50% - (30px * 0.5));
+			}
+		}
 	}
 }
 
 @media only screen and (max-width: 500px) {
-	.events-section .events-container .events-card {
-		width: 90%;
-		margin: 5%;
+	.events-section {
+		.events-container {
+			gap: 15px;
+
+			.events-card {
+				width: 100%;
+			}
+		}
 	}
 }

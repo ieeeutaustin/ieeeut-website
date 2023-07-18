@@ -1,0 +1,24 @@
+@import "../../styles/colors.scss";
+
+.officer-section {
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	padding: 0 0 60px 0;
+
+	.officer-container {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 900px;
+		width: 100%;
+		gap: 30px;
+		margin: 0 20px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.officer-container {
+		justify-content: center;
+	}
+}

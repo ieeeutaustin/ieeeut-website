@@ -45,12 +45,12 @@ export default function Navbar() {
 							<li className="navbar-dropitem">
 								<a href="/students">
 									Students
-									{/* <Image
-									src="/icons/arrow.svg"
-									alt=""
-									width={19}
-									height={19}
-								/> */}
+									<Image
+										src="/icons/arrow.svg"
+										alt=""
+										width={15}
+										height={15}
+									/>
 								</a>
 								<ul className="navbar-dropdown">
 									<li>
