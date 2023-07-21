@@ -29,6 +29,9 @@ export default function OfficerCard(props: any) {
 				<div className="officer-card-text">
 					<h3>{props.name}</h3>
 					<i>{props.position}</i>
+					<a href={`mailto:${props.email}`} target="_blank">
+						{props.email}
+					</a>
 				</div>
 			</div>
 		</div>

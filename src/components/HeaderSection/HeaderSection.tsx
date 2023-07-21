@@ -6,6 +6,8 @@ export default function HeaderSection(props: {
 	desc?: string;
 	image: string;
 	imageStyle?: any;
+	buttonName?: string;
+	buttonLink?: string;
 	children?: any;
 }) {
 	return (
@@ -14,6 +16,17 @@ export default function HeaderSection(props: {
 				<div className="header-content">
 					<h1>{props.title}</h1>
 					{props.desc ? <p>{props.desc}</p> : ""}
+					{props.buttonName ? (
+						<a
+							className="header-button"
+							href={props.buttonLink}
+							target="_blank"
+						>
+							{props.buttonName}
+						</a>
+					) : (
+						""
+					)}
 					{props.children}
 				</div>
 			</div>

@@ -92,6 +92,16 @@
 	}
 }
 
+.text-section.left.cols-3 {
+	> div {
+		grid-column: col-start 2 / span 3;
+	}
+
+	img {
+		grid-column: col-start 6 / span 7;
+	}
+}
+
 .text-section.right {
 	> div {
 		grid-row: 1;

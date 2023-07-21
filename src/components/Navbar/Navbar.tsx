@@ -54,7 +54,7 @@ export default function Navbar() {
 								</a>
 								<ul className="navbar-dropdown">
 									<li>
-										<a href="/members">Merch</a>
+										<a href="/merch">Merch</a>
 									</li>
 									<li>
 										<a href="/officers">Officers</a>

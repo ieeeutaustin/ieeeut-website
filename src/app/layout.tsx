@@ -1,5 +1,5 @@
 import "@/styles/globals.scss";
-// import "@/styles/main.css";
+import "@/styles/main.css";
 
 import { Sofia_Sans } from "next/font/google";
 
@@ -19,9 +19,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={sofiaSans.className}>{children}</body>
 			<link rel="icon" href="/icons/ieeeut-logo.jpg" sizes="any" />
 			<link rel="shortcut icon" href="./icons/ieeeut-logo.jpg" />
+			<body className={sofiaSans.className}>{children}</body>
 		</html>
 	);
 }

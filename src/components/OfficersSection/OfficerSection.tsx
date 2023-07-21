@@ -21,29 +21,26 @@ export default function OfficerSection(props: any) {
 			name: "Armaan Kolsawala",
 			position: "Internal Director",
 			email: "internal.dir@ieeeut.org",
-			image: "Armaan.png",
-			imageHover: "CarpetRoadOverlay.png"
+			image: "Armaan.png"
 		},
 		{
 			name: "Aman Arham",
 			position: "Corporate Director",
-			email: "liasion@ieeeut.org",
-			image: "Aman.jpg",
-			imageHover: "CarpetRoadOverlay.png"
+			email: "corporate@ieeeut.org",
+			image: "Aman.jpg"
 		},
 		{
 			name: "Arnav Vats",
 			position: "Corporate Liaison",
-			email: "corporate@ieeeut.org",
+			email: "liasion@ieeeut.org",
 			image: "Arnav.jpg",
 			imageHover: "PolaroidOverlay.png"
 		},
 		{
 			name: "Ana Yang",
-			position: "Membership and Resources Assistant Director",
+			position: "Membership and Resources Director",
 			email: "mr@ieeeut.org",
-			image: "Armaan.png",
-			imageHover: "CarpetRoadOverlay.png"
+			image: "Armaan.png"
 		},
 		{
 			name: "Aastha Agrawal",
@@ -56,8 +53,8 @@ export default function OfficerSection(props: any) {
 			name: "Juan Gonzales",
 			position: "External Activities and Events Director",
 			email: "external.ae@ieeeut.org",
-			image: "Andrew.jpg",
-			imageHover: "CarpetRoadOverlay.png"
+			image: "JJ.png",
+			imageHover: "PolaroidOverlay.png"
 		},
 		{
 			name: "Trisha Nguyen",
@@ -65,6 +62,12 @@ export default function OfficerSection(props: any) {
 			email: "comms@ieeeut.org",
 			image: "Trisha.jpg",
 			imageHover: "PolaroidOverlay.png"
+		},
+		{
+			name: "Joaquin Escobar",
+			position: "Communications Director",
+			email: "comms@ieeeut.org",
+			image: "Joaquin.png"
 		},
 		{
 			name: "Joaquin Escobar",

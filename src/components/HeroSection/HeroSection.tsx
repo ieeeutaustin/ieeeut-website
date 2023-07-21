@@ -19,11 +19,10 @@ export default function HeroSection() {
 					</div>
 				</div>
 			</div>
-			<img
-				className="hero-side-image"
-				src="/assets/flyers/Cookies.png"
-				alt=""
-			/>
+			<div className="hero-display">
+				<h3>Upcoming Event:</h3>
+				<img src="/assets/flyers/pease_park.jpg" alt="" />
+			</div>
 			<img className="hero-image" src="./hero-image.jpg" alt="" />
 			<img
 				className="hero-background"
