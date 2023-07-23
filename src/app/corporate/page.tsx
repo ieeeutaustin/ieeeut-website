@@ -1,6 +1,4 @@
-import Navbar from "@/components/Navbar/Navbar";
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
-import Footer from "@/components/Footer/Footer";
 import TextSection from "@/components/TextSection/TextSection";
 import Button from "@/components/Button/Button";
 
@@ -11,7 +9,6 @@ export const metadata = {
 export default function Corporate() {
 	return (
 		<>
-			<Navbar />
 			<HeaderSection
 				title="Corporate"
 				image="hero-image.jpg"
@@ -80,7 +77,6 @@ export default function Corporate() {
 					sponsor!
 				</p>
 			</TextSection>
-			<Footer />
 		</>
 	);
 }
