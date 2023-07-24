@@ -7,9 +7,8 @@
 	justify-content: center;
 	align-items: center;
 	flex-flow: column nowrap;
-	gap: 40px;
+	gap: 40px 0;
 	padding: 60px 0;
-	background-color: $color-white;
 
 	.events-container {
 		display: flex;
@@ -17,138 +16,11 @@
 		max-width: 900px;
 		width: 100%;
 		gap: 30px;
-		margin: 0 20px;
-
-		.events-card {
-			width: calc(25% - (30px * 0.75));
-			height: 230px;
-			position: relative;
-			color: white;
-			box-sizing: border-box;
-			cursor: pointer;
-			transition: 250ms ease-in-out;
-
-			.events-card-content {
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				transition: 400ms ease-in-out;
-				transform-style: preserve-3d;
-				border-radius: 10px;
-				box-shadow: 0 0 10px 0 #666;
-
-				.events-card-front {
-					position: absolute;
-					backface-visibility: hidden;
-					height: 100%;
-					width: 100%;
-
-					img {
-						height: 100%;
-						width: 100%;
-						object-fit: cover;
-						position: absolute;
-						top: 0;
-						left: 0;
-						filter: brightness(0.8);
-						border-radius: 10px;
-						transition: 300ms;
-					}
-
-					h5 {
-						position: absolute;
-						top: 7px;
-						left: 7px;
-						padding: 3px;
-						border-radius: 5px;
-						background-color: rgba(0, 0, 0, 0.7);
-						font-size: 19px;
-						transition: 150ms ease-in-out;
-					}
-				}
-
-				.events-card-back {
-					display: flex;
-					position: absolute;
-					height: 100%;
-					max-height: 100%;
-					flex-flow: row wrap;
-					align-content: start;
-					gap: 5px;
-					overflow: hidden;
-					background-color: $color-ieee-blue-8;
-					transform: rotateY(180deg);
-					backface-visibility: hidden;
-					padding: 10px;
-					box-sizing: border-box;
-					border-radius: 10px;
-
-					h5 {
-						border: 2px solid #fff;
-						padding: 3px 5px;
-						border-radius: 5px;
-						font-size: 19px;
-						transition: 150ms ease-in-out;
-					}
-
-					h4 {
-						width: 100%;
-						font-size: 22px;
-					}
-
-					p {
-						width: 100%;
-						font-size: 18px;
-					}
-				}
-			}
-
-			&:hover {
-				transform: scale(1.05);
-
-				.events-card-content {
-					transform: rotateY(180deg);
-					transition: transform 0.5s;
-				}
-			}
-		}
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	.events-section {
-		.events-container {
-			width: 90vw;
-			margin: 0 5vw;
-
-			.events-card {
-				width: calc(33.333% - (30px * 0.66666));
-			}
-		}
-	}
-}
-
-@media only screen and (max-width: 650px) {
-	.events-section {
-		.events-container {
-			width: 90vw;
-			margin: 0 5vw;
-
-			.events-card {
-				width: calc(50% - (30px * 0.5));
-			}
-		}
 	}
 }
 
 @media only screen and (max-width: 500px) {
-	.events-section {
-		.events-container {
-			gap: 15px;
-
-			.events-card {
-				width: 100%;
-			}
-		}
+	.events-container {
+		justify-content: center;
 	}
 }

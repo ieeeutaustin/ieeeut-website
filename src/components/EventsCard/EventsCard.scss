@@ -1,0 +1,86 @@
+@import "../../styles/colors.scss";
+
+.events-card {
+	width: calc(25% - (30px * 0.75));
+	position: relative;
+	cursor: pointer;
+	transition: 200ms ease-in-out;
+	box-sizing: content-box;
+
+	.events-card-date {
+		text-align: center;
+		padding-bottom: 5px;
+		transition: 200ms ease-in-out;
+	}
+
+	.events-card-content {
+		position: relative;
+		box-shadow: 0 0 10px 0 #666;
+		border-radius: 15px;
+		overflow: hidden;
+		background-color: $color-ieee-blue-8;
+		transition: 200ms ease-in-out;
+
+		.events-card-image-wrapper {
+			width: 100%;
+			padding-top: 100%;
+
+			img {
+				transition: 200ms ease-in-out;
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+		}
+
+		.events-card-text {
+			position: absolute;
+			top: 0;
+			color: $color-white;
+			opacity: 0;
+			margin: 10px;
+			max-height: 100%;
+			transition: 200ms ease-in-out;
+
+			h4 {
+				font-size: 25px;
+			}
+
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+
+	&:hover {
+		transform: scale(1.1);
+
+		img {
+			opacity: 0.2;
+			transform: scale(1.1);
+		}
+
+		.events-card-text {
+			opacity: 1;
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.events-card {
+		width: calc(33.333% - (30px * 0.66666));
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.events-card {
+		width: calc(50% - (30px * 0.5));
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.events-card {
+		width: 70%;
+	}
+}
