@@ -19,7 +19,20 @@ export default function TextSection({
 			}
 		>
 			<div className={textColor}>{children}</div>
-			{graphicSrc ? <img src={graphicSrc} alt={graphicAlt} /> : ""}
+			{graphicSrc ? (
+				graphicSrc.includes(".mp4") ? (
+					<video autoPlay={true} muted={true} loop={true}>
+						<source
+							src="./assets/files/MerchVideo.mp4"
+							type="video/mp4"
+						/>
+					</video>
+				) : (
+					<img src={graphicSrc} alt={graphicAlt} />
+				)
+			) : (
+				""
+			)}
 		</GridContainer>
 	);
 }

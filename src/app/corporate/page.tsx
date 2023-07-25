@@ -34,7 +34,7 @@ export default function Corporate() {
 					may feature former UT graduates, a former intern panel,
 					and/or videos and slides with information.
 				</p>
-				<Button link="/about">Learn More</Button>
+				<Button name="Learn More" link="/about" />
 			</TextSection>
 			<TextSection
 				textSide="right"
@@ -50,7 +50,7 @@ export default function Corporate() {
 					activities and talk about their company. They typically
 					provide swag or a prize depending on the event.
 				</p>
-				<Button link="/about">Learn More</Button>
+				<Button name="Learn More" link="/about" />
 			</TextSection>
 			<TextSection
 				textSide="left"
@@ -66,7 +66,7 @@ export default function Corporate() {
 					opportunity for employees and recruiters to interact with
 					our members and learn about their interests and skills
 				</p>
-				<Button link="/about">Learn More</Button>
+				<Button name="Learn More" link="/about" />
 			</TextSection>
 			<TextSection
 				textSide="center"
@@ -79,6 +79,12 @@ export default function Corporate() {
 					Download our corporate packet to learn about how to become a
 					sponsor!
 				</p>
+				<Button
+					name="Corporate Packet 2023-2024"
+					link="./assets/files/IEEE-Spring-Corporate-Packet-2023-2024.pdf"
+					newWindow={true}
+					type="outlined"
+				/>
 			</TextSection>
 			<Footer />
 		</>

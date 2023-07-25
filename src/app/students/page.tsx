@@ -23,7 +23,7 @@ export default function Students() {
 				<p>
 					All ECE students receive access to the following resources:
 				</p>
-				<Button link="/about">Learn More</Button>
+				<Button name="Learn More" link="/about" />
 			</TextSection>
 			<Footer />
 		</>

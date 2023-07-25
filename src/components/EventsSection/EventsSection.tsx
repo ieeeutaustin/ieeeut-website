@@ -83,7 +83,7 @@ export default function EventsSection(props: any) {
 					<EventsCard key={event.title} {...event} />
 				))}
 			</div>
-			{full ? "" : <Button link="/events">All Events</Button>}
+			{full ? "" : <Button name="All Events" link="/events" />}
 		</div>
 	);
 }

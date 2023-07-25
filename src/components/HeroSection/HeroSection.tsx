@@ -14,8 +14,12 @@ export default function HeroSection() {
 						largest ECE organization at UT
 					</i>
 					<div>
-						<Button member="true" />
-						<Button sponsor="true" />
+						<Button link="/join" type="outlined member">
+							Become a <span>Member</span>
+						</Button>
+						<Button link="/corporate" type="outlined sponsor">
+							Become a <span>Sponsor</span>
+						</Button>
 					</div>
 				</div>
 			</div>

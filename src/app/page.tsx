@@ -2,7 +2,6 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 import Navbar from "@/components/Navbar/Navbar";
 import TextSection from "@/components/TextSection/TextSection";
 import Button from "@/components/Button/Button";
-import FlexSection from "@/components/FlexSection/FlexSection";
 import IconList from "@/components/IconList/IconList";
 import Footer from "@/components/Footer/Footer";
 import GallerySection from "@/components/GallerySection/GallerySection";
@@ -24,7 +23,7 @@ export default function Home() {
 					We bring ECE students of all years together to learn from
 					each other and build a community within the department
 				</p>
-				<Button link="/about">Learn More</Button>
+				<Button name="Learn More" link="/about" />
 			</TextSection>
 			<GallerySection
 				images={[
@@ -35,47 +34,6 @@ export default function Home() {
 					"./assets/pexels-keira-burton-6146978.jpg"
 				]}
 			/>
-			{/* <FlexSection>
-				<div>
-					<img src="./icons/members.svg" alt="" />
-					<h1>400+</h1>
-					<h2>Members</h2>
-					<p>
-						We bring ECE students of all years together to learn
-						from each other and build a community within the
-						department
-					</p>
-					<Button light={true}>Become a Member</Button>
-					<img src="./halloween.jpg" alt="" />
-					<div className="background-color bg-ieee-blue" />
-				</div>
-				<div>
-					<img src="./icons/corporate.svg" alt="" />
-					<h1>15+</h1>
-					<h2>Corporate Events</h2>
-					<p>
-						IEEE welcomed over 15 companies to speak to our members
-						about their jobs, opportunities, and insights on the
-						future of electrical engineering and technology.
-					</p>
-					<Button light={true}>Become a Sponsor</Button>
-					<img src="./halloween.jpg" alt="" />
-					<div className="background-color bg-ieee-blue-9" />
-				</div>
-				<div>
-					<img src="./icons/officers.svg" alt="" />
-					<h1>10</h1>
-					<h2>Officers</h2>
-					<p>
-						The IEEE officer team works hard to bring fun, engaging
-						events to our members year-round, and we accept new
-						officers every fall!
-					</p>
-					<Button light={true}>Meet the Officers</Button>
-					<img src="./halloween.jpg" alt="" />
-					<div className="background-color bg-ieee-blue-8" />
-				</div>
-			</FlexSection> */}
 			<TextSection
 				textSide="right"
 				textCols="5"
@@ -92,13 +50,12 @@ export default function Home() {
 					and org updates!
 				</p>
 				<div>
-					<Button>Join Slack</Button>
+					<Button name="Join Slack" link="/" />
 					<Button
+						name="Join Discord"
 						link="https://discord.gg/Vcdqz8YczQ"
 						newWindow={true}
-					>
-						Join Discord
-					</Button>
+					/>
 				</div>
 				<h3>
 					<img src="./icons/gcal.svg" />
@@ -108,9 +65,10 @@ export default function Home() {
 					Add our Google Calendar to yours so you can see all of our
 					events!
 				</p>
-				<Button link="https://calendar.google.com/calendar/u/0?cid=Y183NWNmZGJlZGFjNTY2MGZjOTA2MTRlZTRiNTliNzExOTE0MjU1MGIwYmM5MWJlNTgyNmFiNDBlNzQ4MmQ2YjBjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">
-					Add to Google Calendar
-				</Button>
+				<Button
+					name="Add to Google Calendar"
+					link="https://calendar.google.com/calendar/u/0?cid=Y183NWNmZGJlZGFjNTY2MGZjOTA2MTRlZTRiNTliNzExOTE0MjU1MGIwYmM5MWJlNTgyNmFiNDBlNzQ4MmQ2YjBjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
+				/>
 				<h3>
 					<img src="./icons/instagram.svg" />
 					Instagram
@@ -119,9 +77,11 @@ export default function Home() {
 					Follow us on Instagram, we keep you updated with our events
 					and post some fun content on there too!
 				</p>
-				<Button link="https://instagram.com/ieee.ut" newWindow={true}>
-					Follow Instagram
-				</Button>
+				<Button
+					name="Follow Instagram"
+					link="https://instagram.com/ieee.ut"
+					newWindow={true}
+				/>
 			</TextSection>
 			<TextSection
 				textSide="center"
