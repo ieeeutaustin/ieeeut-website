@@ -25,7 +25,7 @@ export default function About() {
 					informational workshops, and recreational events aimed to
 					enrich members’ experience at UT.
 				</p>
-				<Button>Learn More</Button>
+				<Button name="Learn More" link="/" />
 			</TextSection>
 		</>
 	);

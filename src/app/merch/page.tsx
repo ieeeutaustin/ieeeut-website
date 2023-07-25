@@ -11,6 +11,7 @@ export default function Merch() {
 	return (
 		<>
 			<HeaderSection title="Merch" image="hero-image.jpg" />
+
 			<TextSection
 				textSide="left"
 				textCols="3"
@@ -22,7 +23,7 @@ export default function Merch() {
 					We bring ECE students of all years together to learn from
 					each other and build a community within the department
 				</p>
-				<Button link="/about">Learn More</Button>
+				<Button name="Learn More" link="/about" />
 			</TextSection>
 			<video
 				autoPlay={true}

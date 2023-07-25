@@ -1,33 +1,46 @@
 import "./Button.scss";
+import Link from "next/link";
 
-export default function Button(props: any) {
-	if (props.member) {
-		return (
-			<a className="button member">
-				<span>
-					Become a <span>Member</span>
-				</span>
-			</a>
-		);
-	}
+export default function Button({
+	link,
+	name,
+	newWindow,
+	type,
+	children
+}: {
+	link: string;
+	name?: string;
+	newWindow?: boolean;
+	type?: string;
+	children?: any;
+}) {
+	// if (member) {
+	// 	return (
+	// 		<Link className="button member" href="/join">
+	// 			<span>
+	// 				Become a <span>Member</span>
+	// 			</span>
+	// 		</Link>
+	// 	);
+	// }
 
-	if (props.sponsor) {
-		return (
-			<a className="button sponsor">
-				<span>
-					Become a <span>Sponsor</span>
-				</span>
-			</a>
-		);
-	}
+	// if (sponsor) {
+	// 	return (
+	// 		<Link className="button sponsor" href="/corporate">
+	// 			<span>
+	// 				Become a <span>Sponsor</span>
+	// 			</span>
+	// 		</Link>
+	// 	);
+	// }
 
 	return (
-		<a
-			className={"button" + (props.light ? " light" : "")}
-			href={props.link}
-			target={props.newWindow ? "_blank" : "_self"}
+		<Link
+			className={"button " + (type ? type.replace("default", "") : "")}
+			href={link || "/"}
+			target={newWindow ? "_blank" : "_self"}
 		>
-			{props.children}
-		</a>
+			{name || children}
+		</Link>
 	);
 }

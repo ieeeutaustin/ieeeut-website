@@ -1,33 +1,78 @@
 @import "../../styles/colors.scss";
 
 .button {
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
 	padding: 10px 20px;
+	gap: 5px;
 	border-radius: 10px;
 	font-size: 18px;
 	border: none;
 	background-color: $color-ieee-blue;
 	color: $color-white;
 	cursor: pointer;
-	transition: 100ms ease-in-out;
 	text-decoration: none;
 	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
+	transition: 100ms ease-in-out;
+
+	* {
+		transition: 100ms ease-in-out;
+	}
+
+	&:hover {
+		background-color: $color-ieee-blue-8;
+		color: $color-light-grey;
+	}
+
+	&.light {
+		background-color: $color-platinum;
+		color: $color-black;
+
+		&:hover {
+			background-color: $color-light-grey;
+			color: $color-black;
+		}
+	}
+
+	&.outlined {
+		padding: 15px;
+		border-radius: 10px;
+		border: 3px $color-white solid;
+		background-color: transparent;
+		font-size: 20px;
+
+		&:hover {
+			color: $color-black;
+			background-color: $color-white;
+		}
+
+		&.member {
+			white-space: nowrap;
+
+			> span {
+				color: $color-ieee-blue-light;
+			}
+
+			&:hover > span {
+				color: $color-ieee-blue;
+			}
+		}
+
+		&.sponsor {
+			white-space: nowrap;
+
+			> span {
+				color: $color-ieee-purple-light;
+			}
+
+			&:hover > span {
+				color: $color-ieee-purple;
+			}
+		}
+	}
 }
 
-.button.light {
-	background-color: $color-platinum;
-	color: $color-black;
-}
-
-.button.light:hover {
-	background-color: $color-light-grey;
-	color: $color-black;
-}
-
-.button:hover {
-	background-color: $color-ieee-blue-8;
-	color: $color-light-grey;
-}
+/*
 
 .button > span {
 	font-size: 20px;
@@ -77,3 +122,4 @@
 .sponsor:hover > span {
 	color: $color-black;
 }
+*/

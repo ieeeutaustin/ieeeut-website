@@ -1,5 +1,5 @@
-"use client";
 import "./EventsSection.scss";
+import EventsCard from "../EventsCard/EventsCard";
 import Button from "../Button/Button";
 
 export default function EventsSection(props: any) {
@@ -17,7 +17,7 @@ export default function EventsSection(props: any) {
 			title: "Pre-Exam Carepackage",
 			desc: "Free snacks, stress toys, and more!",
 			date: "04.24",
-			image: "./assets/flyers/Purple.png",
+			image: "./assets/flyers/boat_social.jpeg",
 			url: "https://www.instagram.com/p/CrZn_wwsIHo"
 		},
 		{
@@ -56,19 +56,21 @@ export default function EventsSection(props: any) {
 			image: "./assets/flyers/registration.jpeg",
 			url: "https://www.instagram.com/p/CqYj98YuRE7/"
 		},
-
 		{
 			title: "IEEE Alumni Panel",
 			desc: "Let's see where our members are now!",
 			date: "03.23",
 			image: "./assets/flyers/alumni_panel.jpeg",
 			url: "https://www.instagram.com/p/CqBJCHCrg3r/"
+		},
+		{
+			title: "IEEE Alumni Panel 2",
+			desc: "Let's see where our members are now!",
+			date: "03.23",
+			image: "./assets/flyers/alumni_panel.jpeg",
+			url: "https://www.instagram.com/p/CqBJCHCrg3r/"
 		}
 	];
-
-	const clickHandler = (url: string) => {
-		window.open(url, "_blank");
-	};
 
 	if (!full) events = events.slice(0, 8);
 	else events = events.slice(0, 24);
@@ -78,28 +80,10 @@ export default function EventsSection(props: any) {
 			{full ? "" : <h2>Events</h2>}
 			<div className="events-container">
 				{events.map((event) => (
-					<div
-						className="events-card"
-						key={event.title}
-						onClick={() => {
-							clickHandler(event?.url);
-						}}
-					>
-						<div className="events-card-content">
-							<div className="events-card-front">
-								<img src={event.image} alt="" />
-								<h5>{`${event.date}`}</h5>
-							</div>
-							<div className="events-card-back">
-								<h5>{`${event.date}`}</h5>
-								<h4>{`${event.title}`}</h4>
-								<p>{event.desc}</p>
-							</div>
-						</div>
-					</div>
+					<EventsCard key={event.title} {...event} />
 				))}
 			</div>
-			{full ? "" : <Button link="/events">All Events</Button>}
+			{full ? "" : <Button name="All Events" link="/events" />}
 		</div>
 	);
 }

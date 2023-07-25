@@ -1,5 +1,7 @@
+import Link from "next/link";
 import "./HeaderSection.scss";
 import GridContainer from "@/components/GridContainer/GridContainer";
+import Button from "../Button/Button";
 
 export default function HeaderSection(props: {
 	title: string;
@@ -17,13 +19,12 @@ export default function HeaderSection(props: {
 					<h1>{props.title}</h1>
 					{props.desc ? <p>{props.desc}</p> : ""}
 					{props.buttonName ? (
-						<a
-							className="header-button"
-							href={props.buttonLink}
-							target="_blank"
-						>
-							{props.buttonName}
-						</a>
+						<Button
+							name={props.buttonName}
+							link={props.buttonLink || "/"}
+							type="outlined"
+							newWindow={true}
+						/>
 					) : (
 						""
 					)}
