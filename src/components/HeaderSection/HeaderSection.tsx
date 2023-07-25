@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./HeaderSection.scss";
 import GridContainer from "@/components/GridContainer/GridContainer";
 
@@ -17,13 +18,13 @@ export default function HeaderSection(props: {
 					<h1>{props.title}</h1>
 					{props.desc ? <p>{props.desc}</p> : ""}
 					{props.buttonName ? (
-						<a
+						<Link
 							className="header-button"
-							href={props.buttonLink}
+							href={props.buttonLink || ""}
 							target="_blank"
 						>
 							{props.buttonName}
-						</a>
+						</Link>
 					) : (
 						""
 					)}

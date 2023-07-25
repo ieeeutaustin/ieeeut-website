@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import GridContainer from "@/components/GridContainer/GridContainer";
 import "./Navbar.scss";
 import { useState, useEffect } from "react";
@@ -29,21 +30,21 @@ export default function Navbar() {
 				<div className="navbar-content">
 					<ul className="navbar-list">
 						<li className="navbar-list-logo">
-							<a href="/">
+							<Link href="/">
 								<img src="./ieee-logo-white.png" alt="" />
-							</a>
+							</Link>
 						</li>
 						<ul
 							className={`navbar-links ${opened ? "opened" : ""}`}
 						>
 							<li>
-								<a href="/">Home</a>
+								<Link href="/">Home</Link>
 							</li>
 							<li>
-								<a href="/events">Events</a>
+								<Link href="/events">Events</Link>
 							</li>
 							<li className="navbar-dropitem">
-								<a href="/students">
+								<Link href="/students">
 									Students
 									<Image
 										src="/icons/arrow.svg"
@@ -51,24 +52,24 @@ export default function Navbar() {
 										width={15}
 										height={15}
 									/>
-								</a>
+								</Link>
 								<ul className="navbar-dropdown">
 									<li>
-										<a href="/merch">Merch</a>
+										<Link href="/merch">Merch</Link>
 									</li>
 									<li>
-										<a href="/officers">Officers</a>
+										<Link href="/officers">Officers</Link>
 									</li>
 								</ul>
 							</li>
 							<li>
-								<a href="/corporate">Corporate</a>
+								<Link href="/corporate">Corporate</Link>
 							</li>
 							<li>
-								<a href="/about">About</a>
+								<Link href="/about">About</Link>
 							</li>
 							<li className="navbar-outlined">
-								<a href="/join">Join</a>
+								<Link href="/join">Join</Link>
 							</li>
 						</ul>
 						<li
