@@ -1,7 +1,5 @@
-import Navbar from "@/components/Navbar/Navbar";
 import TextSection from "@/components/TextSection/TextSection";
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
-import Footer from "@/components/Footer/Footer";
 import OfficerSection from "@/components/OfficersSection/OfficerSection";
 import Button from "@/components/Button/Button";
 
@@ -12,7 +10,6 @@ export const metadata = {
 export default function Merch() {
 	return (
 		<>
-			<Navbar />
 			<HeaderSection title="Merch" image="hero-image.jpg" />
 
 			<TextSection
@@ -28,7 +25,14 @@ export default function Merch() {
 				</p>
 				<Button name="Learn More" link="/about" />
 			</TextSection>
-			<Footer />
+			<video
+				autoPlay={true}
+				muted={true}
+				loop={true}
+				style={{ width: 50 + "%", margin: "0 0 0 auto" }}
+			>
+				<source src="./assets/files/MerchVideo.mp4" type="video/mp4" />
+			</video>
 		</>
 	);
 }

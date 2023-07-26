@@ -1,16 +1,13 @@
 import HeroSection from "@/components/HeroSection/HeroSection";
-import Navbar from "@/components/Navbar/Navbar";
 import TextSection from "@/components/TextSection/TextSection";
 import Button from "@/components/Button/Button";
 import IconList from "@/components/IconList/IconList";
-import Footer from "@/components/Footer/Footer";
 import GallerySection from "@/components/GallerySection/GallerySection";
 import EventsSection from "@/components/EventsSection/EventsSection";
 
 export default function Home() {
 	return (
 		<>
-			<Navbar />
 			<HeroSection />
 			<TextSection
 				textSide="left"
@@ -123,7 +120,6 @@ export default function Home() {
 				</p>
 			</TextSection> */}
 			<EventsSection full={false} />
-			<Footer />
 		</>
 	);
 }
