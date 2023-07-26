@@ -3,7 +3,6 @@
 .events-card {
 	width: calc(25% - (30px * 0.75));
 	position: relative;
-	cursor: pointer;
 	transition: 200ms ease-in-out;
 	box-sizing: content-box;
 
@@ -39,9 +38,12 @@
 			top: 0;
 			color: $color-white;
 			opacity: 0;
-			margin: 10px;
+			margin: 5%;
 			max-height: 100%;
 			transition: 200ms ease-in-out;
+			display: flex;
+			flex-direction: column;
+			height: 90%;
 
 			h4 {
 				font-size: 25px;
@@ -49,6 +51,14 @@
 
 			p {
 				font-size: 18px;
+			}
+
+			.button {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				padding: 5px;
+				font-size: 16px;
 			}
 		}
 	}

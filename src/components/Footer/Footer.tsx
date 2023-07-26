@@ -27,7 +27,7 @@ export default function Footer() {
 						<br />
 						Austin, TX 78712
 					</p>
-					<p>ieee@ieeeut.org</p>
+					<a href="mailto:ieee@ieeeut.org">comms@ieeeut.org</a>
 				</div>
 				<img
 					className="footer-logo"

@@ -16,11 +16,38 @@ export default function Students() {
 				textCols="5"
 				graphicSrc="./patrickamogh.jpg"
 			>
-				<h2>Open to All!</h2>
+				<h2>Open to All</h2>
 				<p>
-					All ECE students receive access to the following resources:
+					Our org believes experiences, ideas, and strengths from
+					different students make our community strong. We encourage
+					students of all majors to join IEEE!
 				</p>
-				<Button name="Learn More" link="/about" />
+				<Button name="Join" link="/join" />
+			</TextSection>
+			<TextSection
+				textSide="right"
+				textCols="5"
+				graphicSrc="./patrickamogh.jpg"
+			>
+				<h2>Custom Merch</h2>
+				<p>
+					As a member, you can get some of our free merch! You can
+					also get more pieces by filling out your punch card.
+				</p>
+				<Button name="Merch" link="/merch" />
+			</TextSection>
+			<TextSection
+				textSide="left"
+				textCols="5"
+				graphicSrc="./patrickamogh.jpg"
+			>
+				<h2>Become an Officer</h2>
+				<p>
+					Our officers are what make our org function! Meet our
+					current officers for the 2023-2024 season and learn about
+					applying as an assistant officer!
+				</p>
+				<Button name="Officers" link="/officers" />
 			</TextSection>
 		</>
 	);

@@ -11,28 +11,21 @@ export default function Merch() {
 	return (
 		<>
 			<HeaderSection title="Merch" image="hero-image.jpg" />
-
 			<TextSection
 				textSide="left"
 				textCols="3"
 				graphicSrc="./assets/files/MerchVideo.mp4"
 			>
-				<h2>What We Do</h2>
-				<p>IEEE runs events for ECE students year-round.</p>
+				<h2>Our Merch</h2>
 				<p>
-					We bring ECE students of all years together to learn from
-					each other and build a community within the department
+					Take a look at out merch. We design our clothes with a
+					combination of modern simplicity and nostalgic retro.
+				</p>
+				<p>
+					We also have things like stickers, totes, and beanies too!
 				</p>
 				<Button name="Learn More" link="/about" />
 			</TextSection>
-			<video
-				autoPlay={true}
-				muted={true}
-				loop={true}
-				style={{ width: 50 + "%", margin: "0 0 0 auto" }}
-			>
-				<source src="./assets/files/MerchVideo.mp4" type="video/mp4" />
-			</video>
 		</>
 	);
 }

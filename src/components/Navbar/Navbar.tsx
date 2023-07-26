@@ -60,6 +60,11 @@ export default function Navbar() {
 									<li>
 										<Link href="/officers">Officers</Link>
 									</li>
+									<li>
+										<Link href="/membership">
+											Membership
+										</Link>
+									</li>
 								</ul>
 							</li>
 							<li>

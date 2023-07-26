@@ -15,10 +15,13 @@ export default function Home() {
 				graphicSrc="./patrickamogh.jpg"
 			>
 				<h2>What We Do</h2>
-				<p>IEEE runs events for ECE students year-round.</p>
 				<p>
-					We bring ECE students of all years together to learn from
-					each other and build a community within the department
+					IEEE UT runs events, socials, and workshops year round, to
+					help you grow academically, socially, and professionally.
+				</p>
+				<p>
+					We mostly consist of ECE students, but all majors are
+					welcome!
 				</p>
 				<Button name="Learn More" link="/about" />
 			</TextSection>
