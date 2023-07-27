@@ -10,11 +10,14 @@ export const metadata = {
 export default function Students() {
 	return (
 		<>
-			<HeaderSection title="Students" image="hero-image.jpg" />
+			<HeaderSection
+				title="Students"
+				image="./assets/images/events.JPG"
+			/>
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="./patrickamogh.jpg"
+				graphicSrc="./assets/images/yoga.JPG"
 			>
 				<h2>Open to All</h2>
 				<p>
@@ -27,7 +30,7 @@ export default function Students() {
 			<TextSection
 				textSide="right"
 				textCols="5"
-				graphicSrc="./patrickamogh.jpg"
+				graphicSrc="./assets/images/merch.JPG"
 			>
 				<h2>Custom Merch</h2>
 				<p>
@@ -39,7 +42,7 @@ export default function Students() {
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="./patrickamogh.jpg"
+				graphicSrc="./assets/images/officers/Group2.jpg"
 			>
 				<h2>Become an Officer</h2>
 				<p>

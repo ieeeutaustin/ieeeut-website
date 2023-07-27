@@ -11,7 +11,7 @@ export default function Corporate() {
 		<>
 			<HeaderSection
 				title="Corporate"
-				image="hero-image.jpg"
+				image="./assets/images/greece.jpg"
 				desc="Learn more about becoming a sponsor:"
 				buttonName="Corporate Packet 2023-2024"
 				buttonLink="./assets/files/IEEE-Spring-Corporate-Packet-2023-2024.pdf"
@@ -19,7 +19,7 @@ export default function Corporate() {
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="./patrickamogh.jpg"
+				graphicSrc="./assets/images/patrickamogh.jpg"
 			>
 				<h2>General Meetings</h2>
 				<p>
@@ -36,7 +36,7 @@ export default function Corporate() {
 			<TextSection
 				textSide="right"
 				textCols="5"
-				graphicSrc="./halloween.jpg"
+				graphicSrc="./assets/images/halloween.jpg"
 			>
 				<h2>Social Events</h2>
 				<p>
@@ -52,7 +52,7 @@ export default function Corporate() {
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="./patrickamogh.jpg"
+				graphicSrc="./assets/images/patrickamogh.jpg"
 			>
 				<h2>Workshops</h2>
 				<p>
@@ -69,7 +69,7 @@ export default function Corporate() {
 				textSide="center"
 				textColor="white"
 				textCols="4"
-				graphicSrc="./hero-background.jpg"
+				graphicSrc="./assets/images/backgrounds/hero-background.jpg"
 			>
 				<h2>Corporate Packet</h2>
 				<p>

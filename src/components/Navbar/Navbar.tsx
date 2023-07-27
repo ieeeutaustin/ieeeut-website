@@ -47,7 +47,7 @@ export default function Navbar() {
 								<Link href="/students">
 									Students
 									<Image
-										src="/icons/arrow.svg"
+										src="/assets/icons/arrow.svg"
 										alt=""
 										width={15}
 										height={15}

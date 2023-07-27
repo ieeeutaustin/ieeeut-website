@@ -22,10 +22,7 @@ export default function TextSection({
 			{graphicSrc ? (
 				graphicSrc.includes(".mp4") ? (
 					<video autoPlay={true} muted={true} loop={true}>
-						<source
-							src="./assets/files/MerchVideo.mp4"
-							type="video/mp4"
-						/>
+						<source src={graphicSrc} type="video/mp4" />
 					</video>
 				) : (
 					<img src={graphicSrc} alt={graphicAlt} />

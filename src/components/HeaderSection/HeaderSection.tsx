@@ -39,7 +39,7 @@ export default function HeaderSection(props: {
 			/>
 			<img
 				className="header-background"
-				src="./hero-background.jpg"
+				src="./assets/images/backgrounds/hero-background.jpg"
 				alt=""
 			/>
 		</GridContainer>

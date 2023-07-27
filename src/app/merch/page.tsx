@@ -10,11 +10,11 @@ export const metadata = {
 export default function Merch() {
 	return (
 		<>
-			<HeaderSection title="Merch" image="hero-image.jpg" />
+			<HeaderSection title="Merch" image="./assets/images/merch.JPG" />
 			<TextSection
 				textSide="left"
 				textCols="3"
-				graphicSrc="./assets/files/MerchVideo.mp4"
+				graphicSrc="./assets/videos/MerchVideo.mp4"
 			>
 				<h2>Our Merch</h2>
 				<p>

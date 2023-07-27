@@ -11,7 +11,7 @@ export default function Home() {
 			<HeaderSection
 				title="Events"
 				desc="Check out some upcoming and past events we are hosting! Make sure to RSVP!"
-				image="hero-image.jpg"
+				image="./assets/images/iceskating.jpg"
 			/>
 			<EventsSection full={true} />
 		</>

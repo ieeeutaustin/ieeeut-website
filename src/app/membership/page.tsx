@@ -7,7 +7,10 @@ export const metadata = {
 export default function Membership() {
 	return (
 		<>
-			<HeaderSection title="Membership" image="hero-image.jpg" />
+			<HeaderSection
+				title="Membership"
+				image="./assets/images/events.JPG"
+			/>
 		</>
 	);
 }

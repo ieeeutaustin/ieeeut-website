@@ -10,11 +10,14 @@ export const metadata = {
 export default function About() {
 	return (
 		<>
-			<HeaderSection title="About Us" image="hero-image.jpg" />
+			<HeaderSection
+				title="About Us"
+				image="./assets/images/backgrounds/hero-image.jpg"
+			/>
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="./halloween.jpg"
+				graphicSrc="./assets/images/halloween.jpg"
 			>
 				<h2>Who are we?</h2>
 				<p>

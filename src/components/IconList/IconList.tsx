@@ -20,7 +20,7 @@ export default function IconList(props: any) {
 					href={urls[icon.replace("-white", "").toLowerCase()] || "#"}
 					target="_blank"
 				>
-					<img src={`./icons/${icon}.svg`} alt="" />
+					<img src={`./assets/icons/${icon}.svg`} alt="" />
 				</a>
 			))}
 		</div>

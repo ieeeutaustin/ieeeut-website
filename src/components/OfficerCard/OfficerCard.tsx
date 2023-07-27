@@ -15,13 +15,13 @@ export default function OfficerCard(props: any) {
 				<div className="officer-card-image-wrapper">
 					<img
 						className="officer-card-image"
-						src={"/assets/officers/" + props.image}
+						src={"/assets/images/officers/" + props.image}
 						alt=""
 					/>
 					{imageHoverSrc && (
 						<img
 							className="officer-card-image-hover"
-							src={"/assets/officers/" + imageHoverSrc}
+							src={"/assets/images/officers/" + imageHoverSrc}
 							alt=""
 						/>
 					)}

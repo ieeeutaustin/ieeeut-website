@@ -12,7 +12,7 @@ export default function Home() {
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="./patrickamogh.jpg"
+				graphicSrc="./assets/images/patrickamogh.jpg"
 			>
 				<h2>What We Do</h2>
 				<p>
@@ -27,22 +27,22 @@ export default function Home() {
 			</TextSection>
 			<GallerySection
 				images={[
-					"./assets/pexels-buro-millennial-1438072.jpg",
-					"./assets/pexels-fox-1595391.jpg",
-					"./assets/pexels-julia-m-cameron-4144923.jpg",
-					"./assets/pexels-kampus-production-5940841.jpg",
-					"./assets/pexels-keira-burton-6146978.jpg"
+					"./assets/images/pexels-buro-millennial-1438072.jpg",
+					"./assets/images/pexels-fox-1595391.jpg",
+					"./assets/images/pexels-julia-m-cameron-4144923.jpg",
+					"./assets/images/pexels-kampus-production-5940841.jpg",
+					"./assets/images/pexels-keira-burton-6146978.jpg"
 				]}
 			/>
 			<TextSection
 				textSide="right"
 				textCols="5"
-				graphicSrc="./halloween.jpg"
+				graphicSrc="./assets/images/halloween.jpg"
 			>
 				<h2>Important Links</h2>
 				<h3>
-					<img src="./icons/slack.svg" />
-					Slack & <img src="./icons/discord.svg" />
+					<img src="./assets/icons/slack.svg" />
+					Slack & <img src="./assets/icons/discord.svg" />
 					Discord
 				</h3>
 				<p>
@@ -58,7 +58,7 @@ export default function Home() {
 					/>
 				</div>
 				<h3>
-					<img src="./icons/gcal.svg" />
+					<img src="./assets/icons/gcal.svg" />
 					Google Calendar
 				</h3>
 				<p>
@@ -70,7 +70,7 @@ export default function Home() {
 					link="https://calendar.google.com/calendar/u/0?cid=Y183NWNmZGJlZGFjNTY2MGZjOTA2MTRlZTRiNTliNzExOTE0MjU1MGIwYmM5MWJlNTgyNmFiNDBlNzQ4MmQ2YjBjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
 				/>
 				<h3>
-					<img src="./icons/instagram.svg" />
+					<img src="./assets/icons/instagram.svg" />
 					Instagram
 				</h3>
 				<p>
@@ -87,7 +87,7 @@ export default function Home() {
 				textSide="center"
 				textColor="white"
 				textCols="4"
-				graphicSrc="./hero-background.jpg"
+				graphicSrc="./assets/images/backgrounds/hero-background.jpg"
 			>
 				<h2>Follow our Socials</h2>
 				<p>
@@ -104,24 +104,6 @@ export default function Home() {
 					]}
 				/>
 			</TextSection>
-			{/* <TextSection textSide="left" graphicSrc="./patrickamogh.jpg">
-				<h2>Get Involved</h2>
-				<h3>Upcoming Events</h3>
-				<p>
-					Check out our calendar to see general meeting timing and
-					location and find out about other cool events!
-				</p>
-				<h3>Intramural Sports</h3>
-				<p>
-					IEEE plays in many intramural sports! Join our slack to see
-					what sports we are making teams for!
-				</p>
-				<h3>Membership</h3>
-				<p>
-					Official membership with IEEE requires signing up on our
-					Slack workspace and completing our membership portal.
-				</p>
-			</TextSection> */}
 			<EventsSection full={false} />
 		</>
 	);

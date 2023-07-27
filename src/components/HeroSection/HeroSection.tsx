@@ -25,12 +25,16 @@ export default function HeroSection() {
 			</div>
 			<div className="hero-display">
 				<h3>Upcoming Event:</h3>
-				<img src="/assets/flyers/pease_park.jpg" alt="" />
+				<img src="./assets/images/flyers/pease_park.jpg" alt="" />
 			</div>
-			<img className="hero-image" src="./hero-image.jpg" alt="" />
+			<img
+				className="hero-image"
+				src="./assets/images/hero-image.jpg"
+				alt=""
+			/>
 			<img
 				className="hero-background"
-				src="./hero-background.jpg"
+				src="./assets/images/backgrounds/hero-background.jpg"
 				alt=""
 			/>
 		</GridContainer>
