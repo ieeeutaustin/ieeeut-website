@@ -11,7 +11,7 @@ export default function Officers() {
 		<>
 			<HeaderSection
 				title="Officers"
-				image="./assets/images/officers/Group.png"
+				image="./assets/images/officers/Group2.jpg"
 			/>
 			<TextSection textSide="center" textCols="5" s>
 				<h2>Meet the 23-24 Officers</h2>

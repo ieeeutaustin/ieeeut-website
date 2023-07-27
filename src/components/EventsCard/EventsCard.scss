@@ -63,7 +63,9 @@
 		}
 	}
 
-	&:hover {
+	&:hover,
+	&.details,
+	&:focus {
 		transform: scale(1.1);
 
 		img {

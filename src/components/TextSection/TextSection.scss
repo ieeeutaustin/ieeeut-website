@@ -172,6 +172,10 @@
 		grid-column: col-start 1 / span 12;
 		grid-row: 1;
 		z-index: 1;
+
+		> div.icon-list {
+			gap: 30px;
+		}
 	}
 
 	> img {

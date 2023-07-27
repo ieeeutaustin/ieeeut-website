@@ -27,11 +27,11 @@ export default function Home() {
 			</TextSection>
 			<GallerySection
 				images={[
-					"./assets/images/pexels-buro-millennial-1438072.jpg",
-					"./assets/images/pexels-fox-1595391.jpg",
-					"./assets/images/pexels-julia-m-cameron-4144923.jpg",
-					"./assets/images/pexels-kampus-production-5940841.jpg",
-					"./assets/images/pexels-keira-burton-6146978.jpg"
+					"./assets/images/DodgeballIM.png",
+					"./assets/images/Glamping.JPG",
+					"./assets/images/JohnDeere.png",
+					"./assets/images/yoga3.JPG",
+					"./assets/images/SoccerIM.png"
 				]}
 			/>
 			<TextSection
@@ -50,7 +50,11 @@ export default function Home() {
 					and org updates!
 				</p>
 				<div>
-					<Button name="Join Slack" link="/" />
+					<Button
+						name="Join Slack"
+						link="https://join.slack.com/t/ieeeutaustin/shared_invite/zt-207fi2skh-GQSfBQp3R9h_cAFht1xPQQ"
+						newWindow={true}
+					/>
 					<Button
 						name="Join Discord"
 						link="https://discord.gg/Vcdqz8YczQ"
@@ -87,7 +91,7 @@ export default function Home() {
 				textSide="center"
 				textColor="white"
 				textCols="4"
-				graphicSrc="./assets/images/backgrounds/hero-background.jpg"
+				graphicSrc="./assets/images/backgrounds/BlueGradient.png"
 			>
 				<h2>Follow our Socials</h2>
 				<p>

@@ -42,7 +42,7 @@ export default function Students() {
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="./assets/images/officers/Group2.jpg"
+				graphicSrc="./assets/images/officers/Group.png"
 			>
 				<h2>Become an Officer</h2>
 				<p>

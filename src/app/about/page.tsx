@@ -10,10 +10,7 @@ export const metadata = {
 export default function About() {
 	return (
 		<>
-			<HeaderSection
-				title="About Us"
-				image="./assets/images/backgrounds/hero-image.jpg"
-			/>
+			<HeaderSection title="About Us" image="./assets/images/yoga2.JPG" />
 			<TextSection
 				textSide="left"
 				textCols="5"

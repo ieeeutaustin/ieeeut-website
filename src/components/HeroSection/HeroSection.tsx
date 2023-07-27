@@ -26,15 +26,21 @@ export default function HeroSection() {
 			<div className="hero-display">
 				<h3>Upcoming Event:</h3>
 				<img src="./assets/images/flyers/pease_park.jpg" alt="" />
+				<Button
+					name="RSVP"
+					link="https://www.instagram.com/p/CrMBlZNu7HS/"
+					type="light md px-10"
+					newWindow={true}
+				/>
 			</div>
 			<img
 				className="hero-image"
-				src="./assets/images/hero-image.jpg"
+				src="./assets/images/Boatparty.png"
 				alt=""
 			/>
 			<img
 				className="hero-background"
-				src="./assets/images/backgrounds/hero-background.jpg"
+				src="./assets/images/backgrounds/BlueGradient.png"
 				alt=""
 			/>
 		</GridContainer>
