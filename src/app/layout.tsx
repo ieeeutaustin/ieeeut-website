@@ -7,28 +7,35 @@ import Footer from "@/components/Footer/Footer";
 import { Sofia_Sans } from "next/font/google";
 
 const sofiaSans = Sofia_Sans({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+	subsets: ["latin"],
+	weight: ["100", "200", "300", "400", "500", "600", "700", "800"]
 });
 
 export const metadata = {
-  title: "IEEE UT",
+	title: "IEEE UT"
 };
 
 export default function RootLayout({
-  children,
+	children
 }: {
-  children: React.ReactNode;
+	children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <link rel="icon" href="/icons/ieeeut-logo.jpg" sizes="any" />
-      <link rel="shortcut icon" href="./icons/ieeeut-logo.jpg" />
-      <body className={sofiaSans.className}>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<link
+				rel="icon"
+				href="./assets/images/branding/ieeeut-logo.jpg"
+				sizes="any"
+			/>
+			<link
+				rel="shortcut icon"
+				href="./assets/images/branding/ieeeut-logo.jpg"
+			/>
+			<body className={sofiaSans.className}>
+				<Navbar />
+				{children}
+				<Footer />
+			</body>
+		</html>
+	);
 }

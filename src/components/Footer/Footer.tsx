@@ -31,7 +31,7 @@ export default function Footer() {
 				</div>
 				<img
 					className="footer-logo"
-					src="./ieee-logo-white.png"
+					src="./assets/images/branding/ieee-logo-white.png"
 					alt=""
 				/>
 			</div>

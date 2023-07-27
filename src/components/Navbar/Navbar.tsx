@@ -31,7 +31,10 @@ export default function Navbar() {
 					<ul className="navbar-list">
 						<li className="navbar-list-logo">
 							<Link href="/">
-								<img src="./ieee-logo-white.png" alt="" />
+								<img
+									src="./assets/images/branding/ieee-logo-white.png"
+									alt=""
+								/>
 							</Link>
 						</li>
 						<ul
@@ -87,7 +90,7 @@ export default function Navbar() {
 							<Image
 								height={40}
 								width={40}
-								src="/icons/menu.svg"
+								src="./assets/icons/menu.svg"
 								alt=""
 							/>
 						</li>
