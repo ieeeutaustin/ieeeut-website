@@ -69,7 +69,7 @@ export default function Corporate() {
 				textSide="center"
 				textColor="white"
 				textCols="4"
-				graphicSrc="./assets/images/backgrounds/hero-background.jpg"
+				graphicSrc="./assets/images/backgrounds/BlueGradient.png"
 			>
 				<h2>Corporate Packet</h2>
 				<p>

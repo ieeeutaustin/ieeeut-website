@@ -10,6 +10,7 @@ export default function HeaderSection(props: {
 	imageStyle?: any;
 	buttonName?: string;
 	buttonLink?: string;
+	buttonNewWindow?: boolean;
 	children?: any;
 }) {
 	return (
@@ -23,7 +24,11 @@ export default function HeaderSection(props: {
 							name={props.buttonName}
 							link={props.buttonLink || "/"}
 							type="outlined"
-							newWindow={true}
+							newWindow={
+								props.buttonNewWindow == undefined
+									? true
+									: props.buttonNewWindow
+							}
 						/>
 					) : (
 						""
@@ -39,7 +44,7 @@ export default function HeaderSection(props: {
 			/>
 			<img
 				className="header-background"
-				src="./assets/images/backgrounds/hero-background.jpg"
+				src="./assets/images/backgrounds/BlueGradient.png"
 				alt=""
 			/>
 		</GridContainer>

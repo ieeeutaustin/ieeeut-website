@@ -21,7 +21,8 @@ export default function OfficerSection(props: any) {
 			name: "Armaan Kolsawala",
 			position: "Internal Director",
 			email: "internal.dir@ieeeut.org",
-			image: "Armaan.png"
+			image: "Armaan.png",
+			imageHover: "PolaroidOverlay.png"
 		},
 		{
 			name: "Aman Arham",

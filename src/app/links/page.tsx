@@ -5,10 +5,10 @@ import Button from "@/components/Button/Button";
 import Link from "next/link";
 
 export const metadata = {
-	title: "Join"
+	title: "Links"
 };
 
-export default function Join() {
+export default function Links() {
 	const links = [
 		{
 			name: "TikTok",
