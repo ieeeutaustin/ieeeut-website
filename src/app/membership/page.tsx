@@ -9,7 +9,7 @@ export default function Membership() {
 		<>
 			<HeaderSection
 				title="Membership"
-				image="./assets/images/events.JPG"
+				image="/assets/images/events.JPG"
 			/>
 		</>
 	);

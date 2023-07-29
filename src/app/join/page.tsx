@@ -10,7 +10,7 @@ export const metadata = {
 export default function Join() {
 	return (
 		<>
-			<HeaderSection title="Join" image="./assets/images/Retreat.JPG" />
+			<HeaderSection title="Join" image="/assets/images/Retreat.JPG" />
 		</>
 	);
 }

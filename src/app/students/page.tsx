@@ -17,7 +17,7 @@ export default function Students() {
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="./assets/images/yoga.JPG"
+				graphicSrc="/assets/images/yoga.JPG"
 			>
 				<h2>Open to All</h2>
 				<p>
@@ -30,7 +30,7 @@ export default function Students() {
 			<TextSection
 				textSide="right"
 				textCols="5"
-				graphicSrc="./assets/images/merch.JPG"
+				graphicSrc="/assets/images/merch.JPG"
 			>
 				<h2>Custom Merch</h2>
 				<p>
@@ -42,7 +42,7 @@ export default function Students() {
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="./assets/images/officers/Group.png"
+				graphicSrc="/assets/images/officers/Group.png"
 			>
 				<h2>Become an Officer</h2>
 				<p>

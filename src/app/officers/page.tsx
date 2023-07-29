@@ -13,7 +13,7 @@ export default function Officers() {
 				title="Officers"
 				image="./assets/images/officers/Group2.jpg"
 			/>
-			<TextSection textSide="center" textCols="5" s>
+			<TextSection textSide="center" textCols="5">
 				<h2>Meet the 23-24 Officers</h2>
 				<p>
 					These are our lovely IEEE UT officers for the 23-24

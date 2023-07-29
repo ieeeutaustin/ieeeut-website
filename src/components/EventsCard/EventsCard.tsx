@@ -2,6 +2,7 @@
 import "./EventsCard.scss";
 import Button from "../Button/Button";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function EventCard(props: any) {
 	const [details, setDetails] = useState(false);
@@ -18,7 +19,7 @@ export default function EventCard(props: any) {
 			<h5 className="events-card-date">{props.date}</h5>
 			<div className="events-card-content">
 				<div className="events-card-image-wrapper">
-					<img src={props.image} alt="" />
+					<Image src={props.image} alt="" height={130} width={130}/>
 				</div>
 				<div className="events-card-text">
 					<h4>{props.title}</h4>

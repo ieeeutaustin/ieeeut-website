@@ -1,4 +1,5 @@
 import "./OfficerCard.scss";
+import Image from "next/image";
 
 export default function OfficerCard(props: any) {
 	let imageHoverSrc = props.imageHover;
@@ -13,16 +14,20 @@ export default function OfficerCard(props: any) {
 		<div className="officer-card">
 			<div className="officer-card-content">
 				<div className="officer-card-image-wrapper">
-					<img
+					<Image
 						className="officer-card-image"
 						src={"/assets/images/officers/" + props.image}
 						alt=""
+						width={120}
+						height={120}
 					/>
 					{imageHoverSrc && (
-						<img
+						<Image
 							className="officer-card-image-hover"
 							src={"/assets/images/officers/" + imageHoverSrc}
 							alt=""
+							width={150}
+							height={150}
 						/>
 					)}
 				</div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import TextSection from "@/components/TextSection/TextSection";
 import Button from "@/components/Button/Button";
@@ -11,8 +12,8 @@ export default function Home() {
 			<HeroSection />
 			<TextSection
 				textSide="left"
-				textCols="5"
-				graphicSrc="./assets/images/patrickamogh.jpg"
+				textCols="4"
+				graphicSrc="/assets/images/patrickamogh.jpg"
 			>
 				<h2>What We Do</h2>
 				<p>
@@ -27,21 +28,22 @@ export default function Home() {
 			</TextSection>
 			<GallerySection
 				images={[
-					"./assets/images/DodgeballIM.png",
-					"./assets/images/Glamping.JPG",
-					"./assets/images/JohnDeere.png",
-					"./assets/images/yoga3.JPG",
-					"./assets/images/SoccerIM.png"
+					"/assets/images/DodgeballIM.png",
+					"/assets/images/Glamping.JPG",
+					"/assets/images/JohnDeere.png",
+					"break",
+					"/assets/images/yoga3.JPG",
+					"/assets/images/SoccerIM.png"
 				]}
 			/>
 			<TextSection
 				textSide="right"
 				textCols="5"
-				graphicSrc="./assets/images/halloween.jpg"
+				graphicSrc="/assets/images/halloween.jpg"
 			>
 				<h2>Important Links</h2>
 				<h3>
-					<img src="./assets/icons/slack.svg" />
+					<img src="./assets/icons/slack.svg"/>
 					Slack & <img src="./assets/icons/discord.svg" />
 					Discord
 				</h3>
@@ -91,7 +93,7 @@ export default function Home() {
 				textSide="center"
 				textColor="white"
 				textCols="4"
-				graphicSrc="./assets/images/backgrounds/BlueGradient.png"
+				graphicSrc="/assets/images/backgrounds/BlueGradient.png"
 			>
 				<h2>Follow our Socials</h2>
 				<p>
