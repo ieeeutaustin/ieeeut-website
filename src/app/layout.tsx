@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 
 import { Sofia_Sans } from "next/font/google";
+import "dotenv/config";
 
 const sofiaSans = Sofia_Sans({
 	subsets: ["latin"],

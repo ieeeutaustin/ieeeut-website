@@ -41,7 +41,7 @@ export default function OfficerSection(props: any) {
 			name: "Ana Yang",
 			position: "Membership and Resources Director",
 			email: "mr@ieeeut.org",
-			image: "Armaan.png"
+			image: "Ana.jpg"
 		},
 		{
 			name: "Aastha Agrawal",

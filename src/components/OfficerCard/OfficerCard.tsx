@@ -18,8 +18,8 @@ export default function OfficerCard(props: any) {
 						className="officer-card-image"
 						src={"/assets/images/officers/" + props.image}
 						alt=""
-						width={120}
-						height={120}
+						width={150}
+						height={150}
 					/>
 					{imageHoverSrc && (
 						<Image
