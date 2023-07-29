@@ -4,8 +4,11 @@
 	width: 100%;
 	height: auto;
 	background-color: $color-white;
+	position: relative;
+	overflow: hidden;
 
-	.text-section-content, .text-section-graphic {
+	.text-section-content,
+	.text-section-graphic {
 		grid-row: 1;
 	}
 
@@ -43,7 +46,8 @@
 	}
 
 	.text-section-graphic {
-		img, video {
+		img,
+		video {
 			box-sizing: border-box;
 			min-height: 100%;
 			width: 100%;
@@ -52,9 +56,9 @@
 	}
 
 	&.left {
-
 		.text-section-graphic {
-			img, video {
+			img,
+			video {
 				grid-row: 1;
 				width: calc(100% + 20px);
 				border-left: 20px solid $color-ieee-blue;
@@ -75,7 +79,7 @@
 				grid-column: col-start 6 / span 7;
 			}
 		}
-	
+
 		&.cols-4 {
 			.text-section-content {
 				grid-column: col-start 2 / span 4;
@@ -109,11 +113,11 @@
 
 	&.right {
 		.text-section-graphic {
-			img, video {
+			img,
+			video {
 				grid-row: 1;
 				width: calc(100% + 20px);
 				border-right: 20px solid $color-ieee-blue;
-				margin-right: -20px;
 			}
 		}
 
@@ -159,15 +163,15 @@
 	}
 
 	&.center {
-		width: 100%;
+		display: flex;
 
 		.text-section-content {
-			grid-column: col-start 1 / span 12;
 			max-width: 450px;
 			margin-left: auto;
 			margin-right: auto;
 			text-align: center;
 			align-items: center;
+			z-index: 2;
 
 			.icon-list {
 				gap: 30px;
@@ -175,17 +179,27 @@
 		}
 
 		.text-section-graphic {
-			grid-column: col-start 1 / span 12;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+			> img,
+			video {
+				margin: 0;
+				width: 100%;
+			}
 		}
 	}
 }
 
 @media screen and (max-width: 800px) {
 	.text-section.left,
-	.text-section.right,
-	.text-section.center {
+	.text-section.right {
 		.text-section-graphic {
-			img, video {
+			img,
+			video {
 				border: none;
 				border-bottom: 20px solid $color-ieee-blue;
 				width: 100vw;
@@ -197,7 +211,8 @@
 
 	.text-section.center {
 		.text-section-graphic {
-			img, video {
+			img,
+			video {
 				border: none;
 			}
 		}

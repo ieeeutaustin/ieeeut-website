@@ -21,7 +21,6 @@ export default function Navbar() {
 
 	return (
 		<div className="navbar-container">
-			<div className="navbar-shadow-box" />
 			<div
 				className="navbar-background"
 				style={{ opacity: Math.min(100, clientWindowHeight) / 100 }}
