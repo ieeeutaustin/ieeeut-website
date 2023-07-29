@@ -55,6 +55,7 @@
 
 			img {
 				height: 20px;
+				width: auto;
 				padding: 0px;
 				margin: 0px;
 				display: block;
@@ -161,6 +162,8 @@
 				img {
 					margin-left: 5px;
 					transform: rotate(90deg);
+					height: 15px;
+					width: auto;
 				}
 			}
 

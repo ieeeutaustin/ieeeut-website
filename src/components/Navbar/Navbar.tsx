@@ -1,10 +1,10 @@
 "use client";
 
+import "./Navbar.scss";
 import Image from "next/image";
 import Link from "next/link";
-import GridContainer from "@/components/GridContainer/GridContainer";
-import "./Navbar.scss";
 import { useState, useEffect } from "react";
+import GridContainer from "@/components/GridContainer/GridContainer";
 
 export default function Navbar() {
 	const [clientWindowHeight, setClientWindowHeight] = useState(0);
@@ -30,9 +30,11 @@ export default function Navbar() {
 					<ul className="navbar-list">
 						<li className="navbar-list-logo">
 							<Link href="/">
-								<img
-									src="./assets/images/branding/ieee-logo-white.png"
-									alt=""
+								<Image
+									src="/assets/images/branding/ieee-logo-white.png"
+									alt="IEEE Logo"
+									width={50}
+									height={50}
 								/>
 							</Link>
 						</li>
@@ -51,8 +53,8 @@ export default function Navbar() {
 									<Image
 										src="/assets/icons/arrow.svg"
 										alt=""
-										width={15}
-										height={15}
+										width={10}
+										height={10}
 									/>
 								</Link>
 								<ul className="navbar-dropdown">

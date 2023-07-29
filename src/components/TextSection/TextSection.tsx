@@ -1,6 +1,6 @@
+import "./TextSection.scss";
 import Image from "next/image";
 import GridContainer from "@/components/GridContainer/GridContainer";
-import "./TextSection.scss";
 
 export default function TextSection({
 	children,

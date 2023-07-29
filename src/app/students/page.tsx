@@ -10,10 +10,7 @@ export const metadata = {
 export default function Students() {
 	return (
 		<>
-			<HeaderSection
-				title="Students"
-				image="./assets/images/events.JPG"
-			/>
+			<HeaderSection title="Students" image="/assets/images/events.JPG" />
 			<TextSection
 				textSide="left"
 				textCols="5"

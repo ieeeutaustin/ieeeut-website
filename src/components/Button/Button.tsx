@@ -14,26 +14,6 @@ export default function Button({
 	type?: string;
 	children?: any;
 }) {
-	// if (member) {
-	// 	return (
-	// 		<Link className="button member" href="/join">
-	// 			<span>
-	// 				Become a <span>Member</span>
-	// 			</span>
-	// 		</Link>
-	// 	);
-	// }
-
-	// if (sponsor) {
-	// 	return (
-	// 		<Link className="button sponsor" href="/corporate">
-	// 			<span>
-	// 				Become a <span>Sponsor</span>
-	// 			</span>
-	// 		</Link>
-	// 	);
-	// }
-
 	return (
 		<Link
 			className={"button " + (type ? type.replace("default", "") : "")}

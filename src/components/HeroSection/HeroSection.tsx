@@ -1,4 +1,5 @@
 import "./HeroSection.scss";
+import Image from "next/image";
 import GridContainer from "@/components/GridContainer/GridContainer";
 import Button from "@/components/Button/Button";
 
@@ -25,7 +26,12 @@ export default function HeroSection() {
 			</div>
 			<div className="hero-display">
 				<h3>Upcoming Event:</h3>
-				<img src="./assets/images/flyers/pease_park.jpg" alt="" />
+				<Image
+					src="/assets/images/flyers/pease_park.jpg"
+					alt=""
+					width={150}
+					height={150}
+				/>
 				<Button
 					name="RSVP"
 					link="https://www.instagram.com/p/CrMBlZNu7HS/"
@@ -33,15 +39,19 @@ export default function HeroSection() {
 					newWindow={true}
 				/>
 			</div>
-			<img
+			<Image
 				className="hero-image"
-				src="./assets/images/Boatparty.png"
+				src="/assets/images/Boatparty.png"
 				alt=""
+				width={450}
+				height={350}
 			/>
-			<img
+			<Image
 				className="hero-background"
-				src="./assets/images/backgrounds/BlueGradient.png"
+				src="/assets/images/backgrounds/BlueGradient.png"
 				alt=""
+				width={50}
+				height={50}
 			/>
 		</GridContainer>
 	);

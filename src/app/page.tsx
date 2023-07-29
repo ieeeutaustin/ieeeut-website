@@ -43,8 +43,19 @@ export default function Home() {
 			>
 				<h2>Important Links</h2>
 				<h3>
-					<img src="./assets/icons/slack.svg"/>
-					Slack & <img src="./assets/icons/discord.svg" />
+					<Image
+						src="/assets/icons/slack.svg"
+						alt="Slack logo"
+						width={50}
+						height={50}
+					/>
+					Slack &{" "}
+					<Image
+						src="/assets/icons/discord.svg"
+						alt="Discord logo"
+						width={50}
+						height={50}
+					/>
 					Discord
 				</h3>
 				<p>
@@ -64,7 +75,12 @@ export default function Home() {
 					/>
 				</div>
 				<h3>
-					<img src="./assets/icons/gcal.svg" />
+					<Image
+						src="./assets/icons/gcal.svg"
+						alt="Google Calendar logo"
+						width={50}
+						height={50}
+					/>
 					Google Calendar
 				</h3>
 				<p>
@@ -76,7 +92,12 @@ export default function Home() {
 					link="https://calendar.google.com/calendar/u/0?cid=Y183NWNmZGJlZGFjNTY2MGZjOTA2MTRlZTRiNTliNzExOTE0MjU1MGIwYmM5MWJlNTgyNmFiNDBlNzQ4MmQ2YjBjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
 				/>
 				<h3>
-					<img src="./assets/icons/instagram.svg" />
+					<Image
+						src="./assets/icons/instagram.svg"
+						alt="Instagram logo"
+						width={50}
+						height={50}
+					/>
 					Instagram
 				</h3>
 				<p>

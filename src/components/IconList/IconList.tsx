@@ -1,4 +1,5 @@
 import "./IconList.scss";
+import Image from "next/image";
 
 export default function IconList(props: any) {
 	const urls: any = {
@@ -20,7 +21,12 @@ export default function IconList(props: any) {
 					href={urls[icon.replace("-white", "").toLowerCase()] || "#"}
 					target="_blank"
 				>
-					<img src={`./assets/icons/${icon}.svg`} alt="" />
+					<Image
+						src={`/assets/icons/${icon}.svg`}
+						alt=""
+						width={50}
+						height={50}
+					/>
 				</a>
 			))}
 		</div>

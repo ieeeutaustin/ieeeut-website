@@ -1,5 +1,5 @@
-import Link from "next/link";
 import "./HeaderSection.scss";
+import Image from "next/image";
 import GridContainer from "@/components/GridContainer/GridContainer";
 import Button from "../Button/Button";
 
@@ -36,16 +36,20 @@ export default function HeaderSection(props: {
 					{props.children}
 				</div>
 			</div>
-			<img
+			<Image
 				className="header-image"
 				src={props.image}
 				alt=""
 				style={props.imageStyle}
+				width={200}
+				height={200}
 			/>
-			<img
+			<Image
 				className="header-background"
-				src="./assets/images/backgrounds/BlueGradient.png"
+				src="/assets/images/backgrounds/BlueGradient.png"
 				alt=""
+				width={50}
+				height={50}
 			/>
 		</GridContainer>
 	);

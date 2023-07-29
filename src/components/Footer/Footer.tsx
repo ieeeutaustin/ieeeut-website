@@ -1,6 +1,6 @@
 import "./Footer.scss";
-
 import IconList from "@/components/IconList/IconList";
+import Image from "next/image";
 
 export default function Footer() {
 	return (
@@ -29,10 +29,12 @@ export default function Footer() {
 					</p>
 					<a href="mailto:ieee@ieeeut.org">comms@ieeeut.org</a>
 				</div>
-				<img
+				<Image
 					className="footer-logo"
-					src="./assets/images/branding/ieee-logo-white.png"
+					src="/assets/images/branding/ieee-logo-white.png"
 					alt=""
+					width={50}
+					height={15}
 				/>
 			</div>
 		</div>

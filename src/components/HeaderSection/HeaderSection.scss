@@ -23,7 +23,7 @@ img.header-background {
 img.header-image {
 	z-index: -1;
 	opacity: 0.3;
-	filter: saturate(0.6) brightness(0.75);
+	filter: saturate(0.6) brightness(0.75) blur(3px);
 }
 
 .header-content {
