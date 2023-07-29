@@ -66,12 +66,60 @@
 		}
 
 		.navbar-menu-icon {
-			padding: 0;
+			height: 24px;
+			width: 24px;
+			padding: 13px;
+			position: relative;
+			transition: 0.5s ease-in-out;
 			cursor: pointer;
 			display: none;
 
-			> img {
-				display: block;
+			span {
+				position: absolute;
+				width: 30px;
+				height: 4px;
+				border-radius: 4px;
+				background: $color-white;
+				opacity: 1;
+				right: 0;
+				transition: 0.25s ease-in-out;
+
+				&:nth-child(1) {
+					top: 13px;
+				}
+
+				&:nth-child(2),
+				&:nth-child(3) {
+					top: 23px;
+				}
+
+				&:nth-child(4) {
+					top: 33px;
+				}
+			}
+
+			&.opened {
+				span {
+					&:nth-child(1) {
+						width: 0%;
+						right: 15px;
+						top: 23px;
+					}
+
+					&:nth-child(2) {
+						transform: rotate(45deg);
+					}
+
+					&:nth-child(3) {
+						transform: rotate(-45deg);
+					}
+
+					&:nth-child(4) {
+						width: 0%;
+						right: 15px;
+						top: 23px;
+					}
+				}
 			}
 		}
 	}

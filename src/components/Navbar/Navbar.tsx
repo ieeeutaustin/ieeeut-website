@@ -81,18 +81,17 @@ export default function Navbar() {
 							</li>
 						</ul>
 						<li
-							className="navbar-menu-icon"
+							className={`navbar-menu-icon ${
+								opened ? "opened" : ""
+							}`}
 							onClick={() => {
-								console.log(opened);
 								setOpened(!opened);
 							}}
 						>
-							<Image
-								height={40}
-								width={40}
-								src="./assets/icons/menu.svg"
-								alt=""
-							/>
+							<span />
+							<span />
+							<span />
+							<span />
 						</li>
 					</ul>
 				</div>
