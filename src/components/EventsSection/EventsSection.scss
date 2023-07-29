@@ -15,9 +15,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		max-width: 900px;
-		width: 100%;
 		gap: 30px;
-		margin: 0 20px;
+		padding: 0 20px;
+		width: 100%;
+		box-sizing: border-box;
 	}
 }
 
