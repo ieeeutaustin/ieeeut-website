@@ -41,7 +41,7 @@ export default function HeroSection() {
 			</GridContainer>
 			<Image
 				className="hero-image"
-				src="/assets/images/Boatparty.png"
+				src="/assets/images/Boatparty.jpg"
 				alt=""
 				width={450}
 				height={350}
@@ -49,7 +49,7 @@ export default function HeroSection() {
 			/>
 			<Image
 				className="hero-background"
-				src="/assets/images/backgrounds/BlueGradient.png"
+				src="/assets/images/backgrounds/BlueGradient.jpg"
 				alt=""
 				width={50}
 				height={50}

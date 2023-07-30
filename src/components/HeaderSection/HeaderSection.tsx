@@ -46,7 +46,7 @@ export default function HeaderSection(props: {
 			/>
 			<Image
 				className="header-background"
-				src="/assets/images/backgrounds/BlueGradient.png"
+				src="/assets/images/backgrounds/BlueGradient.jpg"
 				alt=""
 				width={50}
 				height={50}

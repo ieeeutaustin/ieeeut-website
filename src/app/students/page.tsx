@@ -76,7 +76,7 @@ export default function Students() {
 			<TextSection
 				textSide="right"
 				textCols="5"
-				graphicSrc="/assets/images/officers/Group.png"
+				graphicSrc="/assets/images/officers/Group.jpg"
 			>
 				<h2>Officers and Applications</h2>
 				<p>

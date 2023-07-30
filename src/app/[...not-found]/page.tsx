@@ -31,13 +31,13 @@ export default function NotFound() {
 			{redirecting ? (
 				<HeaderSection
 					title="Redirecting..."
-					image="/assets/images/backgrounds/BlueGradient.png"
+					image="/assets/images/backgrounds/BlueGradient.jpg"
 				/>
 			) : (
 				<HeaderSection
 					title="404"
 					desc={`Looks like "${pathname}" doesn't exist...`}
-					image="/assets/images/backgrounds/BlueGradient.png"
+					image="/assets/images/backgrounds/BlueGradient.jpg"
 					buttonName="Home"
 					buttonLink="/"
 					buttonNewWindow={false}

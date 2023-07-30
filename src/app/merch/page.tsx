@@ -11,7 +11,7 @@ export const metadata = {
 export default function Merch() {
 	return (
 		<>
-			<HeaderSection title="Merch" image="/assets/images/merch.JPG" />
+			<HeaderSection title="Merch" image="/assets/images/Merch.jpg" />
 			<TextSection
 				textSide="left"
 				textCols="3"
@@ -48,9 +48,9 @@ export default function Merch() {
 			</TextSection>
 			<GallerySection
 				images={[
-					"/assets/images/DodgeballIM.png",
+					"/assets/images/DodgeballIM.jpg",
 					"/assets/images/Glamping.jpg",
-					"/assets/images/JohnDeere.png"
+					"/assets/images/JohnDeere.jpg"
 				]}
 			/>
 		</>

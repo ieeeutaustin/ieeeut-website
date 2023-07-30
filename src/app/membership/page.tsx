@@ -16,7 +16,7 @@ export default function Membership() {
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="/assets/images/Boatparty.png"
+				graphicSrc="/assets/images/Boatparty.jpg"
 			>
 				<h2>One-Time Fee</h2>
 				<p>
@@ -29,7 +29,7 @@ export default function Membership() {
 			<TextSection
 				textSide="right"
 				textCols="5"
-				graphicSrc="/assets/images/Boatparty.png"
+				graphicSrc="/assets/images/Boatparty.jpg"
 			>
 				<h2 id="punch-card">Punch Card</h2>
 				<p>

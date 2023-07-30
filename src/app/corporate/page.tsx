@@ -11,7 +11,7 @@ export default function Corporate() {
 		<>
 			<HeaderSection
 				title="Corporate"
-				image="/assets/images/JohnDeere.png"
+				image="/assets/images/JohnDeere.jpg"
 				desc="Learn more about becoming a sponsor:"
 				buttonName="Corporate Packet 2023-2024"
 				buttonLink="/assets/files/IEEE-Spring-Corporate-Packet-2023-2024.pdf"
@@ -69,7 +69,7 @@ export default function Corporate() {
 				textSide="center"
 				textColor="white"
 				textCols="4"
-				graphicSrc="/assets/images/backgrounds/BlueGradient.png"
+				graphicSrc="/assets/images/backgrounds/BlueGradient.jpg"
 			>
 				<h2>Corporate Packet</h2>
 				<p>

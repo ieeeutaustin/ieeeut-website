@@ -1,7 +1,6 @@
 import "./TextSection.scss";
 import Image from "next/image";
 import GridContainer from "@/components/GridContainer/GridContainer";
-import BoatPatry from "../../../public/assets/images/Boatparty.png";
 
 export default function TextSection({
 	children,

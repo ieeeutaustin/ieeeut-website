@@ -28,12 +28,12 @@ export default function Home() {
 			</TextSection>
 			<GallerySection
 				images={[
-					"/assets/images/DodgeballIM.png",
+					"/assets/images/DodgeballIM.jpg",
 					"/assets/images/Glamping.jpg",
-					"/assets/images/JohnDeere.png",
+					"/assets/images/JohnDeere.jpg",
 					"break",
 					"/assets/images/Yoga3.jpg",
-					"/assets/images/SoccerIM.png"
+					"/assets/images/SoccerIM.jpg"
 				]}
 			/>
 			<TextSection
@@ -115,7 +115,7 @@ export default function Home() {
 				textSide="center"
 				textColor="white"
 				textCols="4"
-				graphicSrc="/assets/images/backgrounds/BlueGradient.png"
+				graphicSrc="/assets/images/backgrounds/BlueGradient.jpg"
 			>
 				<h2>Follow our Socials</h2>
 				<p>
