@@ -1,6 +1,7 @@
 import "./TextSection.scss";
 import Image from "next/image";
 import GridContainer from "@/components/GridContainer/GridContainer";
+import BoatPatry from "../../../public/assets/images/Boatparty.png";
 
 export default function TextSection({
 	children,
@@ -34,7 +35,7 @@ export default function TextSection({
 								src={graphicSrc}
 								alt={graphicAlt || ""}
 								width={400}
-								height={300}
+								height={200}
 							/>
 						)}
 					</div>
@@ -64,8 +65,12 @@ export default function TextSection({
 							<Image
 								src={graphicSrc}
 								alt={graphicAlt || ""}
-								width={400}
-								height={300}
+								fill={true}
+								sizes="40vw"
+								placeholder="blur"
+								blurDataURL={
+									graphicSrc.split(".")[0] + "Blur.webp"
+								}
 							/>
 						)}
 					</div>

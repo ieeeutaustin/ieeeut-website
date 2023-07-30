@@ -15,9 +15,9 @@ export default function IconList(props: any) {
 
 	return (
 		<div className="icon-list">
-			{props.icons.map((icon: string) => (
+			{props.icons.map((icon: string, index: number) => (
 				<a
-					key={urls}
+					key={`icon-${index}`}
 					href={urls[icon.replace("-white", "").toLowerCase()] || "#"}
 					target="_blank"
 				>

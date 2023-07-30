@@ -14,13 +14,6 @@ export default function EventsSection(props: any) {
 			url: "https://www.instagram.com/p/CrMBlZNu7HS/"
 		},
 		{
-			title: "Pre-Exam Carepackage",
-			desc: "Free snacks, stress toys, and more!",
-			date: "04.24",
-			image: "/assets/images/flyers/boat_social.jpeg",
-			url: "https://www.instagram.com/p/CrZn_wwsIHo"
-		},
-		{
 			title: "Boat Social",
 			desc: "End of the year boat social!",
 			date: "04.16",
@@ -58,13 +51,6 @@ export default function EventsSection(props: any) {
 		},
 		{
 			title: "IEEE Alumni Panel",
-			desc: "Let's see where our members are now!",
-			date: "03.23",
-			image: "/assets/images/flyers/alumni_panel.jpeg",
-			url: "https://www.instagram.com/p/CqBJCHCrg3r/"
-		},
-		{
-			title: "IEEE Alumni Panel 2",
 			desc: "Let's see where our members are now!",
 			date: "03.23",
 			image: "/assets/images/flyers/alumni_panel.jpeg",

@@ -8,21 +8,23 @@ export default function NotFound() {
 	const [redirecting, setRedirecting] = useState(true);
 	const router = useRouter();
 	const pathname = usePathname();
-	const shortURLs = {
-		discord: "https://discord.gg/Vcdqz8YczQ",
-		instagram: "https://instagram.com/ieee.ut",
-		insta: "https://instagram.com/ieee.ut",
-		tiktok: "https://tiktok.com/@ieee.ut",
-		gcal: "https://calendar.google.com/calendar/u/0?cid=Y183NWNmZGJlZGFjNTY2MGZjOTA2MTRlZTRiNTliNzExOTE0MjU1MGIwYmM5MWJlNTgyNmFiNDBlNzQ4MmQ2YjBjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
-	};
 
 	useEffect(() => {
+		const shortURLs = {
+			discord: "https://discord.gg/Vcdqz8YczQ",
+			instagram: "https://instagram.com/ieee.ut",
+			insta: "https://instagram.com/ieee.ut",
+			tiktok: "https://tiktok.com/@ieee.ut",
+			gcal: "https://calendar.google.com/calendar/u/0?cid=Y183NWNmZGJlZGFjNTY2MGZjOTA2MTRlZTRiNTliNzExOTE0MjU1MGIwYmM5MWJlNTgyNmFiNDBlNzQ4MmQ2YjBjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20",
+			"punch-card": "/membership#punch-card"
+		};
+
 		const parsedPathname = pathname.split("/")[1].toLowerCase();
 
 		if (shortURLs[parsedPathname as keyof typeof shortURLs] != undefined) {
 			router.replace(shortURLs[parsedPathname as keyof typeof shortURLs]);
 		} else setRedirecting(false);
-	}, []);
+	}, [pathname, router]);
 
 	return (
 		<div>

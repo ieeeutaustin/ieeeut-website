@@ -21,8 +21,7 @@ export default function OfficerSection(props: any) {
 			name: "Armaan Kolsawala",
 			position: "Internal Director",
 			email: "internal.dir@ieeeut.org",
-			image: "Armaan.png",
-			imageHover: "PolaroidOverlay.png"
+			image: "Armaan.jpg"
 		},
 		{
 			name: "Aman Arham",
@@ -68,35 +67,8 @@ export default function OfficerSection(props: any) {
 			name: "Joaquin Escobar",
 			position: "Communications Director",
 			email: "comms@ieeeut.org",
-			image: "Joaquin.png"
-		},
-		{
-			name: "Joaquin Escobar",
-			position: "Communications Director",
-			email: "comms@ieeeut.org",
 			image: "Joaquin.png",
 			imageHover: "JoaquinHover1.png"
-		},
-		{
-			name: "Joaquin Escobar",
-			position: "Communications Director",
-			email: "comms@ieeeut.org",
-			image: "Joaquin.png",
-			imageHover: "JoaquinHover2.png"
-		},
-		{
-			name: "Joaquin Escobar",
-			position: "Communications Director",
-			email: "comms@ieeeut.org",
-			image: "Joaquin.png",
-			imageHover: "JoaquinHover3.png"
-		},
-		{
-			name: "Joaquin Escobar",
-			position: "Communications Director",
-			email: "comms@ieeeut.org",
-			image: "Joaquin.png",
-			imageHover: "JoaquinHover4.png"
 		}
 	];
 

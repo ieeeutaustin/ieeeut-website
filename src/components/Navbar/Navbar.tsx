@@ -15,9 +15,10 @@ export default function Navbar() {
 	};
 
 	useEffect(() => {
+		setClientWindowHeight(window.scrollY);
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
-	});
+	}, []);
 
 	return (
 		<div className="navbar-container">

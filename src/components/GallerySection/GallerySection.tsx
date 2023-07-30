@@ -13,8 +13,10 @@ export default function GallerySection({ images }: any) {
 							<Image
 								src={imgSrc}
 								alt=""
-								width={500}
-								height={400}
+								width={400}
+								height={300}
+								placeholder="blur"
+								blurDataURL={imgSrc.split(".")[0] + "Blur.webp"}
 							/>
 						</li>
 					);

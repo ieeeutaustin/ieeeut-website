@@ -1,10 +1,11 @@
+import Link from "next/link";
 import TextSection from "@/components/TextSection/TextSection";
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
-import OfficerSection from "@/components/OfficersSection/OfficerSection";
+import GallerySection from "@/components/GallerySection/GallerySection";
 import Button from "@/components/Button/Button";
 
 export const metadata = {
-	title: "Merch"
+	title: "Merch | IEEE UT"
 };
 
 export default function Merch() {
@@ -18,14 +19,40 @@ export default function Merch() {
 			>
 				<h2>Our Merch</h2>
 				<p>
-					Take a look at out merch. We design our clothes with a
-					combination of modern simplicity and nostalgic retro.
+					Take a look at out merch! We design new merch each year so
+					follow us on <Link href="/instagram">Instagram</Link> to
+					stay updated.
 				</p>
 				<p>
-					We also have things like stickers, totes, and beanies too!
+					We also have things like sweatshirts, stickers, totes, and
+					beanies!
 				</p>
-				<Button name="Learn More" link="/about" />
+				<Button name="Instagram" link="/instagram" />
 			</TextSection>
+			<TextSection
+				textSide="right"
+				textCols="4"
+				graphicSrc="/assets/images/Merch.jpg"
+			>
+				<h2>Free Member Merch</h2>
+				<p>
+					All of our confirmed members get a free member t-shirt! Each
+					year we try to come up with a new design.
+				</p>
+				<p>
+					You can also get a sweatshirt, tote bag, beanie, and
+					stickers by attending our meetings and filling out your{" "}
+					<Link href={"/membership#punch-card"}>punch card</Link>!
+				</p>
+				<Button name="Become a Member" link="/membership" />
+			</TextSection>
+			<GallerySection
+				images={[
+					"/assets/images/DodgeballIM.png",
+					"/assets/images/Glamping.jpg",
+					"/assets/images/JohnDeere.png"
+				]}
+			/>
 		</>
 	);
 }

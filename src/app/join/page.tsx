@@ -4,7 +4,7 @@ import OfficerSection from "@/components/OfficersSection/OfficerSection";
 import Button from "@/components/Button/Button";
 
 export const metadata = {
-	title: "Join"
+	title: "Join | IEEE UT"
 };
 
 export default function Join() {

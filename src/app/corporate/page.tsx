@@ -3,7 +3,7 @@ import TextSection from "@/components/TextSection/TextSection";
 import Button from "@/components/Button/Button";
 
 export const metadata = {
-	title: "Corporate"
+	title: "Corporate | IEEE UT"
 };
 
 export default function Corporate() {
@@ -11,7 +11,7 @@ export default function Corporate() {
 		<>
 			<HeaderSection
 				title="Corporate"
-				image="/assets/images/greece.jpg"
+				image="/assets/images/JohnDeere.png"
 				desc="Learn more about becoming a sponsor:"
 				buttonName="Corporate Packet 2023-2024"
 				buttonLink="/assets/files/IEEE-Spring-Corporate-Packet-2023-2024.pdf"
@@ -19,7 +19,7 @@ export default function Corporate() {
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="/assets/images/patrickamogh.jpg"
+				graphicSrc="/assets/images/GREECE.jpg"
 			>
 				<h2>General Meetings</h2>
 				<p>
@@ -36,7 +36,7 @@ export default function Corporate() {
 			<TextSection
 				textSide="right"
 				textCols="5"
-				graphicSrc="/assets/images/halloween.jpg"
+				graphicSrc="/assets/images/Halloween.jpg"
 			>
 				<h2>Social Events</h2>
 				<p>
@@ -52,7 +52,7 @@ export default function Corporate() {
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="/assets/images/patrickamogh.jpg"
+				graphicSrc="/assets/images/Patrickamogh.jpg"
 			>
 				<h2>Workshops</h2>
 				<p>

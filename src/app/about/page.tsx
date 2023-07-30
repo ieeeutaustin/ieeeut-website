@@ -4,17 +4,17 @@ import Button from "@/components/Button/Button";
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
 
 export const metadata = {
-	title: "About"
+	title: "About | IEEE UT"
 };
 
 export default function About() {
 	return (
 		<>
-			<HeaderSection title="About Us" image="/assets/images/yoga2.JPG" />
+			<HeaderSection title="About Us" image="/assets/images/Yoga2.jpg" />
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="/assets/images/halloween.jpg"
+				graphicSrc="/assets/images/Halloween.jpg"
 			>
 				<h2>Who are we?</h2>
 				<p>

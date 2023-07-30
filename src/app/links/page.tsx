@@ -1,11 +1,7 @@
-import TextSection from "@/components/TextSection/TextSection";
-import HeaderSection from "@/components/HeaderSection/HeaderSection";
-import OfficerSection from "@/components/OfficersSection/OfficerSection";
 import Button from "@/components/Button/Button";
-import Link from "next/link";
 
 export const metadata = {
-	title: "Links"
+	title: "Links | IEEE UT"
 };
 
 export default function Links() {

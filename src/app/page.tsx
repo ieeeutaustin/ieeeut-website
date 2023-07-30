@@ -13,7 +13,7 @@ export default function Home() {
 			<TextSection
 				textSide="left"
 				textCols="4"
-				graphicSrc="/assets/images/patrickamogh.jpg"
+				graphicSrc="/assets/images/Patrickamogh.jpg"
 			>
 				<h2>What We Do</h2>
 				<p>
@@ -29,17 +29,17 @@ export default function Home() {
 			<GallerySection
 				images={[
 					"/assets/images/DodgeballIM.png",
-					"/assets/images/Glamping.JPG",
+					"/assets/images/Glamping.jpg",
 					"/assets/images/JohnDeere.png",
 					"break",
-					"/assets/images/yoga3.JPG",
+					"/assets/images/Yoga3.jpg",
 					"/assets/images/SoccerIM.png"
 				]}
 			/>
 			<TextSection
 				textSide="right"
 				textCols="5"
-				graphicSrc="/assets/images/halloween.jpg"
+				graphicSrc="/assets/images/Halloween.jpg"
 			>
 				<h2>Important Links</h2>
 				<h3>
@@ -60,7 +60,7 @@ export default function Home() {
 				</h3>
 				<p>
 					Join our Slack and/or Discord to see announcements, events,
-					and org updates!
+					and general org updates!
 				</p>
 				<div>
 					<Button
@@ -74,23 +74,7 @@ export default function Home() {
 						newWindow={true}
 					/>
 				</div>
-				<h3>
-					<Image
-						src="./assets/icons/gcal.svg"
-						alt="Google Calendar logo"
-						width={50}
-						height={50}
-					/>
-					Google Calendar
-				</h3>
-				<p>
-					Add our Google Calendar to yours so you can see all of our
-					events!
-				</p>
-				<Button
-					name="Add to Google Calendar"
-					link="https://calendar.google.com/calendar/u/0?cid=Y183NWNmZGJlZGFjNTY2MGZjOTA2MTRlZTRiNTliNzExOTE0MjU1MGIwYmM5MWJlNTgyNmFiNDBlNzQ4MmQ2YjBjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
-				/>
+
 				<h3>
 					<Image
 						src="./assets/icons/instagram.svg"
@@ -109,6 +93,23 @@ export default function Home() {
 					link="https://instagram.com/ieee.ut"
 					newWindow={true}
 				/>
+				<h3>
+					<Image
+						src="./assets/icons/gcal.svg"
+						alt="Google Calendar logo"
+						width={50}
+						height={50}
+					/>
+					Google Calendar
+				</h3>
+				<p>
+					Add our Google Calendar so you can stay up to date with our
+					events!
+				</p>
+				<Button
+					name="Add to Google Calendar"
+					link="https://calendar.google.com/calendar/u/0?cid=Y183NWNmZGJlZGFjNTY2MGZjOTA2MTRlZTRiNTliNzExOTE0MjU1MGIwYmM5MWJlNTgyNmFiNDBlNzQ4MmQ2YjBjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
+				/>
 			</TextSection>
 			<TextSection
 				textSide="center"
@@ -119,7 +120,7 @@ export default function Home() {
 				<h2>Follow our Socials</h2>
 				<p>
 					Our socials are a great place to keep up with what and when
-					we’re hosting events and making content!
+					we&apos;re hosting events and making content!
 				</p>
 				<IconList
 					icons={[
