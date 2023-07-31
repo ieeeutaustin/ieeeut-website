@@ -2,7 +2,7 @@
 
 .header-section {
 	width: 100%;
-	color: #fff;
+	color: $color-white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -40,26 +40,9 @@ img.header-image {
 	}
 
 	> p {
+		color: $color-white;
 		font-size: 22px;
 		display: block;
 		max-width: 500px;
-	}
-
-	.header-button {
-		text-decoration: none;
-		color: $color-white;
-		font-size: 20px;
-		padding: 15px;
-		border-radius: 10px;
-		border: 3px $color-white solid;
-		background-color: transparent;
-		transition: 100ms ease-in-out;
-		text-align: center;
-		width: max-content;
-
-		&:hover {
-			background-color: $color-white;
-			color: $color-black;
-		}
 	}
 }

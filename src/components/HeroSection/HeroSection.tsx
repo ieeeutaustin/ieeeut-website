@@ -25,12 +25,14 @@ export default function HeroSection() {
 				</div>
 				<div className="hero-display">
 					<h3>Upcoming Event:</h3>
-					<Image
-						src="/assets/images/flyers/pease_park.jpg"
-						alt=""
-						width={150}
-						height={150}
-					/>
+					<div className="hero-display-img-wrapper">
+						<Image
+							src="/assets/images/flyers/pease_park.jpg"
+							alt=""
+							fill={true}
+							sizes="25vw"
+						/>
+					</div>
 					<Button
 						name="RSVP"
 						link="https://www.instagram.com/p/CrMBlZNu7HS/"
@@ -43,16 +45,16 @@ export default function HeroSection() {
 				className="hero-image"
 				src="/assets/images/Boatparty.jpg"
 				alt=""
-				width={450}
-				height={350}
+				fill={true}
+				sizes="25vw"
 				priority
 			/>
 			<Image
 				className="hero-background"
 				src="/assets/images/backgrounds/BlueGradient.jpg"
 				alt=""
-				width={50}
-				height={50}
+				fill={true}
+				sizes="25vw"
 				priority
 			/>
 		</div>

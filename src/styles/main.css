@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 img,
 svg,
@@ -11,5 +11,4 @@ iframe,
 embed,
 object {
 	display: block;
-	vertical-align: middle;
 }

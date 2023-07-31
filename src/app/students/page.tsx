@@ -13,7 +13,7 @@ export default function Students() {
 			<HeaderSection
 				title="Students"
 				image="/assets/images/Events.jpg"
-				desc="Learn about what IEEE offers to UT Students"
+				desc="All UT Students are IEEE Guests by default!"
 			/>
 			<TextSection
 				textSide="left"
@@ -39,40 +39,11 @@ export default function Students() {
 				<h2>Membership</h2>
 				<p>
 					If you&apos;d like to get the most out of IEEE, you can pay
-					a <b>one time fee of $10</b> to get national membership. And
+					a <b>one-time fee of $10</b> to get national membership. And
 					yes, this lasts for your entire time at UT!
 				</p>
 				<Button name="Learn more" link="/membership" />
 			</TextSection>
-			{/* <TextSection
-				textSide="left"
-				textCols="5"
-				graphicSrc="/assets/images/Merch.jpg"
-			>
-				<h2>Perks</h2>
-				<p>
-					As a member, you have access to so much stuff! Here&apos;s
-					just a few...
-					<ul className="my-2">
-						<li>
-							<p>Merch Drops</p>
-						</li>
-						<li>
-							<p>Resume Reviews</p>
-						</li>
-						<li>
-							<p>IMs & Esports</p>
-						</li>
-						<li>
-							<p>FamilIEEE System</p>
-						</li>
-						<li>
-							<p>Mentorship Program</p>
-						</li>
-					</ul>
-				</p>
-				<Button name="Learn more" link="/membership#perks" />
-			</TextSection> */}
 			<TextSection
 				textSide="center"
 				textColor="white"

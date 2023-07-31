@@ -3,6 +3,7 @@ import HeaderSection from "@/components/HeaderSection/HeaderSection";
 import TextSection from "@/components/TextSection/TextSection";
 import Button from "@/components/Button/Button";
 import FlexSection from "@/components/FlexSection/FlexSection";
+import JoinSection from "@/components/JoinSection/JoinSection";
 
 export const metadata = {
 	title: "Membership | IEEE UT"
@@ -14,13 +15,17 @@ export default function Membership() {
 			<HeaderSection
 				title="Membership"
 				image="/assets/images/Events.jpg"
+				desc="Learn about what IEEE offers!"
+				buttonLink="/join"
+				buttonName="Join IEEE UT"
+				buttonNewWindow={false}
 			/>
 			<TextSection
 				textSide="left"
 				textCols="5"
 				graphicSrc="/assets/images/Boatparty.jpg"
 			>
-				<h2>Official Membership</h2>
+				<h2>Become a Member</h2>
 				<p>
 					All of our free events, free merch, and free workshops cost
 					a lot for us. That is why, to become an official member with
@@ -28,80 +33,27 @@ export default function Membership() {
 					<b>one-time fee of $10</b>! Swing by our office (EER 0.822)
 					if you&apos;re interested!
 				</p>
+				<Button name="Join IEEE UT" link="/join"/>
 			</TextSection>
-			<FlexSection>
-				<div>
-					<Image
-						src="/assets/icons/number-1.svg"
-						alt=""
-						height={50}
-						width={50}
-					/>
-					<h2>Follow our Socials</h2>
-					<p>
-						Follow our <a href="/instagram">Instagram</a> and join
-						our <a href="/slack">Slack</a>/
-						<a href="/discord">Discord</a> to stay in the loop.
-					</p>
-					<Button name="Links" link="/links" type="light" />
-					<Image
-						src="/assets/images/Halloween.jpg"
-						alt=""
-						fill={true}
-						quality={50}
-					/>
-					<div className="background-color bg-ieee-blue-9" />
-				</div>
-				<div>
-					<Image
-						src="/assets/icons/number-2.svg"
-						alt=""
-						height={50}
-						width={50}
-					/>
-					<h2>Attend Events</h2>
-					<p>
-						Each semester, our FamilIEEE system creates a fun way to
-						meet people and get competitive.
-					</p>
-					<Button name="Events" link="/events" type="light" />
-					<Image
-						src="/assets/images/Halloween.jpg"
-						alt=""
-						fill={true}
-						quality={50}
-					/>
-					<div className="background-color bg-ieee-blue-8" />
-				</div>
-				<div>
-					<Image
-						src="/assets/icons/number-3.svg"
-						alt=""
-						height={50}
-						width={50}
-					/>
-					<h2>Become Official</h2>
-					<p>
-						Pay the one-time $10 official member payment in cash by
-						stopping by our office! (EER 0.822)
-					</p>
-					<Button
-						name="Perks"
-						link="/membership#perks"
-						type="light"
-					/>
-					<Image
-						src="/assets/images/Halloween.jpg"
-						alt=""
-						fill={true}
-						quality={50}
-					/>
-					<div className="background-color bg-ieee-blue-8" />
-				</div>
-			</FlexSection>
+			<TextSection
+				textSide="right"
+				textCols="5"
+				graphicSrc="/assets/images/Halloween.jpg"
+			>
+				<h2>IEEE Guest</h2>
+				<p>
+					To be a guest is completely free! As a guest, you get access to free events and free food at those events! (As long as you RSVP...)
+				</p>
+				<h2>IEEE Member</h2>
+				<p>
+					As a member you get access to tons of perks listen below! All of this comes at a one-time cost of $10. And no, your member status will never expire!
+				</p>
+				<Button name="Join IEEE UT" link="/join"/>
+			</TextSection>
+			{/* <JoinSection /> */}
 			<div id="perks">
 				<TextSection
-					textSide="right"
+					textSide="left"
 					textCols="5"
 					graphicSrc="/assets/images/JohnDeere.jpg"
 				>
@@ -112,29 +64,18 @@ export default function Membership() {
 					</p>
 					<h3>Merch</h3>
 					<p>
-						Get a free t-shirt by becoming a member and get more
-						merch by attending meetings!
+						Each official members gets a org t-shirt for free! You can also get more merch by attending events and filling out your punch card decribed below!
 					</p>
-					<h3 id="punch-card">Punch Cards</h3>
+					<h3 id="punch-card">Punch Card</h3>
 					<p>
-						Every meeting you attend, you get a punch. With punches,
+						Every meeting you attend, you get a punch in your card. With punches,
 						you get free stickers, beanies, totes, and sweatshirts!
 					</p>
-					<h3>Resume Reviews</h3>
-					<p>
-						We&apos;ll gladly look over you&apos;re resume to help
-						you get ready for internships or jobs!
-					</p>
-					<h3>FamilIEEE System</h3>
-					<p>
-						Each semester, our FamilIEEE system creates a fun way to
-						meet people and get competitive.
-					</p>
-					<h3>IMs & Esports</h3>
-					<p>
-						IMs & Esports are a great way to stay engaged
-						non-academically!
-					</p>
+					<div className="flex no-wrap">
+						<p className="ml-6">2 punches<br />4 punches<br />7 punches<br />10 punches</p>
+						<p>→<br />→<br />→<br />→</p>
+						<p>Sticker<br />Beanie<br />Tote bag<br />Sweatshirt</p>
+					</div>
 				</TextSection>
 			</div>
 			<FlexSection>
@@ -146,12 +87,12 @@ export default function Membership() {
 					</p>
 					<Button name="Become a Member" link="/" type="light" />
 					<Image
-						src="/assets/images/Halloween.jpg"
+						src="/assets/images/Patrickamogh.jpg"
 						alt=""
 						fill={true}
 						quality={50}
 					/>
-					<div className="background-color bg-ieee-blue-9" />
+					<div className="background-color" />
 				</div>
 				<div>
 					<h2>FamilIEEE System</h2>
@@ -161,12 +102,12 @@ export default function Membership() {
 					</p>
 					<Button name="Become a Member" link="/" type="light" />
 					<Image
-						src="/assets/images/Halloween.jpg"
+						src="/assets/images/FamilIEEE.jpg"
 						alt=""
 						fill={true}
 						quality={50}
 					/>
-					<div className="background-color bg-ieee-blue-8" />
+					<div className="background-color" />
 				</div>
 				<div>
 					<h2>IMs & Esports</h2>
@@ -176,12 +117,12 @@ export default function Membership() {
 					</p>
 					<Button name="Become a Member" link="/" type="light" />
 					<Image
-						src="/assets/images/Halloween.jpg"
+						src="/assets/images/VolleyballIM.jpg"
 						alt=""
 						fill={true}
 						quality={50}
 					/>
-					<div className="background-color bg-ieee-blue-8" />
+					<div className="background-color" />
 				</div>
 			</FlexSection>
 		</>
