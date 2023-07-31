@@ -13,8 +13,8 @@ export default function GallerySection({ images }: any) {
 							<Image
 								src={imgSrc}
 								alt=""
-								width={400}
-								height={300}
+								fill={true}
+								sizes="25vw"
 							/>
 						</li>
 					);

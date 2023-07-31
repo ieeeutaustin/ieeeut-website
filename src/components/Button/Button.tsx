@@ -14,10 +14,20 @@ export default function Button({
 	type?: string;
 	children?: any;
 }) {
+	if (link[0] != "/") return (
+		<a
+			className={"button " + (type ? type.replace("default", "") : "")}
+			href={link}
+			target={newWindow ? "_blank" : "_self"}
+		>
+			{name || children}
+		</a>
+	)
+
 	return (
 		<Link
 			className={"button " + (type ? type.replace("default", "") : "")}
-			href={link || "/"}
+			href={link}
 			target={newWindow ? "_blank" : "_self"}
 		>
 			{name || children}
