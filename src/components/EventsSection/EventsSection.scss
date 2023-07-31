@@ -19,11 +19,14 @@
 		padding: 0 20px;
 		width: 100%;
 		box-sizing: border-box;
+		position: relative;
 	}
 }
 
 @media only screen and (max-width: 500px) {
-	.events-container {
-		justify-content: center;
+	.events-section {
+		.events-container {
+			gap: 20px;
+		}
 	}
 }

@@ -19,7 +19,9 @@
 }
 
 @media only screen and (max-width: 500px) {
-	.officer-container {
-		justify-content: center;
+	.officer-section {
+		.officer-container {
+			gap: 20px;
+		}
 	}
 }

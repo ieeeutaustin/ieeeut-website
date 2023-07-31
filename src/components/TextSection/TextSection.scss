@@ -6,6 +6,8 @@
 	background-color: $color-white;
 	position: relative;
 	overflow: hidden;
+	padding: 0 20px;
+	box-sizing: border-box;
 
 	.text-section-content,
 	.text-section-graphic {

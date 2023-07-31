@@ -46,6 +46,7 @@
 			flex-direction: column;
 			height: 90%;
 			width: 90%;
+			overflow-wrap: break-word;
 
 			h4 {
 				font-size: 25px;
@@ -66,9 +67,7 @@
 		}
 	}
 
-	&:hover,
-	&.details,
-	&:focus {
+	&:hover {
 		transform: scale(1.1);
 
 		img {
@@ -95,6 +94,6 @@
 
 @media only screen and (max-width: 500px) {
 	.events-card {
-		width: 70%;
+		width: calc(50% - (20px * 0.5));
 	}
 }
