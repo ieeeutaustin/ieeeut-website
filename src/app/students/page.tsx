@@ -44,7 +44,7 @@ export default function Students() {
 				</p>
 				<Button name="Learn more" link="/membership" />
 			</TextSection>
-			<TextSection
+			{/* <TextSection
 				textSide="left"
 				textCols="5"
 				graphicSrc="/assets/images/Merch.jpg"
@@ -72,9 +72,33 @@ export default function Students() {
 					</ul>
 				</p>
 				<Button name="Learn more" link="/membership#perks" />
+			</TextSection> */}
+			<TextSection
+				textSide="center"
+				textColor="white"
+				graphicSrc="/assets/images/backgrounds/BlueGradient.jpg"
+			>
+				<h2>Perks</h2>
+				<p>
+					As a member, you have access to so much! Here&apos;s just a
+					few things...
+				</p>
+				<div className="flex-col" style={{ gap: "5px" }}>
+					<i>Merch Drops</i>
+					<i>Resume Reviews</i>
+					<i>IMs & Esports</i>
+					<i>FamilIEEE System</i>
+					<i>Mentorship Program</i>
+				</div>
+
+				<Button
+					name="Learn more"
+					link="/membership#perks"
+					type="light"
+				/>
 			</TextSection>
 			<TextSection
-				textSide="right"
+				textSide="left"
 				textCols="5"
 				graphicSrc="/assets/images/officers/Group.jpg"
 			>

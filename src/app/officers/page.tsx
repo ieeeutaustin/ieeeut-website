@@ -24,7 +24,7 @@ export default function Officers() {
 					Applications open at the beginning of the fall semester.
 					Keep an eye out!
 				</p>
-				<Button name="Instagram" link="/instagram" />
+				<Button name="Instagram" link="/instagram" newWindow={true} />
 			</TextSection>
 			<OfficerSection />
 		</>

@@ -19,6 +19,21 @@ export default function Corporate() {
 			<TextSection
 				textSide="left"
 				textCols="5"
+				graphicSrc="/assets/images/Yoga2.jpg"
+			>
+				<h2>Reach Out</h2>
+				<p>
+					We&apos;d love to hear for you about sponsoring an event or
+					general meeting! They best way to contact us for this is
+					through email to our Corporate Director!
+				</p>
+				<a className="button" href="mailto:corporate@ieeeut.org">
+					corporate@ieeeut.org
+				</a>
+			</TextSection>
+			<TextSection
+				textSide="right"
+				textCols="5"
 				graphicSrc="/assets/images/GREECE.jpg"
 			>
 				<h2>General Meetings</h2>
@@ -34,7 +49,7 @@ export default function Corporate() {
 				<Button name="Learn More" link="/about" />
 			</TextSection>
 			<TextSection
-				textSide="right"
+				textSide="left"
 				textCols="5"
 				graphicSrc="/assets/images/Halloween.jpg"
 			>
@@ -50,7 +65,7 @@ export default function Corporate() {
 				<Button name="Learn More" link="/about" />
 			</TextSection>
 			<TextSection
-				textSide="left"
+				textSide="right"
 				textCols="5"
 				graphicSrc="/assets/images/Patrickamogh.jpg"
 			>

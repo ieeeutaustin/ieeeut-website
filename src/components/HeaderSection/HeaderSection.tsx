@@ -6,7 +6,8 @@ import Button from "../Button/Button";
 export default function HeaderSection(props: {
 	title: string;
 	desc?: string;
-	image: string;
+	image?: string;
+	imageAlt?: string;
 	imageStyle?: any;
 	buttonName?: string;
 	buttonLink?: string;
@@ -36,14 +37,17 @@ export default function HeaderSection(props: {
 					{props.children}
 				</div>
 			</div>
-			<Image
-				className="header-image"
-				src={props.image}
-				alt=""
-				style={props.imageStyle}
-				width={200}
-				height={200}
-			/>
+			{props.image && (
+				<Image
+					className="header-image"
+					src={props.image}
+					alt={props.imageAlt || ""}
+					style={props.imageStyle}
+					width={200}
+					height={200}
+				/>
+			)}
+
 			<Image
 				className="header-background"
 				src="/assets/images/backgrounds/BlueGradient.jpg"

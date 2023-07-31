@@ -33,6 +33,7 @@ img.header-image {
 	flex-direction: column;
 	gap: 30px;
 	align-items: center;
+	overflow-wrap: anywhere;
 
 	> h1 {
 		font-size: 80px;

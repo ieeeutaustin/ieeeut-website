@@ -12,6 +12,7 @@ export default function NotFound() {
 	useEffect(() => {
 		const shortURLs = {
 			discord: "https://discord.gg/Vcdqz8YczQ",
+			slack: "https://join.slack.com/t/ieeeutaustin/signup",
 			instagram: "https://instagram.com/ieee.ut",
 			insta: "https://instagram.com/ieee.ut",
 			tiktok: "https://tiktok.com/@ieee.ut",
@@ -29,10 +30,7 @@ export default function NotFound() {
 	return (
 		<div>
 			{redirecting ? (
-				<HeaderSection
-					title="Redirecting..."
-					image="/assets/images/backgrounds/BlueGradient.jpg"
-				/>
+				<HeaderSection title="Redirecting..." />
 			) : (
 				<HeaderSection
 					title="404"

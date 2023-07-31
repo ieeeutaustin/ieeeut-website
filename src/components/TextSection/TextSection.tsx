@@ -34,7 +34,7 @@ export default function TextSection({
 								src={graphicSrc}
 								alt={graphicAlt || ""}
 								width={400}
-								height={200}
+								height={300}
 							/>
 						)}
 					</div>
@@ -66,10 +66,6 @@ export default function TextSection({
 								alt={graphicAlt || ""}
 								fill={true}
 								sizes="40vw"
-								placeholder="blur"
-								blurDataURL={
-									graphicSrc.split(".")[0] + "Blur.webp"
-								}
 							/>
 						)}
 					</div>

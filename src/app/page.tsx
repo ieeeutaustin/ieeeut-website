@@ -65,7 +65,7 @@ export default function Home() {
 				<div>
 					<Button
 						name="Join Slack"
-						link="https://join.slack.com/t/ieeeutaustin/shared_invite/zt-207fi2skh-GQSfBQp3R9h_cAFht1xPQQ"
+						link="https://join.slack.com/t/ieeeutaustin/signup"
 						newWindow={true}
 					/>
 					<Button
