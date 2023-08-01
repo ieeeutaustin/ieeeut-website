@@ -27,9 +27,12 @@ export default function Corporate() {
 					general meeting! They best way to contact us for this is
 					through email to our Corporate Director!
 				</p>
-				<a className="button" href="mailto:corporate@ieeeut.org">
-					corporate@ieeeut.org
-				</a>
+				<Button
+					name="corporate@ieeeut.org"
+					link="mailto:corporate@ieeeut.org"
+					icon="/assets/icons/email-white.svg"
+					newWindow={true}
+				/>
 			</TextSection>
 			<TextSection
 				textSide="right"

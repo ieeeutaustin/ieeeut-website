@@ -9,12 +9,12 @@ export default function Links() {
 	const links = [
 		{
 			name: "Instagram",
-			link: "https://www.instagram.com/ieee.ut/?hl=en",
+			link: "https://www.instagram.com/ieee.ut",
 			icon: "/assets/icons/instagram.svg"
 		},
 		{
 			name: "Slack",
-			link: "http://ieeeutexas.slack.com/",
+			link: "https://join.slack.com/t/ieeeutaustin/signup",
 			icon: "/assets/icons/slack.svg"
 		},
 		{

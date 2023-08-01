@@ -19,18 +19,23 @@ export default function Button({
 	icon?: string;
 	props?: any;
 }) {
-	if (link[0] != "/")
+	if (!link[0].startsWith("/"))
 		return (
 			<a
 				className={
 					"button " + (type ? type.replace("default", "") : "")
 				}
-				href={link}
 				target={newWindow ? "_blank" : "_self"}
+				href={link}
 				{...props}
 			>
 				{icon && (
-					<Image src={icon} alt="Slack logo" width={50} height={50} />
+					<Image
+						src={icon}
+						alt={`${name} logo`}
+						width={50}
+						height={50}
+					/>
 				)}
 				{name || children}
 			</a>
@@ -39,12 +44,12 @@ export default function Button({
 	return (
 		<Link
 			className={"button " + (type ? type.replace("default", "") : "")}
-			href={link}
 			target={newWindow ? "_blank" : "_self"}
+			href={link}
 			{...props}
 		>
 			{icon && (
-				<Image src={icon} alt="Slack logo" width={50} height={50} />
+				<Image src={icon} alt={`${name} logo`} width={50} height={50} />
 			)}
 			{name || children}
 		</Link>

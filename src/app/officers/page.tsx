@@ -24,7 +24,12 @@ export default function Officers() {
 					Applications open at the beginning of the fall semester.
 					Keep an eye out!
 				</p>
-				<Button name="Instagram" link="/instagram" newWindow={true} />
+				<Button
+					name="Instagram"
+					link="/https://www.instagram.com/ieee.ut"
+					newWindow={true}
+					icon="/assets/icons/instagram.svg"
+				/>
 			</TextSection>
 			<OfficerSection />
 		</>
