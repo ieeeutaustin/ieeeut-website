@@ -5,10 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import GridContainer from "@/components/GridContainer/GridContainer";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
 	const [clientWindowHeight, setClientWindowHeight] = useState(0);
 	const [opened, setOpened] = useState(false);
+	const pathname = usePathname();
 
 	const handleScroll = () => {
 		setClientWindowHeight(window.scrollY);
@@ -19,6 +21,10 @@ export default function Navbar() {
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
+
+	useEffect(() => {
+		setOpened(false)
+	}, [pathname])
 
 	return (
 		<div className="navbar-container">
