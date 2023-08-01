@@ -46,7 +46,7 @@ export default function HeroSection() {
 				src="/assets/images/Boatparty.jpg"
 				alt=""
 				fill={true}
-				sizes="25vw"
+				sizes="50vw"
 				priority
 			/>
 			<Image
