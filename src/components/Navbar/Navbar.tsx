@@ -65,6 +65,7 @@ export default function Navbar() {
 									/>
 								</Link>
 								<ul className="navbar-dropdown">
+									<div className="dropdown-dash-separator" />
 									<li>
 										<Link href="/merch">Merch</Link>
 									</li>
@@ -76,6 +77,7 @@ export default function Navbar() {
 											Membership
 										</Link>
 									</li>
+									<div className="dropdown-dash-separator" />
 								</ul>
 							</li>
 							<li>

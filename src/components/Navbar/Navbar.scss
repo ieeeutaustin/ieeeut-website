@@ -286,8 +286,12 @@
 									position: relative;
 									border-radius: 0;
 									background-color: transparent;
-									border-bottom: $color-platinum 1px dashed;
-									// border-top: $color-platinum 1px dashed;
+
+									.dropdown-dash-separator {
+										width: 25px;
+										border-bottom: $color-platinum 1px dashed;
+										margin: 0 auto;
+									}
 
 									li {
 										display: block;
