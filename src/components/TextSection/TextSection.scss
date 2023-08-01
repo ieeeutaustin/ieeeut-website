@@ -6,7 +6,6 @@
 	background-color: $color-white;
 	position: relative;
 	overflow: hidden;
-	padding: 0 20px;
 	box-sizing: border-box;
 
 	.text-section-content,
@@ -202,6 +201,7 @@
 }
 
 @media screen and (max-width: 800px) {
+
 	.text-section.left,
 	.text-section.right {
 		.text-section-graphic {
@@ -220,7 +220,18 @@
 		}
 	}
 
+	.text-section.left {
+		.text-section-graphic {
+			img,
+			video {
+				margin-left: 0px;
+			}
+		}
+	}
+
 	.text-section.center {
+		padding: 0 20px;
+
 		.text-section-graphic {
 			img,
 			video {

@@ -14,7 +14,7 @@ export default function GallerySection({ images }: any) {
 								src={imgSrc}
 								alt=""
 								fill={true}
-								sizes="25vw"
+								sizes="(max-width: 800px) 50vw, 40vw"
 							/>
 						</li>
 					);
