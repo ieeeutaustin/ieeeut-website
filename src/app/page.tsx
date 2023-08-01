@@ -125,10 +125,10 @@ export default function Home() {
 				<IconList
 					icons={[
 						"instagram-white",
-						"tiktok",
-						"linkedin",
-						"facebook",
-						"youtube"
+						"tiktok-white",
+						"linkedin-white",
+						"facebook-white",
+						"youtube-white"
 					]}
 				/>
 			</TextSection>

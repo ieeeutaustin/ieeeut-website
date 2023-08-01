@@ -12,11 +12,11 @@ export default function Footer() {
 						"instagram-white",
 						"slack-white",
 						"discord-white",
-						"tiktok",
-						"linkedin",
+						"tiktok-white",
+						"linkedin-white",
 						"email-white",
-						"facebook",
-						"youtube"
+						"facebook-white",
+						"youtube-white"
 					]}
 				/>
 				<div>

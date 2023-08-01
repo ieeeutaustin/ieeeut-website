@@ -23,8 +23,8 @@ export default function Navbar() {
 	}, []);
 
 	useEffect(() => {
-		setOpened(false)
-	}, [pathname])
+		setOpened(false);
+	}, [pathname]);
 
 	return (
 		<div className="navbar-container">
@@ -40,8 +40,8 @@ export default function Navbar() {
 								<Image
 									src="/assets/images/branding/ieee-logo-white.png"
 									alt="IEEE Logo"
-									width={50}
-									height={50}
+									width={70}
+									height={70}
 								/>
 							</Link>
 						</li>

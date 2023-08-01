@@ -47,7 +47,7 @@ export default function HeroSection() {
 				alt=""
 				fill={true}
 				sizes="50vw"
-				priority
+				priority={true}
 			/>
 			<Image
 				className="hero-background"
@@ -55,7 +55,7 @@ export default function HeroSection() {
 				alt=""
 				fill={true}
 				sizes="25vw"
-				priority
+				priority={true}
 			/>
 		</div>
 	);
