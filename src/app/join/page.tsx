@@ -20,7 +20,7 @@ export default function Join() {
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="/assets/images/Iceskating2.jpg"
+				graphicSrc="https://www.youtube.com/watch?v=T36RKe9FZvE"
 			>
 				<h2>Joining is Easy</h2>
 				<p>
@@ -29,6 +29,13 @@ export default function Join() {
 					official member through a one-time payment of $10. This
 					gives you access to a whole lot more stuff!
 				</p>
+				<p>
+					Learn more about membership and member perks!
+				</p>
+				<div>
+					<Button name="Membership" link="/membership"/>
+					<Button name="Perks" link="/membership#perks"/>
+				</div>
 			</TextSection>
 			<JoinSection/>
 		</>

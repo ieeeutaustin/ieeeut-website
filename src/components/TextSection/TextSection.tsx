@@ -1,6 +1,8 @@
+"use client"
 import "./TextSection.scss";
 import Image from "next/image";
 import GridContainer from "@/components/GridContainer/GridContainer";
+import { useEffect, useRef, useState } from "react"
 
 export default function TextSection({
 	children,
@@ -42,6 +44,12 @@ export default function TextSection({
 			</div>
 		);
 
+	let videoID = "";
+
+	if (graphicSrc?.includes("youtube")) {
+		videoID = graphicSrc.match(/youtube\.com\/watch\?v=(.+)\?*/)?.[1] || "";
+	}
+
 	return (
 		<div
 			className={
@@ -56,18 +64,22 @@ export default function TextSection({
 				</div>
 				{graphicSrc && (
 					<div className="text-section-graphic">
-						{graphicSrc.includes(".mp4") ? (
-							<video autoPlay={true} muted={true} loop={true}>
-								<source src={graphicSrc} type="video/mp4" />
-							</video>
+						{videoID != "" ? (
+							<iframe src={`https://www.youtube.com/embed/${videoID}?autoplay=1&controls=0&mute=1&loop=1&playlist=${videoID}`} />
 						) : (
-							<Image
-								src={graphicSrc}
-								alt={graphicAlt || ""}
-								fill={true}
-								sizes="40vw"
-							/>
-						)}
+							graphicSrc.includes(".mp4") ? (
+								<video autoPlay={true} muted={true} loop={true}>
+									<source src={graphicSrc} type="video/mp4" />
+								</video>
+							) : (
+								<Image
+									src={graphicSrc}
+									alt={graphicAlt || ""}
+									fill={true}
+									sizes="40vw"
+								/>
+							))
+						}
 					</div>
 				)}
 			</GridContainer>

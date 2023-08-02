@@ -53,11 +53,13 @@
 		width: calc(100% + 20px);
 
 		img,
-		video {
+		video,
+		iframe {
 			box-sizing: border-box;
 			min-height: 100%;
 			width: 100%;
 			object-fit: cover;
+			border: none;
 		}
 	}
 
