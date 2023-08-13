@@ -43,8 +43,8 @@ export default function HeroSection() {
 			</GridContainer>
 			<Image
 				className="hero-image"
-				src="/assets/images/Boatparty.jpg"
-				alt=""
+				src="/assets/images/boatparty-22.jpg"
+				alt="Group photo of IEEE members on rocky hill island in the middle of a lake."
 				fill={true}
 				sizes="50vw"
 				priority={true}

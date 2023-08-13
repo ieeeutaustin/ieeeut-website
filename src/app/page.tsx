@@ -13,64 +13,74 @@ export default function Home() {
 			<TextSection
 				textSide="left"
 				textCols="4"
-				graphicSrc="/assets/images/Patrickamogh.jpg"
+				graphicSrc="/assets/images/patrick-amogh.jpg"
+				graphicAlt="2 IEEE members in a classroom podium laugh while looking at a laptop"
 			>
 				<h2>What We Do</h2>
 				<p>
-					IEEE UT runs events, socials, and workshops year round, to
+					IEEE UT runs events, socials, and workshops year-round to
 					help you grow academically, socially, and professionally.
 				</p>
 				<p>
-					We mostly consist of ECE students, but all majors are
+					We mainly consist of ECE students, but all majors are
 					welcome!
 				</p>
 				<Button name="Learn More" link="/about" />
 			</TextSection>
 			<GallerySection
 				images={[
-					"/assets/images/DodgeballIM.jpg",
-					"/assets/images/Glamping.jpg",
-					"/assets/images/JohnDeere.jpg",
+					"/assets/images/dodgeball.jpg",
+					"/assets/images/glamping.jpg",
+					"/assets/images/john-deere.jpg",
 					"break",
-					"/assets/images/Yoga3.jpg",
-					"/assets/images/SoccerIM.jpg"
+					"/assets/images/yoga-3.jpg",
+					"/assets/images/soccer-22.jpg"
+				]}
+				alts={[
+					"Group photo of IEEE members in uniform on court after a dodgeball game",
+					"Group photo of IEEE members infront of a modern ranch house for a retreat",
+					"General meeting with John Deere",
+					"",
+					"IEEE members reaching over their heads in yoga position",
+					"Group photo of IEEE soccer intramural players"
 				]}
 			/>
 			<TextSection
 				textSide="right"
 				textCols="5"
-				graphicSrc="/assets/images/Halloween.jpg"
+				graphicSrc="/assets/images/halloween.jpg"
+				graphicAlt="IEEE members paint mini pumpkins for halloween social"
 			>
 				<h2>Important Links</h2>
 				<h3>
-					<Image
-						src="/assets/icons/slack.svg"
-						alt="Slack logo"
-						width={50}
-						height={50}
-					/>
-					Slack &{" "}
 					<Image
 						src="/assets/icons/discord.svg"
 						alt="Discord logo"
 						width={50}
 						height={50}
 					/>
-					Discord
+					Discord &{" "}
+					<Image
+						src="/assets/icons/slack.svg"
+						alt="Slack logo"
+						width={50}
+						height={50}
+					/>
+					Slack
 				</h3>
 				<p>
-					Join our Slack and/or Discord to see announcements, events,
-					and general org updates!
+					Join our Discord and Slack to see announcements, events, and
+					general org updates!
 				</p>
 				<div>
 					<Button
-						name="Join Slack"
-						link="https://join.slack.com/t/ieeeutaustin/signup"
+						name="Join Discord"
+						link="https://discord.gg/Vcdqz8YczQ"
 						newWindow={true}
 					/>
 					<Button
-						name="Join Discord"
-						link="https://discord.gg/Vcdqz8YczQ"
+						name="Join Slack"
+						link="https://join.slack.com/t/ieeeutaustin/signup"
 						newWindow={true}
 					/>
 				</div>
@@ -85,7 +95,7 @@ export default function Home() {
 					Instagram
 				</h3>
 				<p>
-					Follow us on Instagram, we keep you updated with our events
+					Follow us on Instagram; we keep you updated with our events
 					and post some fun content on there too!
 				</p>
 				<Button
@@ -103,7 +113,7 @@ export default function Home() {
 					Google Calendar
 				</h3>
 				<p>
-					Add our Google Calendar so you can stay up to date with our
+					Add our Google Calendar so you can stay updated with our
 					events!
 				</p>
 				<Button

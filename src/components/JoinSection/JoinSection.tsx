@@ -5,12 +5,12 @@ import Button from "../Button/Button";
 
 export default function JoinSection(props: any) {
 	return (
-		<div className="join-section">			
+		<div className="join-section">
 			<FlexSection>
 				<div>
 					<Image
 						src="/assets/icons/number-1.svg"
-						alt=""
+						alt="Number 1"
 						height={50}
 						width={50}
 					/>
@@ -22,8 +22,8 @@ export default function JoinSection(props: any) {
 					</p>
 					<Button name="Links" link="/links" type="light" />
 					<Image
-						src="/assets/images/Retreat.jpg"
-						alt=""
+						src="/assets/images/outside-small-group.jpg"
+						alt="Members sit in circle on lawn smiling at the camera"
 						fill={true}
 						quality={50}
 					/>
@@ -32,18 +32,19 @@ export default function JoinSection(props: any) {
 				<div>
 					<Image
 						src="/assets/icons/number-2.svg"
-						alt=""
+						alt="Number 2"
 						height={50}
 						width={50}
 					/>
 					<h2>Attend Events</h2>
 					<p>
-						We host all sorts of events every week with free food! RSVP so you don&apos;t miss out!
+						We host all sorts of events every week with free food!
+						RSVP so you don&apos;t miss out!
 					</p>
 					<Button name="Events" link="/events" type="light" />
 					<Image
-						src="/assets/images/Glamping.jpg"
-						alt=""
+						src="/assets/images/gm.jpg"
+						alt="Students focusing on general meeting presenter."
 						fill={true}
 						quality={50}
 					/>
@@ -52,7 +53,7 @@ export default function JoinSection(props: any) {
 				<div>
 					<Image
 						src="/assets/icons/number-3.svg"
-						alt=""
+						alt="Number 3"
 						height={50}
 						width={50}
 					/>
@@ -67,8 +68,8 @@ export default function JoinSection(props: any) {
 						type="light"
 					/>
 					<Image
-						src="/assets/images/Patrickamogh.jpg"
-						alt=""
+						src="/assets/images/game-night.jpg"
+						alt="Members cheer and excited in lecture hall"
 						fill={true}
 						quality={50}
 					/>

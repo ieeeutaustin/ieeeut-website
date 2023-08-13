@@ -14,7 +14,8 @@ export default function Membership() {
 		<>
 			<HeaderSection
 				title="Membership"
-				image="/assets/images/Events.jpg"
+				image="/assets/images/ieee-asme.jpg"
+				imageAlt="Large group photo of IEEE and ASME members in Zilker Park."
 				desc="Learn about what IEEE offers!"
 				buttonLink="/join"
 				buttonName="Join IEEE UT"
@@ -23,7 +24,8 @@ export default function Membership() {
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="/assets/images/Boatparty.jpg"
+				graphicSrc="/assets/images/boatparty-21.jpg"
+				graphicAlt="Group photo if IEEE members on a 2 story boat."
 			>
 				<h2>Become a Member</h2>
 				<p>
@@ -33,48 +35,72 @@ export default function Membership() {
 					<b>one-time fee of $10</b>! Swing by our office (EER 0.822)
 					if you&apos;re interested!
 				</p>
-				<Button name="Join IEEE UT" link="/join"/>
+				<Button name="Join IEEE UT" link="/join" />
 			</TextSection>
 			<TextSection
 				textSide="right"
 				textCols="5"
-				graphicSrc="/assets/images/Halloween.jpg"
+				graphicSrc="/assets/images/glamping-2.jpg"
+				graphicAlt="Members listening to activity instructions in pairs on field"
 			>
 				<h2>IEEE Guest</h2>
 				<p>
-					To be a guest is completely free! As a guest, you get access to free events and free food at those events! (As long as you RSVP...)
+					To be a guest is completely free! As a guest, you get access
+					to free events and free food at those events! (As long as
+					you RSVP...)
 				</p>
 				<h2>IEEE Member</h2>
 				<p>
-					As a member you get access to tons of perks listen below! All of this comes at a one-time cost of $10. And no, your member status will never expire!
+					As a member, you get access to tons of perks listed below!
+					All of this comes at a one-time cost of $10. And no, your
+					member status will never expire!
 				</p>
-				<Button name="Join IEEE UT" link="/join"/>
+				<Button name="Join IEEE UT" link="/join" />
 			</TextSection>
-			{/* <JoinSection /> */}
 			<div id="perks">
 				<TextSection
 					textSide="left"
 					textCols="5"
-					graphicSrc="/assets/images/JohnDeere.jpg"
+					graphicSrc="/assets/images/john-deere.jpg"
+					graphicAlt="Photo from back of general meeting with John Deere"
 				>
 					<h2>Perks</h2>
 					<p>
-						As a member, you have access to so much! Here&apos;s
-						just a few...
+						As a member, you have access to so much! Here are just a
+						few...
 					</p>
 					<h3>Merch</h3>
 					<p>
-						Each official members gets a org t-shirt for free! You can also get more merch by attending events and filling out your punch card decribed below!
+						Each official member gets an org t-shirt for free! You
+						can also get more merch by attending events and filling
+						out your punch card described below!
 					</p>
 					<h3 id="punch-card">Punch Card</h3>
 					<p>
-						Every meeting you attend, you get a punch in your card. With punches,
-						you get free stickers, beanies, totes, and sweatshirts!
+						Every meeting you attend, you get a hole punch in your
+						card. You get free stickers, beanies, totes, and
+						sweatshirts with punches!
 					</p>
 					<div className="flex no-wrap">
-						<p className="ml-6">2 punches<br />4 punches<br />7 punches<br />10 punches</p>
-						<p>→<br />→<br />→<br />→</p>
-						<p>Sticker<br />Beanie<br />Tote bag<br />Sweatshirt</p>
+						<p className="ml-6">
+							2 punches
+							<br />4 punches
+							<br />7 punches
+							<br />
+							10 punches
+						</p>
+						<p>
+							→<br />→<br />→<br />→
+						</p>
+						<p>
+							Sticker
+							<br />
+							Beanie
+							<br />
+							Tote bag
+							<br />
+							Sweatshirt
+						</p>
 					</div>
 				</TextSection>
 			</div>
@@ -82,13 +108,13 @@ export default function Membership() {
 				<div>
 					<h2>Resume Reviews</h2>
 					<p>
-						We&apos;ll gladly look over you&apos;re resume to help
-						you get ready for internships or jobs!
+						We&apos;ll gladly review your resume to help you prepare
+						for internships or jobs!
 					</p>
 					<Button name="Become a Member" link="/" type="light" />
 					<Image
-						src="/assets/images/Patrickamogh.jpg"
-						alt=""
+						src="/assets/images/patrick-amogh.jpg"
+						alt="2 IEEE members in a classroom podium laugh while looking at a laptop"
 						fill={true}
 						quality={50}
 					/>
@@ -102,8 +128,8 @@ export default function Membership() {
 					</p>
 					<Button name="Become a Member" link="/" type="light" />
 					<Image
-						src="/assets/images/FamilIEEE.jpg"
-						alt=""
+						src="/assets/images/familieee.jpg"
+						alt="Group photo looks at camera while a member shows their phone's clock to the camera"
 						fill={true}
 						quality={50}
 					/>
@@ -117,8 +143,8 @@ export default function Membership() {
 					</p>
 					<Button name="Become a Member" link="/" type="light" />
 					<Image
-						src="/assets/images/VolleyballIM.jpg"
-						alt=""
+						src="/assets/images/volleyball.jpg"
+						alt="Group photo of volleyball intramural team on volleyball court"
 						fill={true}
 						quality={50}
 					/>

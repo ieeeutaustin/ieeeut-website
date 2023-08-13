@@ -12,13 +12,15 @@ export default function Students() {
 		<>
 			<HeaderSection
 				title="Students"
-				image="/assets/images/Events.jpg"
+				image="/assets/images/glamping.jpg"
+				imageAlt="Group photo of IEEE members infront of a modern ranch house for a retreat"
 				desc="All UT Students are IEEE Guests by default!"
 			/>
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="/assets/images/Iceskating.jpg"
+				graphicSrc="/assets/images/iceskating.jpg"
+				graphicAlt="IEEE and IEEE RAS group photo in the middle of an iceskating rink."
 			>
 				<h2>Open to All</h2>
 				<p>
@@ -34,7 +36,8 @@ export default function Students() {
 			<TextSection
 				textSide="right"
 				textCols="5"
-				graphicSrc="/assets/images/Yoga.jpg"
+				graphicSrc="/assets/images/students-row.jpg"
+				graphicAlt="IEEE students seated in a classroom row, smiling at the camera"
 			>
 				<h2>Membership</h2>
 				<p>
@@ -71,7 +74,8 @@ export default function Students() {
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="/assets/images/officers/Group.jpg"
+				graphicSrc="/assets/images/officers-22.jpg"
+				graphicAlt="Group photo of IEEE officers of 2022-2023 in front of a classroom whiteboard"
 			>
 				<h2>Officers and Applications</h2>
 				<p>

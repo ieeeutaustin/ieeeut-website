@@ -11,7 +11,8 @@ export default function Corporate() {
 		<>
 			<HeaderSection
 				title="Corporate"
-				image="/assets/images/JohnDeere.jpg"
+				image="/assets/images/ericsson.jpg"
+				imageAlt="Photo from the back of a Ericsson general meeting"
 				desc="Learn more about becoming a sponsor:"
 				buttonName="Corporate Packet 2023-2024"
 				buttonLink="/assets/files/IEEE-Spring-Corporate-Packet-2023-2024.pdf"
@@ -19,12 +20,13 @@ export default function Corporate() {
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="/assets/images/Yoga2.jpg"
+				graphicSrc="/assets/images/yoga-2.jpg"
+				graphicAlt="Dr. Yerraballi talks with a small group of students around him"
 			>
 				<h2>Reach Out</h2>
 				<p>
-					We&apos;d love to hear for you about sponsoring an event or
-					general meeting! They best way to contact us for this is
+					We&apos;d love to hear from you about sponsoring an event or
+					general meeting! The best way to contact us for this is
 					through email to our Corporate Director!
 				</p>
 				<Button
@@ -37,24 +39,26 @@ export default function Corporate() {
 			<TextSection
 				textSide="right"
 				textCols="5"
-				graphicSrc="/assets/images/GREECE.jpg"
+				graphicSrc="/assets/images/gm-h-and-h.jpg"
+				graphicAlt="Students in general meeting in classroom listen to the presenter"
 			>
 				<h2>General Meetings</h2>
 				<p>
 					We invite companies to talk about what they do and what
 					opportunities are available for Electrical Engineers.
-					Recruiters are welcome to talk about the application and
+					Recruiters are welcome to discuss the application and
 					interview process for internship and full-time positions.
-					Tech talks are typically 1 hour in length, include food, and
-					may feature former UT graduates, a former intern panel,
-					and/or videos and slides with information.
+					Tech talks are typically 1 hour long, include food, and may
+					feature former UT graduates, a former intern panel, and/or
+					videos and slides with information.
 				</p>
 				<Button name="Learn More" link="/about" />
 			</TextSection>
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="/assets/images/Halloween.jpg"
+				graphicSrc="/assets/images/optiver-group.jpg"
+				graphicAlt="Group photo of IEEE members and Optiver representatives outside on lawn."
 			>
 				<h2>Social Events</h2>
 				<p>
@@ -70,7 +74,8 @@ export default function Corporate() {
 			<TextSection
 				textSide="right"
 				textCols="5"
-				graphicSrc="/assets/images/Patrickamogh.jpg"
+				graphicSrc="/assets/images/optiver-chat.jpg"
+				graphicAlt="Optiver representative chatting with 2 IEEE members"
 			>
 				<h2>Workshops</h2>
 				<p>
@@ -79,7 +84,7 @@ export default function Corporate() {
 					details about a specific technology that they are working on
 					or have worked on in the past. Workshops are a great
 					opportunity for employees and recruiters to interact with
-					our members and learn about their interests and skills
+					our members and learn about their interests and skills.
 				</p>
 				<Button name="Learn More" link="/about" />
 			</TextSection>

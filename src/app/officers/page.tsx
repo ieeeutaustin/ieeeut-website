@@ -12,7 +12,8 @@ export default function Officers() {
 		<>
 			<HeaderSection
 				title="Officers"
-				image="/assets/images/officers/Group2.jpg"
+				image="/assets/images/officers-22-2.jpg"
+				imageAlt="Group photo of IEEE officers of 2022-2023 in an iceskating rink"
 			/>
 			<TextSection textSide="center" textCols="5">
 				<h2>Meet the 23-24 Officers</h2>

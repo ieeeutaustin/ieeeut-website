@@ -16,7 +16,7 @@ export default function OfficerCard(props: any) {
 				<div className="officer-card-image-wrapper">
 					<Image
 						className="officer-card-image"
-						src={"/assets/images/officers/" + props.image}
+						src={"/assets/images/headshots/" + props.image}
 						alt=""
 						width={150}
 						height={150}
@@ -24,7 +24,7 @@ export default function OfficerCard(props: any) {
 					{imageHoverSrc && (
 						<Image
 							className="officer-card-image-hover"
-							src={"/assets/images/officers/" + imageHoverSrc}
+							src={"/assets/images/headshots/" + imageHoverSrc}
 							alt=""
 							width={150}
 							height={150}

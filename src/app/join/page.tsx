@@ -14,13 +14,15 @@ export default function Join() {
 		<>
 			<HeaderSection
 				title="Join"
-				image="/assets/images/Retreat.jpg"
+				image="/assets/images/leadership-retreat.jpg"
+				imageAlt="Group photo of members in park"
 				desc="Welcome to IEEE UT!"
 			/>
 			<TextSection
 				textSide="left"
 				textCols="5"
 				graphicSrc="https://www.youtube.com/watch?v=T36RKe9FZvE"
+				graphicAlt="YouTube video promoting IEEE UT"
 			>
 				<h2>Joining is Easy</h2>
 				<p>
@@ -29,15 +31,13 @@ export default function Join() {
 					official member through a one-time payment of $10. This
 					gives you access to a whole lot more stuff!
 				</p>
-				<p>
-					Learn more about membership and member perks!
-				</p>
+				<p>Learn more about membership and member perks!</p>
 				<div>
-					<Button name="Membership" link="/membership"/>
-					<Button name="Perks" link="/membership#perks"/>
+					<Button name="Membership" link="/membership" />
+					<Button name="Perks" link="/membership#perks" />
 				</div>
 			</TextSection>
-			<JoinSection/>
+			<JoinSection />
 		</>
 	);
 }

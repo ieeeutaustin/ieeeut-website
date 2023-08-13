@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import "./TextSection.scss";
 import Image from "next/image";
 import GridContainer from "@/components/GridContainer/GridContainer";
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react";
 
 export default function TextSection({
 	children,
@@ -65,21 +65,21 @@ export default function TextSection({
 				{graphicSrc && (
 					<div className="text-section-graphic">
 						{videoID != "" ? (
-							<iframe src={`https://www.youtube.com/embed/${videoID}?autoplay=1&controls=0&mute=1&loop=1&playlist=${videoID}`} />
+							<iframe
+								src={`https://www.youtube.com/embed/${videoID}?autoplay=1&controls=0&mute=1&loop=1&playlist=${videoID}`}
+							/>
+						) : graphicSrc.includes(".mp4") ? (
+							<video autoPlay={true} muted={true} loop={true}>
+								<source src={graphicSrc} type="video/mp4" />
+							</video>
 						) : (
-							graphicSrc.includes(".mp4") ? (
-								<video autoPlay={true} muted={true} loop={true}>
-									<source src={graphicSrc} type="video/mp4" />
-								</video>
-							) : (
-								<Image
-									src={graphicSrc}
-									alt={graphicAlt || ""}
-									fill={true}
-									sizes="40vw"
-								/>
-							))
-						}
+							<Image
+								src={graphicSrc}
+								alt={graphicAlt || ""}
+								fill={true}
+								sizes="40vw"
+							/>
+						)}
 					</div>
 				)}
 			</GridContainer>

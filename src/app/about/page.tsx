@@ -11,11 +11,16 @@ export const metadata = {
 export default function About() {
 	return (
 		<>
-			<HeaderSection title="About Us" image="/assets/images/Yoga2.jpg" />
+			<HeaderSection
+				title="About Us"
+				image="/assets/images/yoga-2.jpg"
+				imageAlt="Dr. Yerraballi talks with a small group of students around him"
+			/>
 			<TextSection
 				textSide="left"
 				textCols="5"
-				graphicSrc="/assets/images/Halloween.jpg"
+				graphicSrc="/assets/images/boatparty-22.jpg"
+				graphicAlt="Group photo of IEEE members on rocky hill island in the middle of a lake."
 			>
 				<h2>Who are we?</h2>
 				<p>
@@ -28,25 +33,22 @@ export default function About() {
 				</p>
 				<Button name="Learn More" link="/" />
 			</TextSection>
-			<TextSection
-				textSide="right"
-				textCols="5"
-				graphicSrc="/assets/images/Iceskating2.jpg"
-			>
-				<h2>Who are we <i className="text-[42px]">Really?</i></h2>
-				<p>
-					We&apos;re students, friends, and family. We genuinely believe in building a community to have fun, meet people, and grow together. The connections we make at IEEE are unlike no other.
-				</p>
-				<Button name="Learn More" link="/" />
-			</TextSection>
 			<GallerySection
 				images={[
-					"/assets/images/DodgeballIM.jpg",
-					"/assets/images/Glamping.jpg",
-					"/assets/images/JohnDeere.jpg",
+					"/assets/images/award.jpg",
+					"/assets/images/soccer-21.jpg",
+					"/assets/images/yoga-3.jpg",
 					"break",
-					"/assets/images/Yoga3.jpg",
-					"/assets/images/SoccerIM.jpg"
+					"/assets/images/greece.jpg",
+					"/assets/images/camping-retreat.jpg"
+				]}
+				alts={[
+					"3 IEEE members present an award in front of Austin City Hall",
+					"Group photo of soccer intramural team in front of soccer goal",
+					"IEEE members reaching over their heads in yoga position",
+					"",
+					"Photo from back of classroom with general meeting",
+					"Group photo from a outdoor camping retreat"
 				]}
 			/>
 		</>

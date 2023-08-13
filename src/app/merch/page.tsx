@@ -11,11 +11,16 @@ export const metadata = {
 export default function Merch() {
 	return (
 		<>
-			<HeaderSection title="Merch" image="/assets/images/Merch.jpg" />
+			<HeaderSection
+				title="Merch"
+				image="/assets/images/merch-2.jpg"
+				imageAlt="Members in IEEE merch sitting down, laughing and talking to one another"
+			/>
 			<TextSection
 				textSide="left"
 				textCols="3"
 				graphicSrc="/assets/videos/MerchVideo.mp4"
+				graphicAlt="IEEE merch video/promo"
 			>
 				<h2>Our Merch</h2>
 				<p>
@@ -32,7 +37,8 @@ export default function Merch() {
 			<TextSection
 				textSide="right"
 				textCols="4"
-				graphicSrc="/assets/images/Merch.jpg"
+				graphicSrc="/assets/images/merch.jpg"
+				graphicAlt="Members in IEEE merch crouch and sit in the middle of path smiling and talking"
 			>
 				<h2>Free Member Merch</h2>
 				<p>
@@ -46,13 +52,6 @@ export default function Merch() {
 				</p>
 				<Button name="Become a Member" link="/membership" />
 			</TextSection>
-			<GallerySection
-				images={[
-					"/assets/images/DodgeballIM.jpg",
-					"/assets/images/Glamping.jpg",
-					"/assets/images/JohnDeere.jpg"
-				]}
-			/>
 		</>
 	);
 }
