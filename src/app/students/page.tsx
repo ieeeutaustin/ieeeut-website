@@ -13,7 +13,7 @@ export default function Students() {
 			<HeaderSection
 				title="Students"
 				image="/assets/images/glamping.jpg"
-				imageAlt="Group photo of IEEE members infront of a modern ranch house for a retreat"
+				imageAlt="Group photo of IEEE members in front of a modern ranch house for a retreat"
 				desc="All UT Students are IEEE Guests by default!"
 			/>
 			<TextSection

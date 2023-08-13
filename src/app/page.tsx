@@ -38,7 +38,7 @@ export default function Home() {
 				]}
 				alts={[
 					"Group photo of IEEE members in uniform on court after a dodgeball game",
-					"Group photo of IEEE members infront of a modern ranch house for a retreat",
+					"Group photo of IEEE members in front of a modern ranch house for a retreat",
 					"General meeting with John Deere",
 					"",
 					"IEEE members reaching over their heads in yoga position",
