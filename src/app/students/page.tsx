@@ -54,8 +54,8 @@ export default function Students() {
 			>
 				<h2>Perks</h2>
 				<p>
-					As a member, you have access to so much! Here&apos;s just a
-					few things...
+					As a member, you have access to so much! Here are just a few
+					things...
 				</p>
 				<div className="flex-col" style={{ gap: "5px" }}>
 					<i>Merch Drops</i>
