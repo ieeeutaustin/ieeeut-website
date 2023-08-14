@@ -75,12 +75,12 @@ export default function Home() {
 				<div>
 					<Button
 						name="Join Discord"
-						link="https://discord.gg/Vcdqz8YczQ"
+						link="https://discord.gg/mkUxhqu7z5"
 						newWindow={true}
 					/>
 					<Button
 						name="Join Slack"
-						link="https://join.slack.com/t/ieeeutaustin/signup"
+						link="https://ieeeutaustin.slack.com/join/signup"
 						newWindow={true}
 					/>
 				</div>

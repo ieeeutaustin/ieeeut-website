@@ -13,16 +13,15 @@ export default function Links() {
 			icon: "/assets/icons/instagram.svg"
 		},
 		{
-			name: "Slack",
-			link: "https://join.slack.com/t/ieeeutaustin/signup",
-			icon: "/assets/icons/slack.svg"
-		},
-		{
 			name: "Discord",
-			link: "https://discord.gg/yAsNdxnREs",
+			link: "https://discord.gg/mkUxhqu7z5",
 			icon: "/assets/icons/discord.svg"
 		},
-
+		{
+			name: "Slack",
+			link: "https://ieeeutaustin.slack.com/join/signup",
+			icon: "/assets/icons/slack.svg"
+		},
 		{
 			name: "Google Calendar",
 			link: "https://ieeeut.us2.list-manage.com/track/click?u=d3062749e379e986e832fe901&id=48a630aaa0&e=80045ad49e",

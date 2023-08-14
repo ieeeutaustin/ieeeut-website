@@ -16,9 +16,16 @@ export default function JoinSection(props: any) {
 					/>
 					<h2>Follow our Socials</h2>
 					<p>
-						Follow our <a href="/instagram">Instagram</a> and join
-						our <a href="/slack">Slack</a>/
-						<a href="/discord">Discord</a> to stay in the loop.
+						Follow our{" "}
+						<a href="https://www.instagram.com/ieee.ut">
+							Instagram
+						</a>{" "}
+						and join our{" "}
+						<a href="https://discord.gg/mkUxhqu7z5">Discord</a>/
+						<a href="https://ieeeutaustin.slack.com/join/signup">
+							Slack
+						</a>{" "}
+						to stay in the loop.
 					</p>
 					<Button name="Links" link="/links" type="light" />
 					<Image

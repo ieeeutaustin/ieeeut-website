@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function IconList(props: any) {
 	const urls: any = {
-		discord: "https://discord.gg/Vcdqz8YczQ",
+		discord: "https://discord.gg/mkUxhqu7z5",
 		email: "mailto:ieee@ieeeut.org",
 		facebook: "https://www.facebook.com/ieeeut/",
 		gcal: "https://calendar.google.com/calendar/u/0?cid=Y183NWNmZGJlZGFjNTY2MGZjOTA2MTRlZTRiNTliNzExOTE0MjU1MGIwYmM5MWJlNTgyNmFiNDBlNzQ4MmQ2YjBjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20",
