@@ -44,6 +44,7 @@ export default function Home() {
 					"IEEE members reaching over their heads in yoga position",
 					"Group photo of IEEE soccer intramural players"
 				]}
+				hideAfter={3}
 			/>
 			<TextSection
 				textSide="right"
@@ -84,7 +85,6 @@ export default function Home() {
 						newWindow={true}
 					/>
 				</div>
-
 				<h3>
 					<Image
 						src="./assets/icons/instagram.svg"

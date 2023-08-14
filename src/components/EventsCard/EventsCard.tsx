@@ -1,5 +1,3 @@
-"use client";
-
 import "./EventsCard.scss";
 import Image from "next/image";
 import Button from "../Button/Button";
@@ -15,7 +13,12 @@ export default function EventCard(props: any) {
 				<div className="events-card-text">
 					<h4>{props.title}</h4>
 					<p>{props.desc}</p>
-					<Button name="RSVP" link={props.url} type="outlined" newWindow={true}/>
+					<Button
+						name="RSVP"
+						link={props.url}
+						type="outlined"
+						newWindow={true}
+					/>
 				</div>
 			</div>
 		</div>

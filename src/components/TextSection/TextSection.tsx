@@ -1,8 +1,6 @@
-"use client";
 import "./TextSection.scss";
 import Image from "next/image";
 import GridContainer from "@/components/GridContainer/GridContainer";
-import { useEffect, useRef, useState } from "react";
 
 export default function TextSection({
 	children,
@@ -35,8 +33,8 @@ export default function TextSection({
 							<Image
 								src={graphicSrc}
 								alt={graphicAlt || ""}
-								width={400}
-								height={300}
+								fill={true}
+								sizes="(min-width: 800px) 33vw, 100vw"
 							/>
 						)}
 					</div>
