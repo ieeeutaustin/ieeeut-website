@@ -17,7 +17,8 @@ export default function NotFound() {
 			insta: "https://instagram.com/ieee.ut",
 			tiktok: "https://tiktok.com/@ieee.ut",
 			gcal: "https://calendar.google.com/calendar/u/0?cid=Y183NWNmZGJlZGFjNTY2MGZjOTA2MTRlZTRiNTliNzExOTE0MjU1MGIwYmM5MWJlNTgyNmFiNDBlNzQ4MmQ2YjBjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20",
-			"punch-card": "/membership#punch-card"
+			"punch-card": "/membership#punch-card",
+			gte: "https://docs.google.com/document/d/1H3BMapQV1r5jjtzWx6pEpjJb-CXcKQcgKl--I8qOWdY/edit?usp=sharing"
 		};
 
 		const parsedPathname = pathname.split("/")[1].toLowerCase();
