@@ -11,7 +11,7 @@ export default function IconList(props: any) {
 		linkedin: "https://www.linkedin.com/company/ieee-ut-austin",
 		tiktok: "https://tiktok.com/@ieee.ut",
 		youtube: "https://www.youtube.com/channel/UC0zqc1xWxOr4O7BOr37jKQg",
-		slack: "https://join.slack.com/t/ieeeutaustin/signup"
+		slack: "https://ieeeutaustin.slack.com/"
 	};
 
 	return (

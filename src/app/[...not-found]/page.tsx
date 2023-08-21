@@ -12,7 +12,7 @@ export default function NotFound() {
 	useEffect(() => {
 		const shortURLs = {
 			discord: "https://discord.gg/mkUxhqu7z5",
-			slack: "https://join.slack.com/t/ieeeutaustin/signup",
+			slack: "https://ieeeutaustin.slack.com/",
 			instagram: "https://instagram.com/ieee.ut",
 			insta: "https://instagram.com/ieee.ut",
 			tiktok: "https://tiktok.com/@ieee.ut",

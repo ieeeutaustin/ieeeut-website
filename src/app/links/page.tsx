@@ -19,7 +19,7 @@ export default function Links() {
 		},
 		{
 			name: "Slack",
-			link: "https://ieeeutaustin.slack.com/join/signup",
+			link: "https://ieeeutaustin.slack.com/",
 			icon: "/assets/icons/slack.svg"
 		},
 		{
