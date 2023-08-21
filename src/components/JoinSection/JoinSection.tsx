@@ -22,8 +22,10 @@ export default function JoinSection(props: any) {
 						</a>{" "}
 						and join our{" "}
 						<a href="https://discord.gg/mkUxhqu7z5">Discord</a>/
-						<a href="https://ieeeutaustin.slack.com/">Slack</a> to
-						stay in the loop.
+						<a href="https://join.slack.com/t/ieeeutaustin/shared_invite/zt-21fqymxcw-yLl3XOcXttt9tTEcNrcEMA">
+							Slack
+						</a>{" "}
+						to stay in the loop.
 					</p>
 					<Button name="Links" link="/links" type="light" />
 					<Image
