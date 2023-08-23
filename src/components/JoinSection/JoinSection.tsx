@@ -2,6 +2,7 @@ import "./JoinSection.scss";
 import Image from "next/image";
 import FlexSection from "../FlexSection/FlexSection";
 import Button from "../Button/Button";
+import { getURL } from "@/utils/links";
 
 export default function JoinSection(props: any) {
 	return (
@@ -16,16 +17,9 @@ export default function JoinSection(props: any) {
 					/>
 					<h2>Follow our Socials</h2>
 					<p>
-						Follow our{" "}
-						<a href="https://www.instagram.com/ieee.ut">
-							Instagram
-						</a>{" "}
-						and join our{" "}
-						<a href="https://discord.gg/mkUxhqu7z5">Discord</a>/
-						<a href="https://join.slack.com/t/ieeeutaustin/shared_invite/zt-21fqymxcw-yLl3XOcXttt9tTEcNrcEMA">
-							Slack
-						</a>{" "}
-						to stay in the loop.
+						Follow our <a href={getURL("instagram")}>Instagram</a>{" "}
+						and join our <a href={getURL("discord")}>Discord</a>/
+						<a href={getURL("slack")}>Slack</a> to stay in the loop.
 					</p>
 					<Button name="Links" link="/links" type="light" />
 					<Image

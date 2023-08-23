@@ -1,6 +1,7 @@
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
 import TextSection from "@/components/TextSection/TextSection";
 import Button from "@/components/Button/Button";
+import { getURL } from "@/utils/links";
 
 export const metadata = {
 	title: "Corporate | IEEE UT"
@@ -31,7 +32,7 @@ export default function Corporate() {
 				</p>
 				<Button
 					name="corporate@ieeeut.org"
-					link="mailto:corporate@ieeeut.org"
+					link={getURL("email")}
 					icon="/assets/icons/email-white.svg"
 					newWindow={true}
 				/>

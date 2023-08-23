@@ -12,7 +12,7 @@ export default function LinksSection({ links }: { links: Array<any> }) {
 						<Button
 							key={link.name}
 							name={link.name}
-							link={link.link}
+							link={link.url}
 							newWindow={true}
 							icon={link.icon || ""}
 							type="light"

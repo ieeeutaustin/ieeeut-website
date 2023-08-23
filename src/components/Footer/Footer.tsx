@@ -1,5 +1,6 @@
 import "./Footer.scss";
 import IconList from "@/components/IconList/IconList";
+import { getURL } from "@/utils/links";
 import Image from "next/image";
 
 export default function Footer() {
@@ -27,7 +28,7 @@ export default function Footer() {
 						<br />
 						Austin, TX 78712
 					</p>
-					<a href="mailto:ieee@ieeeut.org">comms@ieeeut.org</a>
+					<a href={getURL("email")}>ieee@ieeeut.org</a>
 				</div>
 				<Image
 					className="footer-logo"

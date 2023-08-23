@@ -1,8 +1,8 @@
 import Link from "next/link";
 import TextSection from "@/components/TextSection/TextSection";
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
-import GallerySection from "@/components/GallerySection/GallerySection";
 import Button from "@/components/Button/Button";
+import { getURL } from "@/utils/links";
 
 export const metadata = {
 	title: "Merch | IEEE UT"
@@ -25,14 +25,15 @@ export default function Merch() {
 				<h2>Our Merch</h2>
 				<p>
 					Take a look at out merch! We design new merch each year so
-					follow us on <Link href="/instagram">Instagram</Link> to
-					stay updated.
+					follow us on{" "}
+					<Link href={getURL("instagram")}>Instagram</Link> to stay
+					updated.
 				</p>
 				<p>
 					We also have things like sweatshirts, stickers, totes, and
 					beanies!
 				</p>
-				<Button name="Instagram" link="/instagram" />
+				<Button name="Instagram" link={getURL("instagram")} />
 			</TextSection>
 			<TextSection
 				textSide="right"

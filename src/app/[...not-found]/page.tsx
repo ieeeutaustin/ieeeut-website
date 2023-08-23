@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect } from "react";
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
+import { getShortURL } from "@/utils/shortURLs";
+import { getURL } from "@/utils/links";
 
 export default function NotFound() {
 	const [redirecting, setRedirecting] = useState(true);
@@ -10,21 +12,11 @@ export default function NotFound() {
 	const pathname = usePathname();
 
 	useEffect(() => {
-		const shortURLs = {
-			discord: "https://discord.gg/mkUxhqu7z5",
-			slack: "https://join.slack.com/t/ieeeutaustin/shared_invite/zt-21fqymxcw-yLl3XOcXttt9tTEcNrcEMA",
-			instagram: "https://instagram.com/ieee.ut",
-			insta: "https://instagram.com/ieee.ut",
-			tiktok: "https://tiktok.com/@ieee.ut",
-			gcal: "https://calendar.google.com/calendar/u/0?cid=Y183NWNmZGJlZGFjNTY2MGZjOTA2MTRlZTRiNTliNzExOTE0MjU1MGIwYmM5MWJlNTgyNmFiNDBlNzQ4MmQ2YjBjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20",
-			"punch-card": "/membership#punch-card",
-			gte: "https://docs.google.com/document/d/1H3BMapQV1r5jjtzWx6pEpjJb-CXcKQcgKl--I8qOWdY/edit?usp=sharing"
-		};
-
 		const parsedPathname = pathname.split("/")[1].toLowerCase();
+		const url = getShortURL(parsedPathname) || getURL(parsedPathname);
 
-		if (shortURLs[parsedPathname as keyof typeof shortURLs] != undefined) {
-			router.replace(shortURLs[parsedPathname as keyof typeof shortURLs]);
+		if (url) {
+			router.replace(url);
 		} else setRedirecting(false);
 	}, [pathname, router]);
 

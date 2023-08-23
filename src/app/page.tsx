@@ -5,6 +5,7 @@ import Button from "@/components/Button/Button";
 import IconList from "@/components/IconList/IconList";
 import GallerySection from "@/components/GallerySection/GallerySection";
 import EventsSection from "@/components/EventsSection/EventsSection";
+import { getURL } from "@/utils/links";
 
 export default function Home() {
 	return (
@@ -76,12 +77,12 @@ export default function Home() {
 				<div>
 					<Button
 						name="Join Discord"
-						link="https://discord.gg/mkUxhqu7z5"
+						link={getURL("discord")}
 						newWindow={true}
 					/>
 					<Button
 						name="Join Slack"
-						link="https://join.slack.com/t/ieeeutaustin/shared_invite/zt-21fqymxcw-yLl3XOcXttt9tTEcNrcEMA"
+						link={getURL("slack")}
 						newWindow={true}
 					/>
 				</div>
@@ -100,7 +101,7 @@ export default function Home() {
 				</p>
 				<Button
 					name="Follow Instagram"
-					link="https://instagram.com/ieee.ut"
+					link={getURL("instagram")}
 					newWindow={true}
 				/>
 				<h3>
@@ -116,10 +117,7 @@ export default function Home() {
 					Add our Google Calendar so you can stay updated with our
 					events!
 				</p>
-				<Button
-					name="Add to Google Calendar"
-					link="https://calendar.google.com/calendar/u/0?cid=Y183NWNmZGJlZGFjNTY2MGZjOTA2MTRlZTRiNTliNzExOTE0MjU1MGIwYmM5MWJlNTgyNmFiNDBlNzQ4MmQ2YjBjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
-				/>
+				<Button name="Add to Google Calendar" link={getURL("gcal")} />
 			</TextSection>
 			<TextSection
 				textSide="center"

@@ -2,6 +2,7 @@ import TextSection from "@/components/TextSection/TextSection";
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
 import OfficerSection from "@/components/OfficersSection/OfficerSection";
 import Button from "@/components/Button/Button";
+import { getURL } from "@/utils/links";
 
 export const metadata = {
 	title: "Officers | IEEE UT"
@@ -27,7 +28,7 @@ export default function Officers() {
 				</p>
 				<Button
 					name="Instagram"
-					link="/https://www.instagram.com/ieee.ut"
+					link={getURL("instagram")}
 					newWindow={true}
 					icon="/assets/icons/instagram.svg"
 				/>
