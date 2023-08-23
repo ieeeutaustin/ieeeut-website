@@ -2,6 +2,8 @@ import "./HeroSection.scss";
 import Image from "next/image";
 import GridContainer from "@/components/GridContainer/GridContainer";
 import Button from "@/components/Button/Button";
+import { getURL } from "@/utils/links";
+import { getShortURL } from "@/utils/shortURLs";
 
 export default function HeroSection() {
 	return (
@@ -27,7 +29,7 @@ export default function HeroSection() {
 					<h3>Upcoming Event:</h3>
 					<div className="hero-display-img-wrapper">
 						<Image
-							src="/assets/images/flyers/pease_park.jpg"
+							src="/assets/images/flyers/fall23-gm-1.jpg"
 							alt=""
 							fill={true}
 							sizes="25vw"
@@ -35,7 +37,7 @@ export default function HeroSection() {
 					</div>
 					<Button
 						name="RSVP"
-						link="https://www.instagram.com/p/CrMBlZNu7HS/"
+						link={getShortURL("gm-1")}
 						type="light md px-10"
 						newWindow={true}
 					/>

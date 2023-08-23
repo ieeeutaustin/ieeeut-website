@@ -1,11 +1,19 @@
 import "./EventsSection.scss";
 import EventsCard from "../EventsCard/EventsCard";
 import Button from "../Button/Button";
+import { getShortURL } from "@/utils/shortURLs";
 
 export default function EventsSection(props: any) {
 	const full: boolean = props.full;
 
 	let events = [
+		{
+			title: "First General Meeting",
+			desc: "Come join us for some Pot Belly! 7-8 pm @ ECJ 1.202",
+			date: "08.31",
+			image: "/assets/images/flyers/fall23-gm-1.jpg",
+			url: getShortURL("gm-1")
+		},
 		{
 			title: "Pease Park Litter Pickup",
 			desc: "Volunteer with us to help clean up Pease Park!",
