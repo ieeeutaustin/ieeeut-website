@@ -84,7 +84,7 @@ export default function Membership() {
 					<div className="flex no-wrap">
 						<p className="ml-6">
 							2 punches
-							<br />4 punches
+							<br />5 punches
 							<br />7 punches
 							<br />
 							10 punches

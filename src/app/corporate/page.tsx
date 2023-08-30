@@ -32,7 +32,7 @@ export default function Corporate() {
 				</p>
 				<Button
 					name="corporate@ieeeut.org"
-					link={getURL("email")}
+					link="mailto:corporate@ieeeut.org"
 					icon="/assets/icons/email-white.svg"
 					newWindow={true}
 				/>
