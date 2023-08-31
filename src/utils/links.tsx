@@ -20,7 +20,7 @@ const links: any = {
 	},
 	gcal: {
 		name: "Google Calendar",
-		url: "https://ieeeut.us2.list-manage.com/track/click?u=d3062749e379e986e832fe901&id=48a630aaa0&e=80045ad49e",
+		url: "https://calendar.google.com/calendar/u/0?cid=Y183NWNmZGJlZGFjNTY2MGZjOTA2MTRlZTRiNTliNzExOTE0MjU1MGIwYmM5MWJlNTgyNmFiNDBlNzQ4MmQ2YjBjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20",
 		icon: "/assets/icons/gcal.svg"
 	},
 	tiktok: {
