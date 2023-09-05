@@ -2,7 +2,7 @@ import "./JoinSection.scss";
 import Image from "next/image";
 import FlexSection from "../FlexSection/FlexSection";
 import Button from "../Button/Button";
-import { getURL } from "@/utils/links";
+import { getURL } from "@/utils/socials";
 
 export default function JoinSection(props: any) {
 	return (

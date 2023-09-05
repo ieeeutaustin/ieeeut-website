@@ -1,4 +1,4 @@
-import { getLinks } from "../../utils/links";
+import { getLinks } from "../../utils/socials";
 import LinksSection from "@/components/LinksSection/LinksSection";
 
 export const metadata = {

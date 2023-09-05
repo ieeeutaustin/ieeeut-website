@@ -2,8 +2,9 @@ import "./HeroSection.scss";
 import Image from "next/image";
 import GridContainer from "@/components/GridContainer/GridContainer";
 import Button from "@/components/Button/Button";
-import { getURL } from "@/utils/links";
+import { getURL } from "@/utils/socials";
 import { getShortURL } from "@/utils/shortURLs";
+import { getUpcoming } from "@/utils/events";
 
 export default function HeroSection() {
 	return (
@@ -29,7 +30,10 @@ export default function HeroSection() {
 					<h3>Upcoming Event:</h3>
 					<div className="hero-display-img-wrapper">
 						<Image
-							src="/assets/images/flyers/fall23-gm-1.jpg"
+							src={
+								getUpcoming()?.image ||
+								"/assets/images/branding/ieeeut-logo.jpg"
+							}
 							alt=""
 							fill={true}
 							sizes="25vw"
@@ -37,7 +41,7 @@ export default function HeroSection() {
 					</div>
 					<Button
 						name="RSVP"
-						link={getShortURL("gm-1")}
+						link={getUpcoming()?.url || "/"}
 						type="light md px-10"
 						newWindow={true}
 					/>

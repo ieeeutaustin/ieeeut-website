@@ -5,7 +5,7 @@ import Button from "@/components/Button/Button";
 import IconList from "@/components/IconList/IconList";
 import GallerySection from "@/components/GallerySection/GallerySection";
 import EventsSection from "@/components/EventsSection/EventsSection";
-import { getURL } from "@/utils/links";
+import { getURL } from "@/utils/socials";
 
 export default function Home() {
 	return (

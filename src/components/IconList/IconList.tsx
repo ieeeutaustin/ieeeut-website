@@ -1,4 +1,4 @@
-import { getURL } from "@/utils/links";
+import { getURL } from "@/utils/socials";
 import "./IconList.scss";
 import Image from "next/image";
 

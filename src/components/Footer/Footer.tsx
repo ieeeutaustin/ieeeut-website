@@ -1,6 +1,6 @@
 import "./Footer.scss";
 import IconList from "@/components/IconList/IconList";
-import { getURL } from "@/utils/links";
+import { getURL } from "@/utils/socials";
 import Image from "next/image";
 
 export default function Footer() {

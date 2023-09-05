@@ -2,7 +2,7 @@ import TextSection from "@/components/TextSection/TextSection";
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
 import OfficerSection from "@/components/OfficersSection/OfficerSection";
 import Button from "@/components/Button/Button";
-import { getURL } from "@/utils/links";
+import { getURL } from "@/utils/socials";
 
 export const metadata = {
 	title: "Officers | IEEE UT"

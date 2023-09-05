@@ -15,7 +15,7 @@ export default function EventCard(props: any) {
 					<p>{props.desc}</p>
 					<Button
 						name="RSVP"
-						link={props.url}
+						link={props.url || "/"}
 						type="outlined"
 						newWindow={true}
 					/>

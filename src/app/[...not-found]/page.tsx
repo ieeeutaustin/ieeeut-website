@@ -4,7 +4,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect } from "react";
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
 import { getShortURL } from "@/utils/shortURLs";
-import { getURL } from "@/utils/links";
+import { getURL } from "@/utils/socials";
 
 export default function NotFound() {
 	const [redirecting, setRedirecting] = useState(true);

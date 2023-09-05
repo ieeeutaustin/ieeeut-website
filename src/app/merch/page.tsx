@@ -2,7 +2,7 @@ import Link from "next/link";
 import TextSection from "@/components/TextSection/TextSection";
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
 import Button from "@/components/Button/Button";
-import { getURL } from "@/utils/links";
+import { getURL } from "@/utils/socials";
 
 export const metadata = {
 	title: "Merch | IEEE UT"
