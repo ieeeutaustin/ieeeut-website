@@ -3,6 +3,7 @@ import HeaderSection from "@/components/HeaderSection/HeaderSection";
 import OfficerSection from "@/components/OfficersSection/OfficerSection";
 import Button from "@/components/Button/Button";
 import { getURL } from "@/utils/socials";
+import { getShortURL } from "@/utils/shortURLs";
 
 export const metadata = {
 	title: "Officers | IEEE UT"
@@ -23,14 +24,13 @@ export default function Officers() {
 					semesters.
 				</p>
 				<p>
-					Applications open at the beginning of the fall semester.
-					Keep an eye out!
+					Assistant officer applications are open!{" "}
+					<a href={getShortURL("aoapps")}>Apply today!</a>
 				</p>
 				<Button
-					name="Instagram"
-					link={getURL("instagram")}
+					name="Assistant Officer Applications"
+					link={getShortURL("aoapps")}
 					newWindow={true}
-					icon="/assets/icons/instagram.svg"
 				/>
 			</TextSection>
 			<OfficerSection />
