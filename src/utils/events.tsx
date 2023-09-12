@@ -6,6 +6,27 @@ import { getShortURL } from "./shortURLs";
 
 const events: any = [
 	{
+		title: "Optiver Tech Talk (GM #3)",
+		desc: "Listen to Optiver and get a chance to network! 7-8 pm @ EER 1.518",
+		date: "09.14",
+		image: "/assets/images/flyers/f23-gm-3.jpg",
+		url: getShortURL("gm-3")
+	},
+	{
+		title: "Leadership Retreat",
+		desc: "Learn about AO positions and becoming and IEEE officer! 5-8 pm @ Zilker Park",
+		date: "09.08",
+		image: "/assets/images/flyers/f23-leadership-retreat.jpg",
+		url: getShortURL("leader-retreat")
+	},
+	{
+		title: "FamilIEEE Kickoff (GM #2)",
+		desc: "Join and complete with FamilIEEEs! 7-8 pm @ ETC 2.136",
+		date: "09.07",
+		image: "/assets/images/flyers/f23-gm-2.jpg",
+		url: getShortURL("gm-2")
+	},
+	{
 		title: "Expo Prep",
 		desc: "Get ready for Fall Expo with us! 7-8 pm @ ECJ 1.202",
 		date: "09.05",
@@ -16,7 +37,7 @@ const events: any = [
 		title: "First General Meeting",
 		desc: "Come join us for some Pot Belly! 7-8 pm @ ECJ 1.202",
 		date: "08.31",
-		image: "/assets/images/flyers/fall23-gm-1.jpg",
+		image: "/assets/images/flyers/f23-gm-1.jpg",
 		url: getShortURL("gm-1")
 	},
 	{
