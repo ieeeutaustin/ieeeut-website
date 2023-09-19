@@ -6,6 +6,13 @@ import { getShortURL } from "./shortURLs";
 
 const events: any = [
 	{
+		title: "Burns & McDonnell Tech Talk (GM #4)",
+		desc: "Learn about Burns & McDonnell and get a chance to network! 7-8 pm @ EER 1.518",
+		date: "09.21",
+		image: "/assets/images/flyers/f23-gm-4.jpg",
+		url: getShortURL("gm-4")
+	},
+	{
 		title: "Optiver Tech Talk (GM #3)",
 		desc: "Listen to Optiver and get a chance to network! 7-8 pm @ EER 1.518",
 		date: "09.14",

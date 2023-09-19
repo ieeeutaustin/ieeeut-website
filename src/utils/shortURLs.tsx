@@ -12,8 +12,7 @@ const shortURLs: any = {
 	"leader-retreat": "https://forms.gle/vmxtQAMKQyJkypSo8",
 	"gm-3": "https://forms.gle/xPAoKseoxT2YJ7qV7",
 	"gm-4": "https://forms.gle/XesAwtDjfZRtk94v5",
-	"gm-5": "https://forms.gle/Nc9arNyk1FYiriteA",
-	aoapps: "https://docs.google.com/forms/d/e/1FAIpQLSc8z2EKYHpi9yEnYjz0IVRBEw-HTgfPhcHy1PMZvE3leiSRuA/viewform"
+	"gm-5": "https://forms.gle/Nc9arNyk1FYiriteA"
 };
 
 export function getShortURL(name: string) {

@@ -1,9 +1,6 @@
 import TextSection from "@/components/TextSection/TextSection";
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
 import OfficerSection from "@/components/OfficersSection/OfficerSection";
-import Button from "@/components/Button/Button";
-import { getURL } from "@/utils/socials";
-import { getShortURL } from "@/utils/shortURLs";
 
 export const metadata = {
 	title: "Officers | IEEE UT"
@@ -23,15 +20,10 @@ export default function Officers() {
 					These are our lovely IEEE UT officers for the 23-24
 					semesters.
 				</p>
-				<p>
-					Assistant officer applications are open!{" "}
-					<a href={getShortURL("aoapps")}>Apply today!</a>
-				</p>
-				<Button
-					name="Assistant Officer Applications"
-					link={getShortURL("aoapps")}
-					newWindow={true}
-				/>
+				<i>
+					Assistant officer applications are now closed for the
+					2023-2024 school year.
+				</i>
 			</TextSection>
 			<OfficerSection />
 		</>
