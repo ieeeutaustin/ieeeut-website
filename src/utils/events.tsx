@@ -6,6 +6,13 @@ import { getShortURL } from "./shortURLs";
 
 const events: any = [
 	{
+		title: "Casino Game Night (GM #5)",
+		desc: "Have fun, play games, and join the raffle! 7-8:30 pm @ EER 3.646",
+		date: "09.28",
+		image: "/assets/images/flyers/f23-gm-5.jpg",
+		url: getShortURL("gm-5")
+	},
+	{
 		title: "Burns & McDonnell Tech Talk (GM #4)",
 		desc: "Learn about Burns & McDonnell and get a chance to network! 7-8 pm @ EER 1.518",
 		date: "09.21",
