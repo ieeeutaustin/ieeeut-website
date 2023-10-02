@@ -13,7 +13,8 @@ const shortURLs: any = {
 	"gm-3": "https://forms.gle/xPAoKseoxT2YJ7qV7",
 	"gm-4": "https://forms.gle/XesAwtDjfZRtk94v5",
 	"gm-5": "https://forms.gle/Nc9arNyk1FYiriteA",
-	joinafam: "https://forms.gle/NbXRnRtzciX2eeHp6"
+	joinafam: "https://forms.gle/NbXRnRtzciX2eeHp6",
+	"gm-6": "https://forms.gle/NojMY7x79V5Tjrho6"
 };
 
 export function getShortURL(name: string) {
