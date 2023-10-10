@@ -2,11 +2,11 @@ import "./HeroSection.scss";
 import Image from "next/image";
 import GridContainer from "@/components/GridContainer/GridContainer";
 import Button from "@/components/Button/Button";
-import { getURL } from "@/utils/socials";
-import { getShortURL } from "@/utils/shortURLs";
 import { getUpcoming } from "@/utils/events";
 
 export default function HeroSection() {
+	const upcomingEvent = getUpcoming();
+
 	return (
 		<div className="hero-section">
 			<GridContainer>
@@ -31,7 +31,7 @@ export default function HeroSection() {
 					<div className="hero-display-img-wrapper">
 						<Image
 							src={
-								getUpcoming()?.image ||
+								upcomingEvent?.image ||
 								"/assets/images/branding/ieeeut-logo.jpg"
 							}
 							alt=""
@@ -41,7 +41,7 @@ export default function HeroSection() {
 					</div>
 					<Button
 						name="RSVP"
-						link={getUpcoming()?.url || "/"}
+						link={upcomingEvent?.url || "/"}
 						type="light md px-10"
 						newWindow={true}
 					/>

@@ -6,6 +6,27 @@ import { getShortURL } from "./shortURLs";
 
 const events: any = [
 	{
+		title: "HDR Tech Talk",
+		desc: "Meet with HDR and make connections! 10/17 7pm @ Mulva Foyer",
+		date: "10.17",
+		image: "/assets/images/flyers/f23-hdr.jpg",
+		url: getShortURL("hdr")
+	},
+	{
+		title: "Apple Tech Talk (GM #7)",
+		desc: "Listen and network with Apple! 10/12 7pm @ EER 1.518",
+		date: "10.12",
+		image: "/assets/images/flyers/f23-gm-7.jpg",
+		url: getShortURL("gm-7")
+	},
+	{
+		title: "IEEE x WECE (GM #6)",
+		desc: "Join us and WECE for minute to win it games! 10/05 7pm @ ETC 2.136",
+		date: "10.05",
+		image: "/assets/images/flyers/f23-gm-6.jpg",
+		url: getShortURL("gm-6")
+	},
+	{
 		title: "Casino Game Night (GM #5)",
 		desc: "Have fun, play games, and join the raffle! 7-8:30 pm @ EER 3.646",
 		date: "09.28",
@@ -111,5 +132,19 @@ export function getEvents() {
 }
 
 export function getUpcoming() {
-	return events[0];
+	var currentDate = new Date();
+	var selected = 0;
+
+	for (var i = 0; i < events.length; i++) {
+		var eventDate = new Date(events[i].date.split(".").join(" "));
+		eventDate.setFullYear(currentDate.getFullYear());
+
+		if (eventDate.getTime() < currentDate.getTime()) break;
+		else selected = i;
+	}
+
+	selected = Math.max(0, selected);
+	selected = Math.min(events.length, selected);
+
+	return events[selected];
 }
