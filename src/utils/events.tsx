@@ -6,6 +6,13 @@ import { getShortURL } from "./shortURLs";
 
 const events: any = [
 	{
+		title: "Rock Painting (GM #8)",
+		desc: "De-stress, paint, and snack one some Chi'Lantro! 10/19 7pm @ ETC 2.136",
+		date: "10.19",
+		image: "/assets/images/flyers/f23-gm-8.jpg",
+		url: getShortURL("gm-8")
+	},
+	{
 		title: "HDR Tech Talk",
 		desc: "Meet with HDR and make connections! 10/17 7pm @ Mulva Foyer",
 		date: "10.17",
@@ -135,9 +142,16 @@ export function getUpcoming() {
 	var currentDate = new Date();
 	var selected = 0;
 
+	console.log(currentDate.toString());
+
 	for (var i = 0; i < events.length; i++) {
-		var eventDate = new Date(events[i].date.split(".").join(" "));
-		eventDate.setFullYear(currentDate.getFullYear());
+		var month = parseInt(events[i].date.split(".")[0]);
+		var day = parseInt(events[i].date.split(".")[1]);
+
+		// This creates a date at exactly 7pm (CDT) of the event day
+		var eventDate = new Date(
+			Date.UTC(currentDate.getFullYear(), month - 1, day + 1, 0, 0, 0)
+		);
 
 		if (eventDate.getTime() < currentDate.getTime()) break;
 		else selected = i;

@@ -15,7 +15,7 @@ const links: any = {
 	},
 	slack: {
 		name: "Slack",
-		url: "https://join.slack.com/t/ieeeutaustin/shared_invite/zt-21fqymxcw-yLl3XOcXttt9tTEcNrcEMA",
+		url: "https://join.slack.com/t/ieeeutaustin/shared_invite/zt-24z6ixxky-QTbCADuWcAyL9oC7~FY3~g",
 		icon: "/assets/icons/slack.svg"
 	},
 	gcal: {
@@ -38,7 +38,6 @@ const links: any = {
 		url: "https://www.youtube.com/channel/UC0zqc1xWxOr4O7BOr37jKQg",
 		icon: "/assets/icons/youtube.svg"
 	},
-
 	facebook: {
 		name: "Facebook",
 		url: "https://www.facebook.com/ieeeut",
