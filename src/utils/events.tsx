@@ -142,8 +142,6 @@ export function getUpcoming() {
 	var currentDate = new Date();
 	var selected = 0;
 
-	console.log(currentDate.toString());
-
 	for (var i = 0; i < events.length; i++) {
 		var month = parseInt(events[i].date.split(".")[0]);
 		var day = parseInt(events[i].date.split(".")[1]);
