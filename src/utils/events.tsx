@@ -1,10 +1,17 @@
 /*
-    This file is where you can edit existing links
+    This file is where you can add and edit events!
 */
 
 import { getShortURL } from "./shortURLs";
 
 const events: any = [
+	{
+		title: "Registration Event (GM #9)",
+		desc: "Course registration help & Freebirds! 10/25 7pm @ ETC 2.136",
+		date: "10.25",
+		image: "/assets/images/flyers/f23-gm-9.jpg",
+		url: getShortURL("gm-9")
+	},
 	{
 		title: "Rock Painting (GM #8)",
 		desc: "De-stress, paint, and snack one some Chi'Lantro! 10/19 7pm @ ETC 2.136",
