@@ -20,7 +20,8 @@ const shortURLs: any = {
 	"gm-8": "https://forms.gle/nogbtaMtsEHW8TsS6",
 	ltn: "https://forms.gle/vK8hzA1zQ7uJFmKa7",
 	"gm-9": "https://forms.gle/Ww3uCGLk24hF7o369",
-	"gm-10": "https://forms.gle/o4VmirxZgW6KNSDh7"
+	"gm-10": "https://forms.gle/o4VmirxZgW6KNSDh7",
+	"arduino": "https://drive.google.com/drive/folders/1NoiDOtpY_jIV9JWX9FAP1PpADzL-Vcxr?usp=drive_link"
 };
 
 export function getShortURL(name: string) {
