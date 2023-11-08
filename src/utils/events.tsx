@@ -6,6 +6,20 @@ import { getShortURL } from "./shortURLs";
 
 const events: any = [
 	{
+		title: "Tech Panel (GM #10)",
+		desc: "Learn about tech positions from speakers from Apple, Amazon, and more! 11/09 7pm @ ECJ 1.202",
+		date: "11.09",
+		image: "/assets/images/flyers/f23-gm-10.jpg",
+		url: getShortURL("gm-10")
+	},
+	{
+		title: "Light the Night",
+		desc: "Join a fundraising for Leukemia with IEEE! 11/02 5:30pm - 9:00pm",
+		date: "11.02",
+		image: "/assets/images/flyers/f23-light-the-night.jpg",
+		url: getShortURL("ltn")
+	},
+	{
 		title: "Registration Event (GM #9)",
 		desc: "Course registration help & Freebirds! 10/25 7pm @ ETC 2.136",
 		date: "10.25",

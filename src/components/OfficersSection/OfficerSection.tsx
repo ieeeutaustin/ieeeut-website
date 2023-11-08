@@ -69,7 +69,50 @@ export default function OfficerSection(props: any) {
 			email: "comms@ieeeut.org",
 			image: "Joaquin.png",
 			imageHover: "JoaquinHover1.png"
-		}
+		},
+		{
+			name: "Anya Patwa",
+			position: "Communications Assistant Director",
+			email: "comms@ieeeut.org",
+			image: "Anya.jpg",
+			imageHover: "Anya.jpg"
+		},
+		{
+			name: "Emily Han",
+			position: "Communications Assistant Director",
+			email: "comms@ieeeut.org",
+			image: "Emily.jpeg"
+		},
+		{
+			name: "Aaron Sulbaran",
+			position: "External Activites and Events Assistant Director",
+			email: "external.ae@ieeeut.org",
+			image: "Aaron.jpeg"
+		},
+		{
+			name: "Ayesha Haider",
+			position: "External Activites and Events Assistant Director",
+			email: "external.ae@ieeeut.org",
+			image: "Ayesha.jpeg"
+		},
+		{
+			name: "Jack Son",
+			position: "Internal Activites and Events Assistant Director",
+			email: "internal.ae@ieeeut.org",
+			image: "Jack.jpeg"
+		},
+		{
+			name: "Anneke Anderson",
+			position: "Internal Activites and Events Assistant Director",
+			email: "internal.ae@ieeeut.org",
+			image: "Anneke.jpeg"
+		},
+		{
+			name: "Amina Meddad",
+			position: "Membership and Resources Assistant Director",
+			email: "mr@ieeeut.org",
+			image: "Ana.jpg"
+		},
 	];
 
 	return (

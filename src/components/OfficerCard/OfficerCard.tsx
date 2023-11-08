@@ -20,6 +20,7 @@ export default function OfficerCard(props: any) {
 						alt=""
 						width={150}
 						height={150}
+						style={{objectFit: "cover"}}
 					/>
 					{imageHoverSrc && (
 						<Image
@@ -28,6 +29,7 @@ export default function OfficerCard(props: any) {
 							alt=""
 							width={150}
 							height={150}
+							style={{objectFit: "cover"}}
 						/>
 					)}
 				</div>
