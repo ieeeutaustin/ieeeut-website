@@ -81,13 +81,13 @@ export default function OfficerSection(props: any) {
 			name: "Emily Han",
 			position: "Communications Assistant Director",
 			email: "comms@ieeeut.org",
-			image: "Emily.jpeg"
+			image: "Emily.jpg"
 		},
 		{
 			name: "Aaron Sulbaran",
 			position: "External Activites and Events Assistant Director",
 			email: "external.ae@ieeeut.org",
-			image: "Aaron.jpeg"
+			image: "Aaron.jpg"
 		},
 		{
 			name: "Ayesha Haider",
@@ -105,13 +105,13 @@ export default function OfficerSection(props: any) {
 			name: "Anneke Anderson",
 			position: "Internal Activites and Events Assistant Director",
 			email: "internal.ae@ieeeut.org",
-			image: "Anneke.jpeg"
+			image: "Anneke.jpg"
 		},
 		{
 			name: "Amina Meddad",
 			position: "Membership and Resources Assistant Director",
 			email: "mr@ieeeut.org",
-			image: "Ana.jpg"
+			image: "Amina.jpg"
 		},
 	];
 
