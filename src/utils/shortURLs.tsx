@@ -21,7 +21,8 @@ const shortURLs: any = {
 	ltn: "https://forms.gle/vK8hzA1zQ7uJFmKa7",
 	"gm-9": "https://forms.gle/Ww3uCGLk24hF7o369",
 	"gm-10": "https://forms.gle/o4VmirxZgW6KNSDh7",
-	"arduino": "https://drive.google.com/drive/folders/1NoiDOtpY_jIV9JWX9FAP1PpADzL-Vcxr?usp=drive_link"
+	"arduino": "https://drive.google.com/drive/folders/1NoiDOtpY_jIV9JWX9FAP1PpADzL-Vcxr?usp=drive_link",
+	"famsgiving": "https://forms.gle/X76biJms9jkrp57D8"
 };
 
 export function getShortURL(name: string) {
