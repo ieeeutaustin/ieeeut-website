@@ -6,7 +6,6 @@
 const shortURLs: any = {
 	officehours: "/assets/images/flyers/Office_Hours_F23.png",
 	gte: "https://docs.google.com/document/d/1H3BMapQV1r5jjtzWx6pEpjJb-CXcKQcgKl--I8qOWdY/edit?usp=sharing",
-	"gm-1": "https://docs.google.com/document/d/1Dj0Z0KZcdj5MAn1SHXBxQa-YntquTGqhTm3z7bM5j1Q/edit",
 	expo: "https://drive.google.com/file/d/199XnT_8EY0oekr1TesFqvx_eyRICZO0t/view",
 	"gm-2": "https://forms.gle/8wCtzPKzyhMYoCcD9",
 	"leader-retreat": "https://forms.gle/vmxtQAMKQyJkypSo8",
@@ -24,7 +23,8 @@ const shortURLs: any = {
 	"arduino": "https://drive.google.com/drive/folders/1NoiDOtpY_jIV9JWX9FAP1PpADzL-Vcxr?usp=drive_link",
 	"famsgiving": "https://forms.gle/X76biJms9jkrp57D8",
 	"slime": "https://forms.gle/eVD8GBCh6RJDU7fY7",
-	"s24-im": "https://docs.google.com/document/d/15DkripHZxPdFSmbZZUM3Bef_IMIYvplAu2oCK3mc88g/edit?usp=sharing"
+	"s24-im": "https://docs.google.com/document/d/15DkripHZxPdFSmbZZUM3Bef_IMIYvplAu2oCK3mc88g/edit?usp=sharing",
+	"gm-1": "https://forms.gle/998bY938zhcbzEF38"
 };
 
 export function getShortURL(name: string) {
