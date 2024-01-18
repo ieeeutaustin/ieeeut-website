@@ -23,7 +23,8 @@ const shortURLs: any = {
 	"gm-10": "https://forms.gle/o4VmirxZgW6KNSDh7",
 	"arduino": "https://drive.google.com/drive/folders/1NoiDOtpY_jIV9JWX9FAP1PpADzL-Vcxr?usp=drive_link",
 	"famsgiving": "https://forms.gle/X76biJms9jkrp57D8",
-"slime": "https://forms.gle/eVD8GBCh6RJDU7fY7"
+	"slime": "https://forms.gle/eVD8GBCh6RJDU7fY7",
+	"s24-im": "https://docs.google.com/document/d/15DkripHZxPdFSmbZZUM3Bef_IMIYvplAu2oCK3mc88g/edit?usp=sharing"
 };
 
 export function getShortURL(name: string) {
