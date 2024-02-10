@@ -6,6 +6,20 @@ import { getShortURL } from "./shortURLs";
 
 const events: any = [
 	{
+		title: "Escape the ECJ!",
+		desc: "Explore the ECJ through puzzles and games! 7-8 pm @ ECJ 1.222",
+		date: "02.08.24",
+		image: "/assets/images/flyers/s24-escape-ecj.jpg",
+		url: getShortURL("ecjescape")
+	},
+	{
+		title: "FamilIEEE Kickoff",
+		desc: "Join and complete with FamilIEEEs! 7-8 pm @ CPE 2.210",
+		date: "02.01.24",
+		image: "/assets/images/flyers/s24-fam-kickoff.jpg",
+		url: getShortURL("joinafam")
+	},
+	{
 		title: "HDR Workshop",
 		desc: "Prepare for expo by networking and mock-interviewing with HDR! 1/25 7pm @ Mulva Foyer",
 		date: "01.25.24",
