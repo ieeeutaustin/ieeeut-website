@@ -9,7 +9,8 @@ const shortURLs: any = {
 	"gm-1": "https://forms.gle/998bY938zhcbzEF38",
 	"joinafam": "https://docs.google.com/forms/d/e/1FAIpQLSenTEc-6Dt2COxmcLGAwepvuRl9AIwC89o4hUVLvnYbAUSiOg/viewform",
 	"ecjescape": "https://docs.google.com/forms/d/e/1FAIpQLSdC9p8ozE0-6I8MEZBlMgLvvBc7udhvkar7djfrAqVcTyvfoA/viewform?usp=sf_link",
-	"valwithval": "https://forms.gle/4yPjqbx6jrKrq5Bp6"
+	"valwithval": "https://forms.gle/4yPjqbx6jrKrq5Bp6",
+	"girlday": "https://forms.gle/awFx7b4ure2ymPxFA"
 };
 
 export function getShortURL(name: string) {
