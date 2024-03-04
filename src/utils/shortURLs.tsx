@@ -11,7 +11,8 @@ const shortURLs: any = {
 	"ecjescape": "https://docs.google.com/forms/d/e/1FAIpQLSdC9p8ozE0-6I8MEZBlMgLvvBc7udhvkar7djfrAqVcTyvfoA/viewform?usp=sf_link",
 	"valwithval": "https://forms.gle/4yPjqbx6jrKrq5Bp6",
 	"girlday": "https://forms.gle/awFx7b4ure2ymPxFA",
-	"praetorian": "https://forms.gle/Msgexmw84R86214eA"
+	"praetorian": "https://forms.gle/Msgexmw84R86214eA",
+	"optiver": "https://forms.gle/8eyXShDr9d4Jf2ddA"
 };
 
 export function getShortURL(name: string) {
