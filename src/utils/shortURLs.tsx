@@ -12,7 +12,8 @@ const shortURLs: any = {
 	"valwithval": "https://forms.gle/4yPjqbx6jrKrq5Bp6",
 	"girlday": "https://forms.gle/awFx7b4ure2ymPxFA",
 	"praetorian": "https://forms.gle/Msgexmw84R86214eA",
-	"optiver": "https://forms.gle/8eyXShDr9d4Jf2ddA"
+	"optiver": "https://forms.gle/8eyXShDr9d4Jf2ddA",
+	"climb": "https://forms.gle/EcGoBh26gccEkFqf7"
 };
 
 export function getShortURL(name: string) {
