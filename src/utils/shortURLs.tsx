@@ -13,7 +13,8 @@ const shortURLs: any = {
 	"girlday": "https://forms.gle/awFx7b4ure2ymPxFA",
 	"praetorian": "https://forms.gle/Msgexmw84R86214eA",
 	"optiver": "https://forms.gle/8eyXShDr9d4Jf2ddA",
-	"climb": "https://forms.gle/EcGoBh26gccEkFqf7"
+	"climb": "https://forms.gle/EcGoBh26gccEkFqf7",
+	"stars": "https://docs.google.com/forms/d/e/1FAIpQLSej9lcNpVnZCW_sNbQ79ZoxCUQTP7kTF5uqTEK7VpY_0BO4FQ/viewform"
 };
 
 export function getShortURL(name: string) {
