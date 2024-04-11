@@ -17,7 +17,8 @@ const shortURLs: any = {
 	"stars": "https://docs.google.com/forms/d/e/1FAIpQLSej9lcNpVnZCW_sNbQ79ZoxCUQTP7kTF5uqTEK7VpY_0BO4FQ/viewform",
 	"retreat": "https://forms.gle/c5oJLvdpjtjnZKxG6",
 	"courses": "https://forms.gle/12vMqvh2ht2ZYB478",
-	"officer": "https://forms.gle/e8rRqk4EmbPRUwqCA"
+	"officer": "https://forms.gle/e8rRqk4EmbPRUwqCA",
+	"finale": "https://forms.gle/ANNC7t2P8iZM7dRb8"
 };
 
 export function getShortURL(name: string) {
