@@ -7,6 +7,7 @@ import Footer from "@/components/Footer/Footer";
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
+	subsets: ["latin-ext"],
 	weight: ["400", "500", "600", "700", "800", "900"],
 	style: ["normal", "italic"],
 	variable: '--custom-font-poppins',
