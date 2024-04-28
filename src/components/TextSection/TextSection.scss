@@ -1,4 +1,4 @@
-@import "../../styles/colors.scss";
+	@import "../../styles/colors.scss";
 
 .text-section {
 	width: 100%;
@@ -38,8 +38,7 @@
 
 		> div {
 			display: flex;
-			gap: 20px;
-			flex-wrap: nowrap;
+			gap: 10px;
 		}
 
 		&.white {
@@ -80,17 +79,7 @@
 
 		&.cols-3 {
 			.text-section-content {
-				grid-column: col-start 2 / span 3;
-			}
-
-			.text-section-graphic {
-				grid-column: col-start 6 / span 7;
-			}
-		}
-
-		&.cols-4 {
-			.text-section-content {
-				grid-column: col-start 2 / span 4;
+				grid-column: col-start 3 / span 3;
 			}
 
 			.text-section-graphic {
@@ -98,9 +87,9 @@
 			}
 		}
 
-		&.cols-5 {
+		&.cols-4 {
 			.text-section-content {
-				grid-column: col-start 2 / span 5;
+				grid-column: col-start 3 / span 4;
 			}
 
 			.text-section-graphic {
@@ -108,9 +97,19 @@
 			}
 		}
 
+		&.cols-5 {
+			.text-section-content {
+				grid-column: col-start 3 / span 5;
+			}
+
+			.text-section-graphic {
+				grid-column: col-start 9 / span 4;
+			}
+		}
+
 		&.cols-6 {
 			.text-section-content {
-				grid-column: col-start 2 / span 6;
+				grid-column: col-start 3 / span 6;
 			}
 
 			.text-section-graphic {
@@ -131,17 +130,7 @@
 
 		&.cols-3 {
 			.text-section-content {
-				grid-column: col-start 9 / span 3;
-			}
-
-			.text-section-graphic {
-				grid-column: col-start 1 / span 7;
-			}
-		}
-
-		&.cols-4 {
-			.text-section-content {
-				grid-column: col-start 8 / span 4;
+				grid-column: col-start 8 / span 3;
 			}
 
 			.text-section-graphic {
@@ -149,13 +138,23 @@
 			}
 		}
 
-		&.cols-5 {
+		&.cols-4 {
 			.text-section-content {
-				grid-column: col-start 7 / span 5;
+				grid-column: col-start 7 / span 4;
 			}
 
 			.text-section-graphic {
 				grid-column: col-start 1 / span 5;
+			}
+		}
+
+		&.cols-5 {
+			.text-section-content {
+				grid-column: col-start 6 / span 5;
+			}
+
+			.text-section-graphic {
+				grid-column: col-start 1 / span 4;
 			}
 		}
 

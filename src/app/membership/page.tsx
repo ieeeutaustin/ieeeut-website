@@ -23,7 +23,7 @@ export default function Membership() {
 			/>
 			<TextSection
 				textSide="left"
-				textCols="5"
+				textCols="4"
 				graphicSrc="/assets/images/boatparty-21.jpg"
 				graphicAlt="Group photo if IEEE members on a 2 story boat."
 			>
@@ -39,7 +39,7 @@ export default function Membership() {
 			</TextSection>
 			<TextSection
 				textSide="right"
-				textCols="5"
+				textCols="4"
 				graphicSrc="/assets/images/glamping-2.jpg"
 				graphicAlt="Members listening to activity instructions in pairs on field"
 			>
@@ -60,7 +60,7 @@ export default function Membership() {
 			<div id="perks">
 				<TextSection
 					textSide="left"
-					textCols="5"
+					textCols="4"
 					graphicSrc="/assets/images/john-deere.jpg"
 					graphicAlt="Photo from back of general meeting with John Deere"
 				>

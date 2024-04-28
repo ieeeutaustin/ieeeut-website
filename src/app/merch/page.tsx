@@ -18,7 +18,7 @@ export default function Merch() {
 			/>
 			<TextSection
 				textSide="left"
-				textCols="3"
+				textCols="4"
 				graphicSrc="/assets/videos/MerchVideo.mp4"
 				graphicAlt="IEEE merch video/promo"
 			>

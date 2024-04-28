@@ -13,11 +13,11 @@ export default function Home() {
 			<HeroSection />
 			<TextSection
 				textSide="left"
-				textCols="4"
-				graphicSrc="/assets/images/patrick-amogh.jpg"
+				textCols="3"
+				graphicSrc="/assets/images/leadership-retreat.jpg"
 				graphicAlt="2 IEEE members in a classroom podium laugh while looking at a laptop"
 			>
-				<h2>What We Do</h2>
+				<h2>Who are we?</h2>
 				<p>
 					IEEE UT runs events, socials, and workshops year-round to
 					help you grow academically, socially, and professionally.
@@ -49,7 +49,7 @@ export default function Home() {
 			/>
 			<TextSection
 				textSide="right"
-				textCols="5"
+				textCols="4"
 				graphicSrc="/assets/images/halloween.jpg"
 				graphicAlt="IEEE members paint mini pumpkins for halloween social"
 			>

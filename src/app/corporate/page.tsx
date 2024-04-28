@@ -20,7 +20,7 @@ export default function Corporate() {
 			/>
 			<TextSection
 				textSide="left"
-				textCols="5"
+				textCols="4"
 				graphicSrc="/assets/images/yoga-2.jpg"
 				graphicAlt="Dr. Yerraballi talks with a small group of students around him"
 			>
@@ -39,7 +39,7 @@ export default function Corporate() {
 			</TextSection>
 			<TextSection
 				textSide="right"
-				textCols="5"
+				textCols="3"
 				graphicSrc="/assets/images/gm-h-and-h.jpg"
 				graphicAlt="Students in general meeting in classroom listen to the presenter"
 			>

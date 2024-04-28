@@ -29,6 +29,7 @@ export default function Button({
 				href={link}
 				{...props}
 			>
+				{name || children}
 				{icon && (
 					<Image
 						src={icon}
@@ -37,7 +38,6 @@ export default function Button({
 						height={50}
 					/>
 				)}
-				{name || children}
 			</a>
 		);
 
@@ -48,10 +48,10 @@ export default function Button({
 			href={link}
 			{...props}
 		>
+			{name || children}
 			{icon && (
 				<Image src={icon} alt={`${name} logo`} width={50} height={50} />
 			)}
-			{name || children}
 		</Link>
 	);
 }

@@ -18,7 +18,7 @@ export default function About() {
 			/>
 			<TextSection
 				textSide="left"
-				textCols="5"
+				textCols="4"
 				graphicSrc="/assets/images/boatparty-22.jpg"
 				graphicAlt="Group photo of IEEE members on rocky hill island in the middle of a lake."
 			>

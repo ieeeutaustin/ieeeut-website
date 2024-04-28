@@ -4,11 +4,12 @@ import "@/styles/main.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 
-import { Sofia_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 
-const sofiaSans = Sofia_Sans({
-	subsets: ["latin"],
-	weight: ["100", "200", "300", "400", "500", "600", "700", "800"]
+const poppins = Poppins({
+	weight: ["400", "500", "600", "700", "800", "900"],
+	style: ["normal", "italic"],
+	variable: '--custom-font-poppins',
 });
 
 export const metadata = {
@@ -31,7 +32,7 @@ export default function RootLayout({
 				rel="shortcut icon"
 				href="./assets/images/branding/ieeeut-logo.jpg"
 			/>
-			<body className={sofiaSans.className}>
+			<body className={`${poppins.variable}`}>
 				<Navbar />
 				{children}
 				<Footer />

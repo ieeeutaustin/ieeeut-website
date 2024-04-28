@@ -4,20 +4,23 @@
 	display: inline-flex;
 	align-items: center;
 	padding: 10px 20px;
-	gap: 5px;
-	border-radius: 10px;
-	font-size: 18px;
+	gap: 7px;
+	border-radius: 50px;
+	font-size: 0.85rem;
+	font-weight: 600;
 	border: none;
 	background-color: $color-ieee-blue;
 	color: $color-white;
 	cursor: pointer;
 	text-decoration: none;
-	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
 	transition: 100ms ease-in-out;
+	text-transform: uppercase;
+	text-align: center;
+	height: min-content;
 
 	> img {
-		height: 18px;
-		margin-right: 5px;
+		height: 15px;
 		width: auto;
 	}
 
@@ -26,8 +29,7 @@
 	}
 
 	&:hover {
-		background-color: $color-ieee-blue-8;
-		color: $color-light-grey;
+		filter: brightness(0.75);
 	}
 
 	&.light {
@@ -41,19 +43,19 @@
 	}
 
 	&.outlined {
-		padding: 15px;
-		border-radius: 10px;
+		padding: 15px 25px;
 		border: 3px $color-white solid;
 		background-color: transparent;
-		font-size: 20px;
 
 		&:hover {
 			color: $color-black;
 			background-color: $color-white;
+			filter: none;
 		}
 
 		&.member {
 			white-space: nowrap;
+			font-size: 1rem;
 
 			> span {
 				color: $color-ieee-blue-light;
@@ -66,6 +68,7 @@
 
 		&.sponsor {
 			white-space: nowrap;
+			font-size: 1rem;
 
 			> span {
 				color: $color-ieee-purple-light;

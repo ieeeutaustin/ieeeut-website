@@ -9,24 +9,59 @@
 	flex-flow: column nowrap;
 	gap: 40px 0;
 	padding: 60px 0;
-	background-color: $color-white;
 
 	.events-container {
 		display: flex;
 		flex-wrap: wrap;
-		max-width: 1000px;
 		gap: 30px;
 		padding: 0 20px;
 		width: 100%;
 		box-sizing: border-box;
 		position: relative;
+		justify-content: center;
+		max-width: 1300px;
+	}
+
+	.events-section-background {
+		z-index: -1;
+
+		> .white-block {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $color-white;
+		}
+
+		> img {
+			object-fit: cover;
+			mix-blend-mode: overlay;
+		}
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
 	.events-section {
 		.events-container {
-			gap: 20px;
+			align-items: center;
+			flex-direction: column;
+
+			// .event-card {
+			// 	flex-direction: column;
+			// 	align-items: center;
+
+			// 	.event-content {
+			// 		text-align: center;
+	
+			// 		> div {
+			// 			margin-top: 10px;
+			// 			text-align: left;
+			// 			justify-content: center;
+			// 			gap: 20px;
+			// 		}
+			// 	}
+			// }
 		}
 	}
 }

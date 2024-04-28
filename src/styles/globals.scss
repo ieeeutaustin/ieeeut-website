@@ -9,10 +9,18 @@
 	background-color: #00b5e2;
 }
 
+html {
+	// scroll-behavior: smooth;
+	height: 100vh;
+}
+
 body {
 	display: block;
 	margin: 0;
 	padding: 0;
+	font-family: var(--custom-font-poppins);
+	background-color: #1F4053;
+	height: 100%;
 }
 
 h1 {
@@ -24,13 +32,16 @@ h1 {
 }
 
 h2 {
-	font-size: 42px;
+	font-size: 2.2rem;
+	font-weight: 700;
+	text-transform: uppercase;
 	margin: 0;
 	padding: 0;
 }
 
 h3 {
 	font-size: 32px;
+	font-weight: 600;
 	margin: 0;
 	padding: 0;
 }
@@ -51,7 +62,7 @@ p,
 a,
 i,
 b {
-	font-size: 22px;
+	font-size: 1rem;
 	font-weight: 400;
 	margin: 0;
 	padding: 0;

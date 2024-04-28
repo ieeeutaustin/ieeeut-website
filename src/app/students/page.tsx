@@ -18,7 +18,7 @@ export default function Students() {
 			/>
 			<TextSection
 				textSide="left"
-				textCols="5"
+				textCols="4"
 				graphicSrc="/assets/images/iceskating.jpg"
 				graphicAlt="IEEE and IEEE RAS group photo in the middle of an iceskating rink."
 			>
@@ -35,7 +35,7 @@ export default function Students() {
 			</TextSection>
 			<TextSection
 				textSide="right"
-				textCols="5"
+				textCols="4"
 				graphicSrc="/assets/images/students-row.jpg"
 				graphicAlt="IEEE students seated in a classroom row, smiling at the camera"
 			>
@@ -73,7 +73,7 @@ export default function Students() {
 			</TextSection>
 			<TextSection
 				textSide="left"
-				textCols="5"
+				textCols="4"
 				graphicSrc="/assets/images/officers-22.jpg"
 				graphicAlt="Group photo of IEEE officers of 2022-2023 in front of a classroom whiteboard"
 			>

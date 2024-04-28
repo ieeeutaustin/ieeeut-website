@@ -53,7 +53,7 @@ export default function TextSection({
 			className={
 				"text-section " +
 				textSide +
-				(textCols ? ` cols-${textCols}` : " cols-5")
+				(textCols ? ` cols-${textCols}` : " cols-4")
 			}
 		>
 			<GridContainer>

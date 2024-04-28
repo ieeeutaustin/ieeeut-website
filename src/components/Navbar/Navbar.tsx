@@ -1,11 +1,13 @@
 "use client";
 
 import "./Navbar.scss";
+
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import GridContainer from "@/components/GridContainer/GridContainer";
 import { usePathname } from "next/navigation";
+
+import GridContainer from "@/components/GridContainer/GridContainer";
 
 export default function Navbar() {
 	const [clientWindowHeight, setClientWindowHeight] = useState(0);
@@ -26,84 +28,96 @@ export default function Navbar() {
 		setOpened(false);
 	}, [pathname]);
 
+	const navbarLinks = [
+		{ title: "Home", link: "/", exact: true },
+		{ title: "Events", link: "/events" },
+		{
+			title: "Students",
+			link: "/students",
+			dropdown: [
+				{ title: "Merch", link: "/merch" },
+				{ title: "Officers", link: "/officers" },
+				{ title: "Membership", link: "/membership" },
+			],
+		},
+		{ title: "Corporate", link: "/corporate" },
+		{ title: "About", link: "/about" },
+	];
+
 	return (
 		<div className="navbar-container">
 			<div
 				className="navbar-background"
-				style={{ opacity: Math.min(100, clientWindowHeight) / 100 }}
+				style={{ opacity: Math.min(400, clientWindowHeight) / 400 }}
 			/>
 			<GridContainer className="navbar">
 				<div className="navbar-content">
-					<ul className="navbar-list">
-						<li className="navbar-list-logo">
-							<Link href="/">
-								<Image
-									src="/assets/images/branding/ieee-logo-white.png"
-									alt="IEEE Logo"
-									width={70}
-									height={70}
-								/>
-							</Link>
-						</li>
-						<ul
-							className={`navbar-links ${opened ? "opened" : ""}`}
-						>
-							<li>
-								<Link href="/">Home</Link>
-							</li>
-							<li>
-								<Link href="/events">Events</Link>
-							</li>
-							<li className="navbar-dropitem">
-								<Link href="/students">
-									Students
-									<Image
-										src="/assets/icons/arrow.svg"
-										alt=""
-										width={10}
-										height={10}
-									/>
-								</Link>
-								<ul className="navbar-dropdown">
-									<div className="dropdown-dash-separator" />
-									<li>
-										<Link href="/merch">Merch</Link>
-									</li>
-									<li>
-										<Link href="/officers">Officers</Link>
-									</li>
-									<li>
-										<Link href="/membership">
-											Membership
-										</Link>
-									</li>
-									<div className="dropdown-dash-separator" />
-								</ul>
-							</li>
-							<li>
-								<Link href="/corporate">Corporate</Link>
-							</li>
-							<li>
-								<Link href="/about">About</Link>
-							</li>
-							<li className="navbar-outlined">
-								<Link href="/join">Join</Link>
-							</li>
-						</ul>
-						<li
-							className={`navbar-menu-icon ${
-								opened ? "opened" : ""
-							}`}
-							onClick={() => {
-								setOpened(!opened);
-							}}
-						>
-							<span />
-							<span />
-							<span />
-							<span />
-						</li>
+					<Link href="/" className="navbar-logo">
+						<Image
+							src="/assets/images/branding/ieee-logo-white.png"
+							alt="IEEE Logo"
+							width={70}
+							height={70}
+						/>
+					</Link>
+					<ul className={`navbar-links ${opened ? "opened" : ""}`}>
+						{navbarLinks.map((link, index) => (
+							link.dropdown && link.dropdown.length > 0 ? (
+								<li key={index} className={`navbar-dropitem ${pathname.startsWith(link.link) && 'active'}`}>
+									<Link href={link.link}>
+										{link.title}
+										<Image
+											src="/assets/icons/arrow.svg"
+											alt=""
+											width={10}
+											height={10}
+										/>
+									</Link>
+				
+									<ul className="navbar-dropdown" 
+										style={{ 
+											borderRadius: `${10 * (1 - Math.min(400, clientWindowHeight) / 400)}px ${10 * (1 - Math.min(400, clientWindowHeight) / 400)}px 10px 10px`
+										}}>
+										<div className="dropdown-dash-separator" />
+										{link.dropdown.map((dropdownLink, dropdownIndex) => (
+											<li key={dropdownIndex} className={pathname.startsWith(dropdownLink.link) ? 'active' : ''}>
+												<Link href={dropdownLink.link}>
+													{dropdownLink.title}
+												</Link>
+											</li>
+										))}
+										<div className="dropdown-dash-separator" />
+									</ul>
+								</li>
+							) : (
+								<li key={index} className={(link.exact && pathname === link.link || !link.exact && pathname.startsWith(link.link)) ? 'active' : ''}>
+									<Link href={link.link}>{link.title}</Link>
+								</li>
+							)
+						))}
 					</ul>
+					<Link href="/links" className="navbar-socials">
+						Socials
+						<Image
+							src="/assets/icons/rightarrow.svg"
+							alt=""
+							width={13}
+							height={13}
+						/>
+					</Link>
+					<div
+						className={`navbar-menu-icon ${
+							opened ? "opened" : ""
+						}`}
+						onClick={() => {
+							setOpened(!opened);
+						}}
+					>
+						<span />
+						<span />
+						<span />
+						<span />
+					</div>
 				</div>
 			</GridContainer>
 		</div>
