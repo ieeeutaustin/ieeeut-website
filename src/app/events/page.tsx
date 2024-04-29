@@ -10,7 +10,7 @@ export default function Home() {
 		<>
 			<HeaderSection
 				title="Events"
-				desc="Check out some upcoming and past events we are hosting! Make sure to RSVP!"
+				desc="Check out some of our upcoming and past events! Make sure to RSVP to get some food!"
 				image="/assets/images/iceskating.jpg"
 				imageAlt="IEEE and IEEE RAS group photo in the middle of an iceskating rink."
 			/>

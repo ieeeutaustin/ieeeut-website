@@ -35,7 +35,7 @@ export default function Membership() {
 					<b>one-time fee of $10</b>! Swing by our office (EER 0.822)
 					if you&apos;re interested!
 				</p>
-				<Button name="Join IEEE UT" link="/join" />
+				<Button name="Join IEEE" link="/join" />
 			</TextSection>
 			<TextSection
 				textSide="right"
@@ -55,7 +55,7 @@ export default function Membership() {
 					All of this comes at a one-time cost of $10. And no, your
 					member status will never expire!
 				</p>
-				<Button name="Join IEEE UT" link="/join" />
+				<Button name="Join IEEE" link="/join" />
 			</TextSection>
 			<div id="perks">
 				<TextSection
@@ -75,33 +75,6 @@ export default function Membership() {
 						can also get more merch by attending events and filling
 						out your punch card described below!
 					</p>
-					<h3 id="punch-card">Punch Card</h3>
-					<p>
-						Every meeting you attend, you get a hole punch in your
-						card. You get free stickers, beanies, totes, and
-						sweatshirts with punches!
-					</p>
-					<div className="flex no-wrap">
-						<p className="ml-6">
-							2 punches
-							<br />5 punches
-							<br />7 punches
-							<br />
-							10 punches
-						</p>
-						<p>
-							→<br />→<br />→<br />→
-						</p>
-						<p>
-							Sticker
-							<br />
-							Beanie
-							<br />
-							Tote bag
-							<br />
-							Sweatshirt
-						</p>
-					</div>
 				</TextSection>
 			</div>
 			<FlexSection>

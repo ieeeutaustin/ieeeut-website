@@ -43,13 +43,8 @@ export default function Merch() {
 			>
 				<h2>Free Member Merch</h2>
 				<p>
-					All of our confirmed members get a free member t-shirt! Each
-					year we try to come up with a new design.
-				</p>
-				<p>
-					You can also get a sweatshirt, tote bag, beanie, and
-					stickers by attending our meetings and filling out your{" "}
-					<Link href={"/membership#punch-card"}>punch card</Link>!
+					All of our new members get a free member t-shirt! Each
+					year we come up with a new design!
 				</p>
 				<Button name="Become a Member" link="/membership" />
 			</TextSection>

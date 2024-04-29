@@ -29,7 +29,7 @@ export default function Students() {
 					<b>free</b> to UT Students! (Just make sure to RSVP)
 				</p>
 				<div>
-					<Button name="Join" link="/join" />
+					<Button name="Join IEEE" link="/join" />
 					<Button name="Events" link="/events" />
 				</div>
 			</TextSection>
