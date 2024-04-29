@@ -4,7 +4,15 @@
 
 import { getShortURL } from "./shortURLs";
 
-const events: any = [
+const events: {
+	title?: string,
+	desc?: string,
+	date: string,
+	time?: string,
+	room?: string,
+	image?: string,
+	rsvp?: string
+}[] = [
 	{
 		title: "First General Meeting",
 		desc: "Learn about IEEE and how you can become a member (or an assistant officer 👀)! RSVP for some free food!",
@@ -301,7 +309,7 @@ export function getEvents() {
 		eventDate.setHours(19);
 
 		if (eventDate < currentDate) {
-			events[i].rsvp = null;
+			events[i].rsvp = undefined;
 		}
 	}
 

@@ -2,7 +2,7 @@ import "./OfficerCard.scss";
 import Image from "next/image";
 
 export default function OfficerCard(props: any) {
-	let imageHoverSrc = props.imageHover;
+	let imageHoverSrc = props?.imageHover;
 
 	// Random hover image
 	if (imageHoverSrc && Array.isArray(imageHoverSrc)) {
@@ -16,7 +16,7 @@ export default function OfficerCard(props: any) {
 				<div className="officer-card-image-wrapper">
 					<Image
 						className="officer-card-image"
-						src={"/assets/images/headshots/" + props.image}
+						src={"/assets/images/headshots/" + (props.image || "default.jpg")}
 						alt=""
 						width={150}
 						height={150}
