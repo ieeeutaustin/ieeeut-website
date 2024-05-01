@@ -164,13 +164,30 @@ export default function ShortURLTable() {
         setOrderBy(property);
     };
 
-    const handleSave = (index: number) => {
+    const handleSave = async (row: ShortURL, index: number) => {
 
-        // setSelectedRow(-1);
+        const updatedRow = {
+            name: row.name,
+            url: document.getElementById(`shorturl-table-row-${index}-url`)?.textContent,
+            visits: row.visits,
+            dateCreated: row.dateCreated,
+        };
+        
+        await fetch('/api/shorturls', {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(updatedRow),
+        });
+        await mutate();
+
+        setSelectedRow(-1);
     };
 
     const handleCancel = (index: number) => {
-
+        
+        setRows(data);
         setSelectedRow(-1);
     };
 
@@ -179,10 +196,40 @@ export default function ShortURLTable() {
         setSelectedRow(index);
     };
 
-    const handleDelete = (index: number) => {
+    const handleDelete = async (row: ShortURL) => {
 
-        // setSelectedRow(-1);
+        await fetch(`/api/shorturls?name=${row.name}`, {
+            method: 'DELETE',
+        });
+        await mutate();
+
+        setSelectedRow(-1);
     };
+
+    const handleCreate = async () => {
+
+        const newRow = {
+            name: document.getElementById('shorturl-table-add-name')?.textContent,
+            url: document.getElementById('shorturl-table-add-url')?.textContent,
+            visits: parseInt(document.getElementById('shorturl-table-add-visits')?.textContent),
+            dateCreated: document.getElementById('shorturl-table-add-date')?.textContent,
+        };
+
+        await fetch('/api/shorturls', {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(newRow),
+        });
+
+        await mutate();
+
+        document.getElementById('shorturl-table-add-name')!.textContent = '';
+        document.getElementById('shorturl-table-add-url')!.textContent = '';
+        document.getElementById('shorturl-table-add-visits')!.textContent = '';
+        document.getElementById('shorturl-table-add-date')!.textContent = '';
+    }
 
     return (
         <Sheet
@@ -229,7 +276,6 @@ export default function ShortURLTable() {
                 <tbody>
                     {rows.slice().sort(getComparator(order, orderBy))
                         .map((row, index) => {
-                            const labelId = `enhanced-table-checkbox-${index}`;
                             const selected = index === selectedRow;
 
                             return (
@@ -244,10 +290,10 @@ export default function ShortURLTable() {
                                           : {}
                                       }
                                 >
-                                    <td id={labelId} scope="row" contentEditable={selected && 'true'}>
+                                    <td>
                                         {row.name}
                                     </td>
-                                    <td contentEditable={selected && 'true'}>
+                                    <td id={`shorturl-table-row-${index}-url`} contentEditable={selected && 'true'}>
                                         {row.url}
                                     </td>
                                     <td>{row.visits}</td>
@@ -259,7 +305,7 @@ export default function ShortURLTable() {
                                                     size="sm" 
                                                     variant="soft"
                                                     color="success"
-                                                    onClick={(event) => handleSave(index)}
+                                                    onClick={() => handleSave(row, index)}
                                                 >
                                                     Save
                                                 </Button>
@@ -267,7 +313,7 @@ export default function ShortURLTable() {
                                                     size="sm" 
                                                     variant="plain"
                                                     color="neutral"
-                                                    onClick={(event) => handleCancel(index)}
+                                                    onClick={() => handleCancel(index)}
                                                 >
                                                     Cancel
                                                 </Button>
@@ -276,7 +322,7 @@ export default function ShortURLTable() {
                                                     size="sm" 
                                                     variant="plain"
                                                     color="neutral"
-                                                    onClick={(event) => handleEdit(index)}
+                                                    onClick={() => handleEdit(index)}
                                                 >
                                                     Edit
                                                 </Button>
@@ -284,7 +330,7 @@ export default function ShortURLTable() {
                                                     size="sm" 
                                                     variant="soft"
                                                     color="danger"
-                                                    onClick={(event) => handleDelete(index)}
+                                                    onClick={() => handleDelete(row)}
                                                 >
                                                     Delete
                                                 </Button>
@@ -295,11 +341,20 @@ export default function ShortURLTable() {
                             );
                         })}
                     <tr>
-                        <td colSpan={5}>
+                        <td contentEditable={true} id="shorturl-table-add-name" style={{borderBottom: '1px solid #000'}}></td>
+                        <td contentEditable={true} id="shorturl-table-add-url" style={{borderBottom: '1px solid #000'}}></td>
+                        <td contentEditable={true} id="shorturl-table-add-visits" style={{borderBottom: '1px solid #000'}}></td>
+                        <td contentEditable={true} id="shorturl-table-add-date" style={{borderBottom: '1px solid #000'}}></td>
+                        <td style={{
+                            display: 'flex',
+                            justifyContent: 'flex-end',
+                            gap: 1
+                        }}>
                             <Button 
                                 size="sm" 
                                 variant="soft"
-                                color="primary"
+                                color="success"
+                                onClick={handleCreate}
                             >
                                 Add
                             </Button>

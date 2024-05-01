@@ -14,13 +14,26 @@ export const getShortURL = async (name: string): Promise<ShortURL | null> => {
     const params = {
         TableName: 'ShortURLs',
         Key: {
-            name: name,
+            name: name.toLowerCase(),
+        }
+    };
+
+    const updateParams = {
+        TableName: 'ShortURLs',
+        Key: {
+            name: name.toLowerCase(),
         },
+        UpdateExpression: 'set visits = visits + :inc',
+        ExpressionAttributeValues: {
+            ':inc': 1
+        }
     };
 
     try {
 
         const data = await db.get(params).promise();
+
+        db.update(updateParams).promise();
 
         return data.Item as ShortURL;
 
@@ -74,6 +87,27 @@ export const putShortURL = async (shortURL: ShortURL): Promise<void> => {
         return Promise.resolve();
     } catch (err) {
         console.error('Error putting short URL:', err);
+
+        return Promise.reject();
+    }
+};
+
+// Delete ShortURL
+export const deleteShortURL = async (name: string): Promise<void> => {
+
+    const params = {
+        TableName: 'ShortURLs',
+        Key: {
+            name: name,
+        },
+    };
+
+    try {
+        await db.delete(params).promise();
+
+        return Promise.resolve();
+    } catch (err) {
+        console.error('Error deleting short URL:', err);
 
         return Promise.reject();
     }
