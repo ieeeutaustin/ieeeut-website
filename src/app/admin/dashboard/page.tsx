@@ -6,6 +6,7 @@ export const metadata = {
 };
 
 export default async function Dashboard() {
+
 	await loginIsRequiredServer();
 
 	return (

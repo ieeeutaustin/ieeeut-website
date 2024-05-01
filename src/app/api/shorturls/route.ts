@@ -1,4 +1,6 @@
 import { putShortURL, getShortURL, getAll, deleteShortURL } from "@/database/shortURLs";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/lib/auth";
 
 export async function GET(request : Request) {
 
@@ -30,13 +32,13 @@ export async function PUT(request : Request) : Promise<Response> {
     shortURL.name = shortURL.name.toLowerCase();
 
     try {
-        await putShortURL(shortURL);
+        const res = await putShortURL(shortURL);
 
-        return Response.json({ status: 200 });
+        return Response.json(res);
     } catch (err) {
         console.error('Error creating short URL:', err);
 
-        return Response.json({ status: 500 });
+        return Response.json(err);
     }
 }
 

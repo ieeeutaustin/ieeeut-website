@@ -180,6 +180,7 @@ export default function ShortURLTable() {
             },
             body: JSON.stringify(updatedRow),
         });
+        
         await mutate();
 
         setSelectedRow(-1);
@@ -208,9 +209,14 @@ export default function ShortURLTable() {
 
     const handleCreate = async () => {
 
+        const name = document.getElementById('shorturl-table-add-name')?.textContent;
+        const url = document.getElementById('shorturl-table-add-url')?.textContent;
+
+        if (!name || !url) return;
+
         const newRow = {
-            name: document.getElementById('shorturl-table-add-name')?.textContent,
-            url: document.getElementById('shorturl-table-add-url')?.textContent
+            name: name,
+            url: url
         };
 
         await fetch('/api/shorturls', {

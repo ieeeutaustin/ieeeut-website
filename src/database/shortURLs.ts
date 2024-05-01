@@ -1,4 +1,6 @@
 import { db } from './config';
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/lib/auth";
 
 // ShortURL type
 export interface ShortURL {
@@ -52,7 +54,6 @@ export const getAll = async (): Promise<ShortURL[] | null> => {
     };
 
     try {
-
         const data = await db.scan(params).promise();
 
         return data.Items as ShortURL[];
@@ -65,17 +66,16 @@ export const getAll = async (): Promise<ShortURL[] | null> => {
 };
 
 // Create or Update ShortURL
-export const putShortURL = async (shortURL: ShortURL): Promise<void> => {
+export const putShortURL = async (shortURL: ShortURL): Promise<number> => {
+
+    const session = await getServerSession(authOptions);
+
+    if (!session) return Promise.reject(401);
 
     // Default values
-    if (!shortURL.dateCreated) {
-        shortURL.dateCreated = new Date().toISOString();
-    }
-
-    if (!shortURL.visits) {
-        shortURL.visits = 0;
-    }
-
+    if (!shortURL.dateCreated) shortURL.dateCreated = new Date().toISOString();
+    if (!shortURL.visits) shortURL.visits = 0;
+    
     const params = {
         TableName: 'ShortURLs',
         Item: shortURL,
@@ -84,16 +84,20 @@ export const putShortURL = async (shortURL: ShortURL): Promise<void> => {
     try {
         await db.put(params).promise();
 
-        return Promise.resolve();
+        return Promise.resolve(201);
     } catch (err) {
         console.error('Error putting short URL:', err);
 
-        return Promise.reject();
+        return Promise.reject(500);
     }
 };
 
 // Delete ShortURL
-export const deleteShortURL = async (name: string): Promise<void> => {
+export const deleteShortURL = async (name: string): Promise<number> => {
+
+    const session = await getServerSession(authOptions);
+
+    if (!session) return Promise.reject(401);
 
     const params = {
         TableName: 'ShortURLs',
@@ -105,10 +109,10 @@ export const deleteShortURL = async (name: string): Promise<void> => {
     try {
         await db.delete(params).promise();
 
-        return Promise.resolve();
+        return Promise.resolve(204);
     } catch (err) {
         console.error('Error deleting short URL:', err);
 
-        return Promise.reject();
+        return Promise.reject(500);
     }
 };
