@@ -1,19 +1,24 @@
-import HeaderSection from "@/components/HeaderSection/HeaderSection";
-import AdminDashboard from "@/components/AdminDashboard/AdminDashboard";
+import { redirect } from "next/navigation";
+import { getServerSession } from "next-auth";
+
+import { GoogleSignInButton } from "@/components/AuthButtons/AuthButtons";
+import { authOptions } from "@/lib/auth";
 
 export const metadata = {
 	title: "Admin | IEEE UT"
 };
 
-export default function Admin() {
+export default async function Admin(props: any) {
+    const session = await getServerSession(authOptions);
+
+    console.log("Session: ", session);
+  
+    if (session) return redirect("/admin/dashboard");  
+
 	return (
-		<>
-			<HeaderSection
-				title="Admin"
-				// image="/assets/images/yoga-2.jpg"
-				// imageAlt="Dr. Yerraballi talks with a small group of students around him"
-			/>
-			<AdminDashboard />
-		</>
+		<div className="flex flex-col bg-white items-center py-[60px]">
+			<h2 className="mb-5">Sign in</h2>
+            <GoogleSignInButton />
+        </div>
 	);
 }

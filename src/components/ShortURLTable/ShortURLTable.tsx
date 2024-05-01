@@ -210,9 +210,7 @@ export default function ShortURLTable() {
 
         const newRow = {
             name: document.getElementById('shorturl-table-add-name')?.textContent,
-            url: document.getElementById('shorturl-table-add-url')?.textContent,
-            visits: parseInt(document.getElementById('shorturl-table-add-visits')?.textContent),
-            dateCreated: document.getElementById('shorturl-table-add-date')?.textContent,
+            url: document.getElementById('shorturl-table-add-url')?.textContent
         };
 
         await fetch('/api/shorturls', {
@@ -227,8 +225,6 @@ export default function ShortURLTable() {
 
         document.getElementById('shorturl-table-add-name')!.textContent = '';
         document.getElementById('shorturl-table-add-url')!.textContent = '';
-        document.getElementById('shorturl-table-add-visits')!.textContent = '';
-        document.getElementById('shorturl-table-add-date')!.textContent = '';
     }
 
     return (
@@ -343,8 +339,8 @@ export default function ShortURLTable() {
                     <tr>
                         <td contentEditable={true} id="shorturl-table-add-name" style={{borderBottom: '1px solid #000'}}></td>
                         <td contentEditable={true} id="shorturl-table-add-url" style={{borderBottom: '1px solid #000'}}></td>
-                        <td contentEditable={true} id="shorturl-table-add-visits" style={{borderBottom: '1px solid #000'}}></td>
-                        <td contentEditable={true} id="shorturl-table-add-date" style={{borderBottom: '1px solid #000'}}></td>
+                        <td></td>
+                        <td></td>
                         <td style={{
                             display: 'flex',
                             justifyContent: 'flex-end',

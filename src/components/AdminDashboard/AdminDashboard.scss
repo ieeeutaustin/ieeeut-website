@@ -21,7 +21,7 @@
         flex-direction: column;
         gap: 10px;
 
-        > button {
+        > button:not(.MuiButton-root) {
             padding: 10px 20px;
             background-color: $color-light-grey;
             border-radius: 5px;
@@ -37,6 +37,8 @@
                 color: $color-white;
             }
         }
+
+
     }
 
     .dashboard-content {
