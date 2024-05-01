@@ -1,5 +1,5 @@
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
-import ShortURlTable from "@/components/ShortURLTable/ShortURLTable";
+import AdminDashboard from "@/components/AdminDashboard/AdminDashboard";
 
 export const metadata = {
 	title: "Admin | IEEE UT"
@@ -13,7 +13,7 @@ export default function Admin() {
 				// image="/assets/images/yoga-2.jpg"
 				// imageAlt="Dr. Yerraballi talks with a small group of students around him"
 			/>
-			<ShortURlTable />
+			<AdminDashboard />
 		</>
 	);
 }
