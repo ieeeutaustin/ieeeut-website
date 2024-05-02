@@ -1,6 +1,4 @@
 import { putShortURL, getShortURL, getAll, deleteShortURL } from "@/database/shortURLs";
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/lib/auth";
 
 export async function GET(request : Request) {
 

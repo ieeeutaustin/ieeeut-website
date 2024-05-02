@@ -10,7 +10,6 @@ import FileUploadIcon from '@mui/icons-material/FileUpload';
 
 export default function EventCard(props: any) {
 
-	const admin: boolean = props.admin === true;
 	const event = props.event;
 	let formattedDate = "";
 
@@ -25,7 +24,7 @@ export default function EventCard(props: any) {
 	}
 
 	return (
-		<div className={"event-card " + (admin ? "admin" : "")}>
+		<div className="event-card">
 			<div>
 				<Image
 					className="event-image"
@@ -35,52 +34,21 @@ export default function EventCard(props: any) {
 					height={200}
 				/>
 				<div className="event-content">
-					<h3 contentEditable={admin ? 'true' : 'false'}>{event.title || "No title"}</h3>
-					<p contentEditable={admin ? 'true' : 'false'}>{event.desc}</p>
+					<h3>{event.title || "No title"}</h3>
+					<p>{event.desc}</p>
 					<div className="event-details">
 						<div className="event-time-loc">
-							<p contentEditable={admin ? 'true' : 'false'}>{formattedDate}</p>
+							<p>{formattedDate}</p>
 							<div className="flex gap-1 flex-wrap">
-								<p contentEditable={admin ? 'true' : 'false'}>{event.time || (admin && "No Time")}</p>
-								<p>{(admin || event.room) && `@`}</p>
-								<p contentEditable={admin ? 'true' : 'false'}>{(admin || event.room) && `${event.room || 'No Room'}`}</p>
+								<p>{event.time}</p>
+								<p>{event.room && `@`}</p>
+								<p>{event.room}</p>
 							</div>
 						</div>
 						{event.rsvp && <Button link={event.rsvp} name="RSVP" type="dark" icon="/assets/icons/calendar-white.svg" newWindow={true}/>}
 					</div>
 				</div>
 			</div>
-			{ admin && <div className="event-admin">
-				<ButtonJoy 
-					size="sm" 
-					variant="soft"
-					color="primary"
-				>
-					Edit Text
-				</ButtonJoy>
-				<ButtonJoy 
-					size="sm" 
-					variant="soft"
-					color="primary"
-				>
-					Edit RSVP URL
-				</ButtonJoy>
-				<ButtonJoy 
-					size="sm" 
-					variant="soft"
-					color="success"
-					startDecorator={<FileUploadIcon />}
-				>
-					New Image
-				</ButtonJoy>
-				<IconButton 
-					size="sm" 
-					variant="soft"
-					color="danger"
-				>
-					<DeleteIcon />
-				</IconButton>
-			</div>}
 		</div>
 	);
 }

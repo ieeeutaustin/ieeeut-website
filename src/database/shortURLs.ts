@@ -13,6 +13,8 @@ export interface ShortURL {
 // Get ShortURL by name
 export const getShortURL = async (name: string): Promise<ShortURL | null> => {
 
+    console.log('Getting short URL:', name);
+
     const params = {
         TableName: 'ShortURLs',
         Key: {
@@ -48,6 +50,8 @@ export const getShortURL = async (name: string): Promise<ShortURL | null> => {
 
 // Get ShortURL by name
 export const getAll = async (): Promise<ShortURL[] | null> => {
+
+    console.log('Getting all short URLs');
 
     const params = {
         TableName: 'ShortURLs',

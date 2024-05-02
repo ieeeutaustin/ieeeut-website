@@ -18,12 +18,10 @@ export async function loginIsRequiredServer() {
     if (!session) return redirect("/admin");
 }
 
-export function loginIsRequiredClient() {
-    if (typeof window !== "undefined") {
-        const session = useSession();
-        const router = useRouter();
-        if (!session) router.push("/admin");
-    }
+export async function useLoginRequiredClient() {
+    const session = useSession();
+    const router = useRouter();
+    if (!session) router.push("/admin");
 }
 
 export default NextAuth(authOptions);

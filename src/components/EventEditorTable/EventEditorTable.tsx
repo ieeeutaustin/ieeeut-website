@@ -1,9 +1,9 @@
-import EventsSection from "../EventsSection/EventsSection";
+import EventEditorSection from "../EventEditorSection/EventEditorSection";
 
 export default function EventEditorTable (props: any) {
     return (
-        <div>
-            <EventsSection full={true} admin={true}/>
-        </div>
+        <>
+            <EventEditorSection full={true}/>
+        </>
     );
 }

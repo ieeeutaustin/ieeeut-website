@@ -1,5 +1,7 @@
+import { withUt } from "uploadthing/tw";
+ 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+module.exports = withUt({
 	content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
 	theme: {
 		extend: {}
@@ -8,4 +10,4 @@ module.exports = {
 	corePlugins: {
 		preflight: false
 	}
-};
+});
