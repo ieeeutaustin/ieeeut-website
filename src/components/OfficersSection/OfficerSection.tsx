@@ -20,7 +20,8 @@ export default function OfficerSection(props: any) {
 			name: "Aaron Sulbaran",
 			position: "Corporate Director",
 			email: "corporate@ieeeut.org",
-			image: "Aaron.jpg"
+			image: "Aaron.jpg",
+			imageHover: "PolaroidOverlay.png",
 		},
 		{
 			name: "Joaquin Escobar",
@@ -33,35 +34,38 @@ export default function OfficerSection(props: any) {
 			name: "Ayesha Haider",
 			position: "Corporate Liaison",
 			email: "liasion@ieeeut.org",
-			image: "Ayesha.jpeg"
+			image: "Ayesha.jpeg",
 		},
 		{
 			name: "Amina Meddad",
 			position: "Membership and Resources Director",
 			email: "mr@ieeeut.org",
-			image: "Amina.jpg"
+			image: "Amina.jpg",
 		},
 		{
 			name: "Anneke Anderson",
 			position: "Internal Activities and Events Director",
 			email: "internal.ae@ieeeut.org",
-			image: "Anneke.jpg"
+			image: "Anneke.jpg",
 		},
 		{
 			name: "Brianna Dickenson",
 			position: "External Activities and Events Director",
 			email: "external.ae@ieeeut.org",
+			image: "Brianna.jpg",
 		},
 		{
 			name: "Emily Han",
 			position: "Communications Director",
 			email: "comms@ieeeut.org",
-			image: "Emily.jpg"
+			image: "Emily.jpg",
 		},
 		{
 			name: "Hannah Nguyen",
 			position: "Communications Director",
 			email: "comms@ieeeut.org",
+			image: "Hannah.jpg",
+			imageHover: "PolaroidOverlay.png",
 		},
 		{
 			position: "Communications Assistant Director",
@@ -83,6 +87,7 @@ export default function OfficerSection(props: any) {
 			name: "Nicklas Di Tirro",
 			position: "Internal Activites and Events Assistant Director",
 			email: "internal.ae@ieeeut.org",
+			image: "Nicklas.jpg",
 		},
 		{
 			position: "Internal Activites and Events Assistant Director",
