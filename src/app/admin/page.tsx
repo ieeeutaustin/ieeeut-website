@@ -10,8 +10,6 @@ export const metadata = {
 
 export default async function Admin(props: any) {
     const session = await getServerSession(authOptions);
-
-    console.log("Session: ", session);
   
     if (session) return redirect("/admin/dashboard");  
 

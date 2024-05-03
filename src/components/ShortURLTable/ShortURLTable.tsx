@@ -23,12 +23,12 @@ function descendingComparator<T>(a: T, b: T, orderBy: keyof T) {
 
 type Order = 'asc' | 'desc';
 
-function getComparator<Key extends keyof any>(
+function getComparator<Key extends keyof ShortURL>(
     order: Order,
     orderBy: Key,
 ): (
-    a: { [key in Key]: number | string | Date },
-    b: { [key in Key]: number | string | Date },
+    a: ShortURL,
+    b: ShortURL,
 ) => number {
     return order === 'desc'
         ? (a, b) => descendingComparator(a, b, orderBy)

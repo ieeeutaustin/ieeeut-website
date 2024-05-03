@@ -17,8 +17,8 @@ export default function Officers() {
 			<TextSection textSide="center" textCols="5">
 				<h2>Meet the 24-25 Officers</h2>
 				<p>
-					These are our lovely IEEE UT officers for the 23-24
-					semesters.
+					These are our lovely IEEE UT officers for the 24-25
+					school year.
 				</p>
 				<i>
 					Assistant officer applications for the 24-25 school year will open during the first week of the Fall 2024 semester.
