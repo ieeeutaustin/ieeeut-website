@@ -204,12 +204,11 @@ export default function EventEditorCard(props: any) {
 
 		if (!window.confirm("Are you sure you want to delete this event?")) return;
 
-		await fetch("/api/events", {
+		await fetch(`/api/events/${event.id}`, {
 			method: "DELETE",
 			headers: {
 				"Content-Type": "application/json",
 			},
-			body: JSON.stringify({ id: event.id }),
 		});
 
 		await props.mutate();

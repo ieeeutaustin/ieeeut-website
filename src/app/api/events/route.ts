@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getAll, putEvent, deleteEvent, Event } from "@/database/events";
+import { getAll, putEvent, Event } from "@/database/events";
 
 export async function GET(request : Request) : Promise<NextResponse>{
     try {
@@ -26,22 +26,6 @@ export async function PUT(request : Request) : Promise<NextResponse> {
         return NextResponse.json(res);
     } catch (err) {
         console.error('Error creating event:', err);
-
-        return NextResponse.json(err);
-    }
-}
-
-export async function DELETE(request : Request) : Promise<NextResponse> {
-    const { id } = await request.json();
-
-    if (!id) return NextResponse.json({ status: 400 });
-
-    try {
-        await deleteEvent(id);
-
-        return NextResponse.json({ status: 200 });
-    } catch (err) {
-        console.error('Error deleting event:', err);
 
         return NextResponse.json(err);
     }
