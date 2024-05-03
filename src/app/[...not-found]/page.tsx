@@ -1,10 +1,25 @@
 "use client";
+
 import React, { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect } from "react";
+
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
-import { getShortURL } from "@/utils/shortURLs";
 import { getURL } from "@/utils/socials";
+
+async function getShortURL(name: string) {
+
+	const response = await fetch(`/api/shorturls/${name}`, {
+		method: "GET",
+		headers: {
+			"Content-Type": "application/json",
+		},
+	});
+
+	const data = await response.json();
+
+	return data.url;
+}
 
 export default function NotFound() {
 	const [redirecting, setRedirecting] = useState(true);
@@ -12,12 +27,14 @@ export default function NotFound() {
 	const pathname = usePathname();
 
 	useEffect(() => {
-		const parsedPathname = pathname.split("/")[1].toLowerCase();
-		const url = getShortURL(parsedPathname) || getURL(parsedPathname);
-
-		if (url) {
-			router.replace(url);
-		} else setRedirecting(false);
+		(async function checkShortURL() {
+			const parsedPathname = pathname.split("/")[1].toLowerCase();
+			const destinationURL = await getShortURL(parsedPathname) || getURL(parsedPathname);
+	
+			if (destinationURL) {
+				router.replace(destinationURL);
+			} else setRedirecting(false);
+		})();
 	}, [pathname, router]);
 
 	return (

@@ -20,19 +20,28 @@ export default function EventCard(props: any) {
 
 	return (
 		<div className="event-card">
-			<Image
-				className="event-image"
-				src={event.image || "/assets/images/flyers/default.jpg"	}
-				alt=""
-				width={200}
-				height={200}
-			/>
-			<div className="event-content">
-				<h3>{event.title || "No title"}</h3>
-				<p>{event.desc}</p>
-				<div>
-					<p><span>{formattedDate}</span><br />{event.time}{event.room && ` @ ${event.room}`}</p>
-					{event.rsvp && <Button link={event.rsvp} name="RSVP" type="dark" icon="/assets/icons/calendar-white.svg" newWindow={true}/>}
+			<div>
+				<Image
+					className="event-image"
+					src={event.image || "/assets/images/flyers/default.jpg"	}
+					alt=""
+					width={200}
+					height={200}
+				/>
+				<div className="event-content">
+					<h3>{event.title || "No title"}</h3>
+					<p>{event.description}</p>
+					<div className="event-details">
+						<div className="event-time-loc">
+							<p>{formattedDate}</p>
+							<div className="flex gap-1 flex-wrap">
+								<p>{event.time}</p>
+								<p>{event.room && `@`}</p>
+								<p>{event.room}</p>
+							</div>
+						</div>
+						{event.rsvp && <Button link={event.rsvp} name="RSVP" type="dark" icon="/assets/icons/calendar-white.svg" newWindow={true}/>}
+					</div>
 				</div>
 			</div>
 		</div>

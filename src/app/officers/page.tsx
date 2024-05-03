@@ -15,14 +15,13 @@ export default function Officers() {
 				imageAlt="Group photo of IEEE officers of 2022-2023 in an iceskating rink"
 			/>
 			<TextSection textSide="center" textCols="5">
-				<h2>Meet the 23-24 Officers</h2>
+				<h2>Meet the 24-25 Officers</h2>
 				<p>
-					These are our lovely IEEE UT officers for the 23-24
-					semesters.
+					These are our lovely IEEE UT officers for the 24-25
+					school year.
 				</p>
 				<i>
-					Assistant officer applications are now closed for the
-					2023-2024 school year.
+					Assistant officer applications for the 24-25 school year will open during the first week of the Fall 2024 semester.
 				</i>
 			</TextSection>
 			<OfficerSection />

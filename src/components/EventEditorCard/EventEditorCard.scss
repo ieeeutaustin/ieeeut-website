@@ -1,0 +1,67 @@
+@import "../../styles/colors.scss";
+
+.event-card.admin {
+
+    .event-content {
+
+        gap: 5px;
+
+        textarea, input {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            resize: none;
+            font-family: 'Poppins', sans-serif;
+
+            &.h3 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin: 0;
+                padding: 0;
+            }
+
+            &.p {
+                max-width: 400px;
+                font-weight: 200;
+                font-size: 0.9rem;
+            }
+        }
+
+        .event-time-loc {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+
+    .event-admin {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+
+        .event-buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .event-buttons-details {
+            display: flex;
+            gap: 10px;
+
+            .rsvp-url-button {
+                padding: 10px;
+                box-sizing: border-box;
+                flex-grow: 1;
+            }
+
+            form {
+                flex-grow: 1;
+            }
+        }
+    }
+}
