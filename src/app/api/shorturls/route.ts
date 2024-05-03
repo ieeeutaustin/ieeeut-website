@@ -2,23 +2,11 @@ import { putShortURL, getShortURL, getAll, deleteShortURL } from "@/database/sho
 
 export async function GET(request : Request) {
 
-    const { searchParams } = new URL(request.url);
-    const name = searchParams.get('name');
+    const shortURLs = await getAll();
 
-    if (!name) {
-        const shortURLs = await getAll();
+    if (!shortURLs) return Response.json({ status: 404 });
 
-        if (!shortURLs) return Response.json({ status: 404 });
-
-        return Response.json(shortURLs);
-    } else {
-        
-        const destinationURL = await getShortURL(name);
-
-        if (!destinationURL) return Response.json({ status: 404 });
-    
-        return Response.json(destinationURL);
-    }
+    return Response.json(shortURLs);
 }
 
 export async function PUT(request : Request) : Promise<Response> {
@@ -37,23 +25,5 @@ export async function PUT(request : Request) : Promise<Response> {
         console.error('Error creating short URL:', err);
 
         return Response.json(err);
-    }
-}
-
-export async function DELETE(request : Request) : Promise<Response> {
-
-    const { searchParams } = new URL(request.url);
-    const name = searchParams.get('name');
-
-    if (!name) return Response.json({ status: 400 });
-
-    try {
-        await deleteShortURL(name);
-
-        return Response.json({ status: 200 });
-    } catch (err) {
-        console.error('Error deleting short URL:', err);
-
-        return Response.json({ status: 500 });
     }
 }

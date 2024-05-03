@@ -2,11 +2,6 @@ import "./EventsCard.scss";
 
 import Image from "next/image";
 import Button from "../Button/Button";
-import ButtonJoy from '@mui/joy/Button';
-import IconButton from '@mui/joy/IconButton';
-
-import DeleteIcon from '@mui/icons-material/Delete';
-import FileUploadIcon from '@mui/icons-material/FileUpload';
 
 export default function EventCard(props: any) {
 
@@ -35,7 +30,7 @@ export default function EventCard(props: any) {
 				/>
 				<div className="event-content">
 					<h3>{event.title || "No title"}</h3>
-					<p>{event.desc}</p>
+					<p>{event.description}</p>
 					<div className="event-details">
 						<div className="event-time-loc">
 							<p>{formattedDate}</p>

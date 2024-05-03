@@ -199,9 +199,10 @@ export default function ShortURLTable() {
 
     const handleDelete = async (row: ShortURL) => {
 
-        await fetch(`/api/shorturls?name=${row.name}`, {
+        await fetch(`/api/shorturls/${row.name}`, {
             method: 'DELETE',
         });
+        
         await mutate();
 
         setSelectedRow(-1);

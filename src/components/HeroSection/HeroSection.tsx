@@ -1,43 +1,45 @@
-'use client'
-
 import "./HeroSection.scss";
-import { use, useEffect, useState } from "react";
 
 import Image from "next/image";
 import Button from "@/components/Button/Button";
-import { getUpcoming } from "@/utils/events";
+import ContinueIcon from "./ContinueIcon";
+import { getAll, Event } from "@/database/events";
 
-export default function HeroSection() {
-	const upcomingEvent = getUpcoming();
-	const [upcomingEventDate, setUpcomingEventDate] = useState("");
-	const [showExpandArrow, setShowExpandArrow] = useState(true);
+function getUpcoming(events: Event[]) {
 
-	useEffect(() => {
-		const handleScroll = () => {
-			const scrollTop = window.scrollY || document.documentElement.scrollTop;
-			
-			setShowExpandArrow(scrollTop === 0);
-		};
+	const currentDate = new Date();
+	let upcomingEvent = null;
+	let upcomingDate = null;
 
-		window.addEventListener("scroll", handleScroll);
+	for (let i = 0; i < events.length; i++) {
+		const eventDate = new Date(events[i].date.replace(/\//g, "/"));
 
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, []);
+		eventDate.setHours(19);
 
-	useEffect(() => {
-		if (upcomingEvent) {
-			const eventDate = new Date(upcomingEvent.date.replace(/\//g, "/"));
-			const formattedDate = eventDate.toLocaleDateString('en-US', {
-				year: 'numeric',
-				month: 'long',
-				day: 'numeric',
-			});
-
-			setUpcomingEventDate(formattedDate);
+		if (eventDate > currentDate && (!upcomingDate || eventDate < upcomingDate)) {
+			upcomingDate = eventDate;
+			upcomingEvent = events[i];
 		}
-	}, [upcomingEvent]);
+	}
+
+	return upcomingEvent;
+}
+
+export default async function HeroSection() {
+	const events: Event[] = await getAll();
+	const upcomingEvent = getUpcoming(events);
+
+	let eventDate = null;
+	let formattedDate = null;
+
+	if (upcomingEvent) {
+		eventDate = new Date(upcomingEvent.date.replace(/\//g, "/"));
+		formattedDate = eventDate.toLocaleDateString('en-US', {
+			year: 'numeric',
+			month: 'long',
+			day: 'numeric',
+		});
+	}
 
 	return (
 		<div className="hero-section">
@@ -55,7 +57,7 @@ export default function HeroSection() {
 						Become a <span>sponsor</span>
 					</Button>
 				</div>
-				<Image src={"/assets/icons/dropdown.svg"} alt={""} width={30} height={30} className={`hero-expand-arrow ${!showExpandArrow ? 'hidden' : ''}`}/>
+				<ContinueIcon />
 			</div>
 			{upcomingEvent && <div className="hero-event-wrapper">
 				<h2>Upcoming Event!</h2>
@@ -69,9 +71,9 @@ export default function HeroSection() {
 					/>
 					<div className="hero-event-content">
 						<h3>{upcomingEvent.title || "No title"}</h3>
-						<p>{upcomingEvent.desc}</p>
+						<p>{upcomingEvent.description}</p>
 						<div>
-							<p><span>{upcomingEventDate}</span><br />{upcomingEvent.time}{upcomingEvent.room && ` @ ${upcomingEvent.room}`}</p>
+							<p><span>{formattedDate}</span><br />{upcomingEvent.time}{upcomingEvent.room && ` @ ${upcomingEvent.room}`}</p>
 							{upcomingEvent.rsvp && <Button link={upcomingEvent.rsvp || "/"} name="RSVP" type="light" icon="/assets/icons/calendar.svg" newWindow={true}/>}
 						</div>
 					</div>

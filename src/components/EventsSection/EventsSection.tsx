@@ -4,31 +4,54 @@ import Image from "next/image";
 
 import EventsCard from "../EventsCard/EventsCard";
 import Button from "../Button/Button";
-import { getEvents } from "@/utils/events";
+import { getAll, Event } from "@/database/events";
 
+function removeOutdatedRSVPs(events: Event[]) {
 
-export default function EventsSection(props: any) {
-	const admin: boolean = props.admin === true;
+	const currentDate = new Date();
+	const updatedEvents = events.map((event) => {
+
+		let eventDate = new Date(event.date);
+
+		if (event.time) {
+			const match = event.time.match(/(\d)+/);
+			const startHours = match ? parseInt(match[0]) : 0;
+			const pm = event.time.match(/(pm)/);
+
+			eventDate.setHours(startHours + (pm ? 12 : 0));
+
+		} else eventDate.setHours(19);
+
+		if (eventDate < currentDate) event.rsvp = "";
+		
+
+		return event;
+	});
+
+	return updatedEvents;
+}
+
+export default async function EventsSection(props: any) {
 	const full: boolean = props.full;
-	let events: any = getEvents();
+	let events : Event[] = removeOutdatedRSVPs(await getAll());
 
 	if (!full) events = events.slice(0, 8);
 	else events = events.slice(0, 24);
 
 	return (
-		<div className={"events-section " + (admin ? "admin" : "")}>
-			{!admin && <div className="events-section-background">
+		<div className="events-section">
+			<div className="events-section-background">
 				<div className="white-block" />
 				<Image
 					src="/assets/images/backgrounds/WhiteBackground.jpg"
 					alt="Events Section"
 					fill={true}
 				/>
-			</div>}
+			</div>
 			{full ? "" : <h2>Our Events</h2>}
 			<div className="events-container">
 				{events.map((event: any, index: number) => (
-					<EventsCard key={index} event={event} admin={admin}/>
+					<EventsCard key={index} event={event}/>
 				))}
 			</div>
 			{full ? "" : <Button name="All Events" link="/events" />}

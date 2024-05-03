@@ -134,7 +134,7 @@ export default function EventEditorCard(props: any) {
 			}
 
 			// Save the changes to the database
-			fetch("/api/events", {
+			await fetch("/api/events", {
 				method: "PUT",
 				headers: {
 					"Content-Type": "application/json",
@@ -152,7 +152,7 @@ export default function EventEditorCard(props: any) {
 			event.rsvp = rsvp;
 
 			// Save the changes to the database
-			fetch("/api/events", {
+			await fetch("/api/events", {
 				method: "PUT",
 				headers: {
 					"Content-Type": "application/json",
@@ -170,7 +170,7 @@ export default function EventEditorCard(props: any) {
 			event.image = image;
 
 			// Save the changes to the database
-			fetch("/api/events", {
+			await fetch("/api/events", {
 				method: "PUT",
 				headers: {
 					"Content-Type": "application/json",
@@ -189,7 +189,7 @@ export default function EventEditorCard(props: any) {
 
 		newEvent.id = Date.now().toString();
 
-		fetch("/api/events", {
+		await fetch("/api/events", {
 			method: "PUT",
 			headers: {
 				"Content-Type": "application/json",
@@ -204,7 +204,7 @@ export default function EventEditorCard(props: any) {
 
 		if (!window.confirm("Are you sure you want to delete this event?")) return;
 
-		fetch("/api/events", {
+		await fetch("/api/events", {
 			method: "DELETE",
 			headers: {
 				"Content-Type": "application/json",
