@@ -49,7 +49,7 @@ export default function OfficerSection(props: any) {
 			image: "Anneke.jpg",
 		},
 		{
-			name: "Brianna Dickenson",
+			name: "Brianna Dickson",
 			position: "External Activities and Events Director",
 			email: "external.ae@ieeeut.org",
 			image: "Brianna.jpg",
