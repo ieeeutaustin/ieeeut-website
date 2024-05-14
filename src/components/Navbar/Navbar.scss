@@ -134,22 +134,49 @@
 			&:hover {
 				color: $color-white;
 			}
-		}
-
-		li.active > a {
-		
-			color: #fFF;
 
 			&::after {
 				content: "";
 				position: absolute;
-				width: calc(100% - 20px);
 				height: 2px;
 				border-radius: 2px;
 				background-color: $color-white;
 				bottom: 10px;
 				left: 50%;
 				transform: translateX(-50%);
+				width: 0;
+				transition: 200ms ease-out;
+			}
+		}
+
+		li.active > a {
+		
+			color: #FFF;
+
+			&::after {
+				width: calc(100% - 20px);
+			}
+		}
+
+		li:not(.active) > a {
+
+			&::after {
+				content: "";
+				position: absolute;
+				height: 2px;
+				border-radius: 2px;
+				background-color: $color-white;
+				bottom: 10px;
+				left: 50%;
+				transform: translateX(-50%);
+				transition: 200ms;
+				opacity: 0;
+				width: 0;
+			}
+
+			&:hover::after {
+				opacity: 1;
+				width: 10px;
 			}
 		}
 	}

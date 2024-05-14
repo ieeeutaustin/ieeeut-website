@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "@/components/Button/Button";
 import ContinueIcon from "./ContinueIcon";
 import { getAll, Event } from "@/database/events";
+import HeroTransition from "./HeroTransition";
 
 function getUpcoming(events: Event[]) {
 
@@ -44,19 +45,7 @@ export default async function HeroSection() {
 	return (
 		<div className="hero-section">
 			<div className="hero-content">
-				<div className="hero-title">
-					<span>IEEE</span>
-					<span>UT</span>
-				</div>
-				<i className="hero-subtitle">UT Austin’s official chapter of the Institute of Electrical and Electronics Engineers and home to the largest ECE organization at UT</i>
-				<div className="hero-buttons">
-					<Button link="/join" type="outlined member">
-						Become a <span>member</span>
-					</Button>
-					<Button link="/corporate" type="outlined sponsor">
-						Become a <span>sponsor</span>
-					</Button>
-				</div>
+				<HeroTransition />
 				<ContinueIcon />
 			</div>
 			{upcomingEvent && <div className="hero-event-wrapper">

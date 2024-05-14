@@ -19,13 +19,13 @@
 	text-align: center;
 	height: min-content;
 
+	* {
+		transition: 100ms ease-in-out;
+	}
+
 	> img {
 		height: 15px;
 		width: auto;
-	}
-
-	* {
-		transition: 100ms ease-in-out;
 	}
 
 	&:hover {
@@ -46,6 +46,8 @@
 		padding: 15px 25px;
 		border: 3px $color-white solid;
 		background-color: transparent;
+		position: relative;
+		overflow: hidden;
 
 		&:hover {
 			color: $color-black;
@@ -54,8 +56,6 @@
 		}
 
 		&.member {
-			white-space: nowrap;
-			font-size: 1rem;
 
 			> span {
 				color: $color-ieee-blue-light;
@@ -67,8 +67,6 @@
 		}
 
 		&.sponsor {
-			white-space: nowrap;
-			font-size: 1rem;
 
 			> span {
 				color: $color-ieee-purple-light;
@@ -78,6 +76,39 @@
 				color: $color-ieee-purple;
 			}
 		}
+
+		&.member, &.sponsor {
+
+			white-space: nowrap;
+			font-size: 1rem;
+			transition-delay: 30ms;
+
+			> span {
+				transition-delay: 50ms;
+			}
+
+			&::before {
+				content: "";
+				position: absolute;
+				background: $color-white;
+				width: 0;
+				height: 350%;
+				left: 20%;
+				top: 0%;
+				transform: translateY(-70%) rotate(45deg);
+				z-index: -1;
+				transition: all 300ms ease-out;
+				transform-origin: left;
+			}
+	
+			&:hover {
+				background-color: transparent;
+				
+				&::before {
+					width: 90%;
+				}
+			}
+		}
 	}
 
 	&.md {
@@ -85,55 +116,3 @@
 		font-size: 16px;
 	}
 }
-
-/*
-
-.button > span {
-	font-size: 20px;
-	font-weight: 500;
-	color: $color-white;
-}
-
-.member,
-.sponsor {
-	padding: 15px;
-	border-radius: 10px;
-	border: 3px $color-white solid;
-	background-color: transparent;
-}
-
-.member,
-.member *,
-.sponsor,
-.sponsor * {
-	transition: 100ms ease-in-out;
-	text-align: center;
-	white-space: nowrap;
-}
-
-.member > span > span {
-	color: $color-ieee-blue-light;
-}
-
-.member:hover > span > span {
-	color: $color-ieee-blue;
-}
-
-.sponsor:hover > span > span {
-	color: $color-ieee-purple;
-}
-
-.sponsor > span > span {
-	color: $color-ieee-purple-light;
-}
-
-.member:hover,
-.sponsor:hover {
-	background-color: $color-white;
-}
-
-.member:hover > span,
-.sponsor:hover > span {
-	color: $color-black;
-}
-*/
