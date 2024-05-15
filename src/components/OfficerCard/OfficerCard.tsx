@@ -9,7 +9,7 @@ export default function OfficerCard(props: any) {
 		const randIndex = Math.floor(Math.random() * imageHoverSrc.length);
 		imageHoverSrc = imageHoverSrc[randIndex];
 	}
-
+	
 	return (
 		<div className="officer-card">
 			<div className="officer-card-content">
@@ -30,6 +30,7 @@ export default function OfficerCard(props: any) {
 							width={150}
 							height={150}
 							style={{objectFit: "cover"}}
+							unoptimized={imageHoverSrc.includes(".gif")}
 						/>
 					)}
 				</div>

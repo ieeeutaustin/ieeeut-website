@@ -27,8 +27,8 @@ export default function OfficerSection(props: any) {
 			name: "Joaquin Escobar",
 			position: "Internal Director",
 			email: "internal.dir@ieeeut.org",
-			image: "Joaquin.png",
-			imageHover: "JoaquinHover5.png"
+			image: "Joaquin.jpg",
+			imageHover: "JoaquinHover2.gif"
 		},
 		{
 			name: "Ayesha Haider",
