@@ -19,7 +19,6 @@ export default function AdminDashboard(props: any) {
                 <div className="dashboard-selector">
                     <button onClick={() => setSelected("Short URLs")} className={selected == "Short URLs" ? "active" : ""}>Short URLs</button>
                     <button onClick={() => setSelected("Events")} className={selected == "Events" ? "active" : ""}>Events</button>
-                    <button onClick={() => setSelected("Officers")} className={selected == "Officers" ? "active" : ""}>Officers</button>
                     <GoogleSignOutButton />
                 </div>
                 <div className="dashboard-content">
