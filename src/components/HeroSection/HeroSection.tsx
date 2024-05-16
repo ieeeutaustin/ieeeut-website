@@ -78,6 +78,7 @@ export default async function HeroSection() {
 				width={1920}
 				priority={true}
 				placeholder="blur"
+				quality={100}
 			/>
 		</div>
 	);
