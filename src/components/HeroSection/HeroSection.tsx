@@ -6,6 +6,8 @@ import ContinueIcon from "./ContinueIcon";
 import { getAll, Event } from "@/database/events";
 import HeroTransition from "./HeroTransition";
 
+import HeroBackground from "../../../public/assets/images/backgrounds/HeroBackground.jpg";
+
 function getUpcoming(events: Event[]) {
 
 	const currentDate = new Date();
@@ -70,11 +72,12 @@ export default async function HeroSection() {
 			</div>}
 			<Image
 				className="hero-background"
-				src="/assets/images/backgrounds/HeroBackground.jpg"
+				src={HeroBackground}
 				alt=""
 				height={1080}
 				width={1920}
 				priority={true}
+				placeholder="blur"
 			/>
 		</div>
 	);
