@@ -97,3 +97,23 @@
 		}
 	}
 }
+
+@supports (animation-timeline: view()) {
+	@media (prefers-reduced-motion: no-preference) {
+		@keyframes float {
+			from {
+				transform: scale(0.85);
+			}
+			to {
+				transform: scale(1);
+			}
+		}
+
+		.event-card {
+			animation: float linear forwards;
+			animation-timeline: view();
+			transform: scale(0.85);
+			animation-range: entry 0% contain 25%;
+		}
+	}
+}
