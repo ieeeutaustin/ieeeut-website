@@ -45,6 +45,7 @@ export default function HeaderSection(props: {
 					style={props.imageStyle}
 					width={200}
 					height={200}
+					priority={true}
 				/>
 			)}
 
@@ -54,6 +55,7 @@ export default function HeaderSection(props: {
 				alt=""
 				width={50}
 				height={50}
+				priority={true}
 			/>
 		</GridContainer>
 	);
