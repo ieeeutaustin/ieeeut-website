@@ -1,7 +1,7 @@
 import "./HeaderSection.scss";
 import Image from "next/image";
 import GridContainer from "@/components/GridContainer/GridContainer";
-import Button from "../Button/Button";
+import Button, { ButtonType } from "../Button/Button";
 
 export default function HeaderSection(props: {
 	title: string;
@@ -9,9 +9,7 @@ export default function HeaderSection(props: {
 	image?: string;
 	imageAlt?: string;
 	imageStyle?: any;
-	buttonName?: string;
-	buttonLink?: string;
-	buttonNewWindow?: boolean;
+	button?: ButtonType;
 	children?: any;
 }) {
 	return (
@@ -20,15 +18,15 @@ export default function HeaderSection(props: {
 				<div className="header-content">
 					<h1>{props.title}</h1>
 					{props.desc ? <p>{props.desc}</p> : ""}
-					{props.buttonName ? (
+					{props.button?.name ? (
 						<Button
-							name={props.buttonName}
-							link={props.buttonLink || "/"}
+							name={props.button?.name}
+							link={props.button.link || "/"}
 							type="outlined"
 							newWindow={
-								props.buttonNewWindow == undefined
+								props.button.newWindow == undefined
 									? true
-									: props.buttonNewWindow
+									: props.button.newWindow
 							}
 						/>
 					) : (

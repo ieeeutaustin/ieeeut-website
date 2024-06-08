@@ -35,9 +35,9 @@ export default function Navbar() {
 			title: "Students",
 			link: "/students",
 			dropdown: [
-				{ title: "Merch", link: "/merch" },
-				{ title: "Officers", link: "/officers" },
 				{ title: "Membership", link: "/membership" },
+				{ title: "Officers", link: "/officers" },
+				{ title: "Merch", link: "/merch" },
 			],
 		},
 		{ title: "Corporate", link: "/corporate" },
@@ -54,7 +54,8 @@ export default function Navbar() {
 				<div className="navbar-content">
 					<Link href="/" className="navbar-logo">
 						<Image
-							src="/assets/images/branding/ieee-logo-white.png"
+							src="/assets/images/branding/ieeeut-logo.svg"
+							// src="/assets/images/branding/ieee-logo-white.png"
 							alt="IEEE Logo"
 							width={70}
 							height={70}
@@ -97,7 +98,7 @@ export default function Navbar() {
 						))}
 					</ul>
 					<Link href="/links" className="navbar-socials">
-						Socials
+						Links
 						<Image
 							src="/assets/icons/rightarrow.svg"
 							alt=""

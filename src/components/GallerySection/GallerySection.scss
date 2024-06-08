@@ -7,14 +7,14 @@
 	// border-top: 20px solid $color-ieee-blue;
 	// border-bottom: 20px solid $color-ieee-blue;
 
-	li {
+	> div {
 		height: 300px;
 		width: 400px;
 		flex-grow: 1;
 		position: relative;
 	}
 
-	li.break {
+	> div.break {
 		flex-basis: 100%;
 		height: 0;
 	}
@@ -25,11 +25,13 @@
 }
 
 @media screen and (max-width: 1000px) {
-	li.break {
-		height: auto;
-	}
+	.gallery-section {
+		div.break {
+			height: auto;
+		}
 
-	li.hide {
-		display: none;
+		div.hide {
+			display: none;
+		}
 	}
 }

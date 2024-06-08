@@ -23,13 +23,13 @@
 			align-items: center;
 
 			span {
-				font-size: min(7rem, 20vw);
+				font-size: min(6rem, 20vw);
 				font-weight: 900;
 				user-select: none;
 			}
 
 			span:nth-child(2) {
-				font-size: calc(min(7rem, 20vw) - (min(0.4rem, 1vw)));
+				font-size: calc(min(6rem, 20vw) - (min(0.4rem, 1vw)));
 				color: rgba(0, 0, 0, 0.1);
 				letter-spacing: 10px;
 				-webkit-text-stroke-width: min(0.4rem, 1vw);
@@ -38,9 +38,17 @@
 		}
 
 		.hero-subtitle {
-			font-size: 1.5rem;
+			font-size: 1.8rem;
+			// text-align: center;
+			font-weight: 600;
+			max-width: 500px;
+			margin-bottom: 20px;
+		}
+
+		.hero-desc {
+			font-size: 1.3rem;
 			text-align: center;
-			max-width: 550px;
+			max-width: 600px;
 			margin-bottom: 40px;
 		}
 

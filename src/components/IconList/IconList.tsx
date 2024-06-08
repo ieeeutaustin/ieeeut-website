@@ -15,7 +15,7 @@ export default function IconList(props: any) {
 				>
 					<Image
 						src={`/assets/icons/${icon}.svg`}
-						alt=""
+						alt={`${icon} logo`}
 						width={50}
 						height={50}
 					/>

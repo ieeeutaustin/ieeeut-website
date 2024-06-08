@@ -16,6 +16,10 @@ async function getShortURL(name: string) {
 		},
 	});
 
+	console.log(response);
+
+	if (!response.ok) return;
+
 	const data = await response.json();
 
 	return data.url;

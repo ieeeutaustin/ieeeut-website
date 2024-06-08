@@ -2,31 +2,55 @@ import Image from "next/image";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import TextSection from "@/components/TextSection/TextSection";
 import Button from "@/components/Button/Button";
-import IconList from "@/components/IconList/IconList";
 import GallerySection from "@/components/GallerySection/GallerySection";
 import EventsSection from "@/components/EventsSection/EventsSection";
 import { getURL } from "@/utils/socials";
+import FlexSection from "@/components/FlexSection/FlexSection";
+import { JoinSection } from "./join/page";
 
 export default function Home() {
 	return (
 		<>
 			<HeroSection />
+			<FlexSection
+				sections={[
+					{
+						title: "Weekly Events",
+						icon: "/assets/icons/calendar-white.svg",
+						desc: <p>Year-round events, socials, and workshops with catered food! All for <strong>free</strong> when you RSVP!</p>,
+						bgImage: "/assets/images/f23-casino-night.jpg",
+					},
+					{
+						title: "Community & Networking",
+						icon: "/assets/icons/group-white.svg",
+						desc: "Meet students, professors, and recruiters for both casual and professional networking!",
+						bgImage: "/assets/images/optiver-chat.jpg",
+					},
+					{
+						title: "Academic Support",
+						icon: "/assets/icons/academic-white.svg",
+						desc: "Get help from upperclassman and other students! We know ECE is tough, so we're here to help!",
+						bgImage: "/assets/images/patrick-amogh.jpg",
+					}
+				]}
+			/>
 			<TextSection
 				textSide="left"
 				textCols="3"
 				graphicSrc="/assets/images/leadership-retreat.jpg"
 				graphicAlt="2 IEEE members in a classroom podium laugh while looking at a laptop"
 			>
-				<h2>Who are we?</h2>
+				<h2>A little about us...</h2>
 				<p>
-					IEEE UT runs events, socials, and workshops year-round to
-					help you grow academically, socially, and professionally.
+					Our goal is to provide a community for ECE students to connect, making engineering/college a little less daunting!
 				</p>
 				<p>
-					We mainly consist of ECE students, but all majors are
-					welcome!
+					Almost all of our events are free (when you RSVP), and we provide food at most of them!
 				</p>
-				<Button name="Learn More" link="/about" />
+				<i>
+					We are not particularly project based, however, <a href="https://ras.ece.utexas.edu" target="_blank">IEEE RAS</a> is, if you are interested in robotics!
+				</i>
+				<Button name="Learn more" link="/about" />
 			</TextSection>
 			<GallerySection
 				images={[
@@ -54,72 +78,83 @@ export default function Home() {
 				graphicAlt="IEEE members paint mini pumpkins for halloween social"
 			>
 				<h2>Important Links</h2>
-				<h3>
-					<Image
-						src="/assets/icons/discord.svg"
-						alt="Discord logo"
-						width={50}
-						height={50}
-					/>
-					Discord &{" "}
-					<Image
-						src="/assets/icons/slack.svg"
-						alt="Slack logo"
-						width={50}
-						height={50}
-					/>
-					Slack
-				</h3>
-				<p>
-					Join our Discord and Slack to see announcements, events, and
-					general org updates!
-				</p>
-				<div>
-					<Button
-						name="Join Discord"
-						link={getURL("discord")}
-						newWindow={true}
-					/>
-					<Button
-						name="Join Slack"
-						link={getURL("slack")}
-						newWindow={true}
-					/>
+				<div className="flex flex-col gap-[10px]">
+					<h3>
+						<Image
+							src="/assets/icons/discord.svg"
+							alt="Discord logo"
+							width={50}
+							height={50}
+						/>
+						Discord &{" "}
+						<Image
+							src="/assets/icons/slack.svg"
+							alt="Slack logo"
+							width={50}
+							height={50}
+						/>
+						Slack
+					</h3>
+					<p>
+						Join our Discord and Slack to see announcements, events, and
+						general org updates!
+					</p>
+					<div className="flex gap-[10px] mt-2">
+						<Button
+							name="Join Discord"
+							link={getURL("discord")}
+							newWindow={true}
+						/>
+						<Button
+							name="Join Slack"
+							link={getURL("slack")}
+							newWindow={true}
+						/>
+					</div>
 				</div>
-				<h3>
-					<Image
-						src="./assets/icons/instagram.svg"
-						alt="Instagram logo"
-						width={50}
-						height={50}
-					/>
-					Instagram
-				</h3>
-				<p>
-					Follow us on Instagram; we keep you updated with our events
-					and post some fun content on there too!
-				</p>
-				<Button
-					name="Follow Instagram"
-					link={getURL("instagram")}
-					newWindow={true}
-				/>
-				<h3>
-					<Image
-						src="./assets/icons/gcal.svg"
-						alt="Google Calendar logo"
-						width={50}
-						height={50}
-					/>
-					Google Calendar
-				</h3>
-				<p>
-					Add our Google Calendar so you can stay updated with our
-					events!
-				</p>
-				<Button name="Add to Google Calendar" link={getURL("gcal")} />
+				<div className="flex flex-col gap-[10px]">
+					<h3>
+						<Image
+							src="./assets/icons/instagram.svg"
+							alt="Instagram logo"
+							width={50}
+							height={50}
+						/>
+						Instagram
+					</h3>
+					<p>
+						Follow us on Instagram; we keep you updated with our events
+						and post some fun content on there too!
+					</p>
+					<div className="flex gap-[10px] mt-2">
+						<Button
+							name="Follow Instagram"
+							link={getURL("instagram")}
+							newWindow={true}
+						/>
+					</div>
+				</div>
+				<div className="flex flex-col gap-[10px]">
+					<h3>
+						<Image
+							src="./assets/icons/gcal.svg"
+							alt="Google Calendar logo"
+							width={50}
+							height={50}
+						/>
+						Google Calendar
+					</h3>
+					<p>
+						Add our Google Calendar so you can stay updated with our
+						events!
+					</p>
+					<div className="flex gap-[10px] mt-2">
+						<Button name="Add to Google Calendar" link={getURL("gcal")} />
+					</div>
+				</div>
 			</TextSection>
-			<TextSection
+			<JoinSection />
+			{/* <TextSection
 				textSide="center"
 				textColor="white"
 				textCols="4"
@@ -139,7 +174,7 @@ export default function Home() {
 						"youtube-white"
 					]}
 				/>
-			</TextSection>
+			</TextSection> */}
 			<EventsSection full={false} />
 		</>
 	);

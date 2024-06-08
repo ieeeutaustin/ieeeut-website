@@ -15,8 +15,11 @@ export default function Corporate() {
 				image="/assets/images/ericsson.jpg"
 				imageAlt="Photo from the back of a Ericsson general meeting"
 				desc="Learn more about becoming a sponsor:"
-				buttonName="Corporate Packet 2023-2024"
-				buttonLink="/assets/files/IEEE-Spring-Corporate-Packet-2023-2024.pdf"
+				button={{
+					name: "Corporate Packet 2024-2025",
+					link: "/assets/files/IEEE_Fall_Corporate_Packet_2024-2025.pdf",
+					newWindow: true
+				}}
 			/>
 			<TextSection
 				textSide="left"
@@ -101,8 +104,8 @@ export default function Corporate() {
 					sponsor!
 				</p>
 				<Button
-					name="Corporate Packet 2023-2024"
-					link="/assets/files/IEEE-Spring-Corporate-Packet-2023-2024.pdf"
+					name="Corporate Packet 2024-2025"
+					link="/assets/files/IEEE_Fall_Corporate_Packet_2024-2025.pdf"
 					newWindow={true}
 					type="outlined"
 				/>

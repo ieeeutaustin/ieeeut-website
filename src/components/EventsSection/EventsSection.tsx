@@ -34,8 +34,9 @@ function removeOutdatedRSVPs(events: Event[]) {
 export default async function EventsSection(props: any) {
 	const full: boolean = props.full;
 	let events : Event[] = removeOutdatedRSVPs(await getAll());
+	const eventCount = events.length;
 
-	if (!full) events = events.slice(0, 8);
+	if (!full) events = events.slice(0, 4);
 	else events = events.slice(0, 24);
 
 	return (
@@ -48,13 +49,13 @@ export default async function EventsSection(props: any) {
 					fill={true}
 				/>
 			</div>
-			{full ? "" : <h2>Our Events</h2>}
+			{full ? "" : <h2>Recent Events</h2>}
 			<div className="events-container">
 				{events.map((event: any, index: number) => (
 					<EventsCard key={index} event={event}/>
 				))}
 			</div>
-			{full ? "" : <Button name="All Events" link="/events" />}
+			{full ? "" : <Button name={`View ${eventCount - 4} More`} link="/events" />}
 		</div>
 	);
 }

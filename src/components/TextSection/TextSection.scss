@@ -18,16 +18,15 @@
 		padding: 0;
 		display: inline-flex;
 		flex-direction: column;
-		gap: 18px;
+		gap: 28px;
 		align-items: flex-start;
 
 		h3 {
-			margin-top: 20px;
 
 			img {
 				height: 23px;
 				width: auto;
-				margin: 0 5px 0px 0px;
+				margin: 0 8px 0px 0px;
 				display: inline-block;
 			}
 
@@ -36,10 +35,10 @@
 			}
 		}
 
-		> div {
-			display: flex;
-			gap: 10px;
-		}
+		// h2::before {
+		// 	scroll-padding-top: 70px;
+		// }
+		
 
 		&.white {
 			color: $color-white;

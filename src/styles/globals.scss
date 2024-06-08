@@ -10,8 +10,9 @@
 }
 
 html {
-	// scroll-behavior: smooth;
+	scroll-behavior: smooth;
 	height: 100vh;
+	scroll-padding-top: 80px;
 }
 
 body {

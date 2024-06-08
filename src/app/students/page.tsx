@@ -2,6 +2,7 @@ import Link from "next/link";
 import TextSection from "@/components/TextSection/TextSection";
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
 import Button from "@/components/Button/Button";
+import { PerksSection } from "../membership/page";
 
 export const metadata = {
 	title: "Students | IEEE UT"
@@ -15,6 +16,11 @@ export default function Students() {
 				image="/assets/images/glamping.jpg"
 				imageAlt="Group photo of IEEE members in front of a modern ranch house for a retreat"
 				desc="All UT Students are IEEE Guests by default!"
+				button={{
+					name: "Join IEEE",
+					link: "/membership",
+					newWindow: false
+				}}
 			/>
 			<TextSection
 				textSide="left"
@@ -26,10 +32,10 @@ export default function Students() {
 				<p>
 					We believe ideas and passions from different students make
 					our org great. Because of this, almost all of our events are{" "}
-					<b>free</b> to UT Students! (Just make sure to RSVP)
+					<b>free</b> to UT students! (Just make sure to RSVP)
 				</p>
-				<div>
-					<Button name="Join IEEE" link="/join" />
+				<div className="flex gap-3">
+					<Button name="Join IEEE" link="/membership" />
 					<Button name="Events" link="/events" />
 				</div>
 			</TextSection>
@@ -42,48 +48,41 @@ export default function Students() {
 				<h2>Membership</h2>
 				<p>
 					If you&apos;d like to get the most out of IEEE, you can pay
-					a <b>one-time fee of $10</b> to get national membership. And
-					yes, this lasts for your entire time at UT!
+					a dues! This gives you access to a whole lot more stuff!
 				</p>
-				<Button name="Learn more" link="/membership" />
+				<Button name="Membership" link="/membership" />
 			</TextSection>
-			<TextSection
-				textSide="center"
-				textColor="white"
-				graphicSrc="/assets/images/backgrounds/BlueGradient.jpg"
-			>
-				<h2>Perks</h2>
-				<p>
-					As a member, you have access to so much! Here are just a few
-					things...
-				</p>
-				<div className="flex-col" style={{ gap: "5px" }}>
-					<i>Merch Drops</i>
-					<i>Resume Reviews</i>
-					<i>IMs & Esports</i>
-					<i>FamilIEEE System</i>
-					<i>Mentorship Program</i>
-				</div>
-
-				<Button
-					name="Learn more"
-					link="/membership#perks"
-					type="light"
-				/>
-			</TextSection>
+			<PerksSection />
 			<TextSection
 				textSide="left"
 				textCols="4"
 				graphicSrc="/assets/images/officers-22.jpg"
 				graphicAlt="Group photo of IEEE officers of 2022-2023 in front of a classroom whiteboard"
 			>
-				<h2>Officers and Applications</h2>
+				<h2>Officers & Applications</h2>
 				<p>
-					Our officers are what make our org function! Meet our
-					current officers for the 2023-2024 season and learn about
+					Our officers are what make our org function! We recruit assistant officers during the fall semester and officers during the spring semester.
+				</p>
+				<p>
+					Meet our current officer team and learn about
 					how and when to apply!
 				</p>
 				<Button name="Officers" link="/officers" />
+			</TextSection>
+			<TextSection
+				textSide="right"
+				textCols="4"
+				graphicSrc="/assets/images/merch.jpg"
+				graphicAlt="IEEE students seated in a classroom row, smiling at the camera"
+			>
+				<h2>Merch</h2>
+				<p>
+					For the year you pay dues, you&apos;ll get a <strong>free member shirt</strong>! Swing by the office during <a href="/officehours">office hours</a> to pick it up!
+				</p>
+				<p>
+					We also have other merch available for purchase! This includes sweaters, shirts, and more to come!
+				</p>
+				<Button name="Merch" link="/merch" />
 			</TextSection>
 		</>
 	);

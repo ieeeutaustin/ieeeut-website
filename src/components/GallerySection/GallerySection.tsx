@@ -17,10 +17,10 @@ export default function GallerySection({
 			{images.map((imgSrc: string, index: number) => {
 				if (imgSrc == "break") {
 					hideAfter++;
-					return <li className="break" key={imgSrc}></li>;
+					return <div className="break" key={imgSrc}></div>;
 				} else
 					return (
-						<li
+						<div
 							key={imgSrc}
 							className={index >= hideAfter ? "hide" : ""}
 						>
@@ -30,7 +30,7 @@ export default function GallerySection({
 								fill={true}
 								sizes="(min-width: 800px) 33vw, (min-width: 400px) 50vw, 100vw"
 							/>
-						</li>
+						</div>
 					);
 			})}
 		</div>

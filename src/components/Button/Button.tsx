@@ -2,15 +2,7 @@ import "./Button.scss";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Button({
-	link,
-	name,
-	newWindow,
-	type,
-	children,
-	icon,
-	...props
-}: {
+export type ButtonType = {
 	link: string;
 	name?: string;
 	newWindow?: boolean;
@@ -18,7 +10,9 @@ export default function Button({
 	children?: any;
 	icon?: string;
 	props?: any;
-}) {
+};
+
+export default function Button({ link, name, newWindow, type, children, icon, ...props }: ButtonType) {
 	if (!link[0].startsWith("/"))
 		return (
 			<a

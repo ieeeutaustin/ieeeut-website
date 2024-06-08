@@ -13,7 +13,6 @@ export default function Footer() {
 						"instagram-white",
 						"slack-white",
 						"discord-white",
-						"tiktok-white",
 						"linkedin-white",
 						"email-white",
 						"facebook-white",

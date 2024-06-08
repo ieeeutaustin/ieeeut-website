@@ -8,7 +8,8 @@ export default function TextSection({
 	textCols,
 	textColor,
 	graphicSrc,
-	graphicAlt
+	graphicAlt,
+	id
 }: {
 	children: any;
 	textSide: string;
@@ -16,10 +17,11 @@ export default function TextSection({
 	textColor?: string;
 	graphicSrc?: string;
 	graphicAlt?: string;
+	id?: string;
 }) {
 	if (textSide == "center")
 		return (
-			<div className={"text-section center"}>
+			<div className={"text-section center"} id={id}>
 				<div className={"text-section-content " + (textColor || "")}>
 					{children}
 				</div>
@@ -55,6 +57,7 @@ export default function TextSection({
 				textSide +
 				(textCols ? ` cols-${textCols}` : " cols-4")
 			}
+			id={id}
 		>
 			<GridContainer>
 				<div className={"text-section-content " + (textColor || "")}>

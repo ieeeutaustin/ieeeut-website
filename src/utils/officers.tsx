@@ -17,7 +17,6 @@ const officers = [
         position: "Corporate Director",
         email: "corporate@ieeeut.org",
         image: "Aaron.jpg",
-        imageHover: "PolaroidOverlay.png",
     },
     {
         name: "Joaquin Escobar",

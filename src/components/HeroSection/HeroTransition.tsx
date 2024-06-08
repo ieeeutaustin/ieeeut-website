@@ -18,9 +18,10 @@ export default function HeroTransition() {
                 <span>IEEE</span>
                 <span>UT</span>
             </div>
-            <i className="hero-subtitle">UT Austin’s official chapter of the Institute of Electrical and Electronics Engineers and home to the largest ECE organization at UT</i>
+            <h2 className="hero-subtitle">Where ECE meets social, academic, and professional</h2>
+            <i className="hero-desc">Home to the largest ECE organization at UT Austin</i>
             <div className="hero-buttons">
-                <Button link="/join" type="outlined member">
+                <Button link="/membership" type="outlined member">
                     Become a <span>member</span>
                 </Button>
                 <Button link="/corporate" type="outlined sponsor">
