@@ -50,9 +50,11 @@ export default function NotFound() {
 					title="404"
 					desc={`Looks like "${pathname}" doesn't exist...`}
 					image="/assets/images/backgrounds/BlueGradient.jpg"
-					buttonName="Home"
-					buttonLink="/"
-					buttonNewWindow={false}
+					button={{
+						name: "Home",
+						link: "/",
+						newWindow: false,
+					}}
 				/>
 			)}
 		</div>
