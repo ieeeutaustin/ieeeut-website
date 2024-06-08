@@ -3,7 +3,6 @@ import Image from "next/image";
 import "./FlexSection.scss";
 
 import Button, { ButtonType } from "../Button/Button";
-import { formatText } from "@/utils/markdown"; 
 
 type SectionType = {
 	title: string;
