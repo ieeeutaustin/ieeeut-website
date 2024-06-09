@@ -1,9 +1,8 @@
-import Image from "next/image";
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
 import TextSection from "@/components/TextSection/TextSection";
 import Button from "@/components/Button/Button";
 import FlexSection from "@/components/FlexSection/FlexSection";
-import { JoinSection } from "../join/page";
+import { getURL } from "@/utils/socials";
 
 export const metadata = {
 	title: "Membership | IEEE UT"
@@ -41,7 +40,7 @@ export default function Membership() {
 					<Button name="Perks" link="/membership#perks" />
 				</div>
 			</TextSection>
-			<JoinSection />
+			<JoinSection memberform={true}/>
 			<TextSection
 				textSide="right"
 				textCols="4"
@@ -86,7 +85,7 @@ export const PerksSection = () => (
 				desc: "We'll gladly review your resume to help you prepare for internships or jobs!",
 				bgImage: "/assets/images/patrick-amogh.jpg",
 				bgImageAlt: "2 IEEE members in a classroom podium laugh while looking at a laptop",
-				icon: "/assets/icons/resume.svg"
+				icon: "/assets/icons/resume-white.svg"
 			},
 			{
 				title: "FamilIEEE Systems",
@@ -105,3 +104,55 @@ export const PerksSection = () => (
 		]}
 	/>
 )
+
+export const JoinSection = ({ memberform = false } : { memberform?: boolean }) => {
+	return (
+		<div className="join-section">
+			<FlexSection sections={[
+				{
+					title: "Follow our Socials",
+					icon: "/assets/icons/number-1.svg",
+					desc: 
+						<p>
+							Follow our <a href={getURL("instagram") || "/"}>Instagram</a>{" "}
+							and join our <a href={getURL("discord") || "/"}>Discord</a>/
+							<a href={getURL("slack") || "/"}>Slack</a> to stay in the loop.
+						</p>
+					,
+					button: {
+						name: "Socials",
+						link: "/links",
+						type: "light",
+					},
+					bgImage: "/assets/images/outside-small-group.jpg",
+					bgImageAlt: "Members sit in circle on lawn smiling at the camera",
+				},
+				{
+					title: "Attend Events",
+					icon: "/assets/icons/number-2.svg",
+					desc: "We host all sorts of events every week with free food! RSVP so you don't miss out!",
+					button: {
+						name: "Events",
+						link: "/events",
+						type: "light",
+					},
+					bgImage: "/assets/images/gm.jpg",
+					bgImageAlt: "Students focusing on general meeting presenter."
+				},
+				{
+					title: "Become Official",
+					icon: "/assets/icons/number-3.svg",
+					desc: "Fill out a member form and claim your shirt if you pay your optional dues!",
+					button: {
+						name: memberform ? "Member Form" : "Membership",
+						link: memberform ? getURL("memberform") : "/membership" || "/membership",
+						type: "light",
+						newWindow: memberform
+					},
+					bgImage: "/assets/images/game-night.jpg",
+					bgImageAlt: "Members cheer and excited in lecture hall"
+				}
+			]} />
+		</div>
+	);
+}

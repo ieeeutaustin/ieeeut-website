@@ -6,7 +6,7 @@ import GallerySection from "@/components/GallerySection/GallerySection";
 import EventsSection from "@/components/EventsSection/EventsSection";
 import { getURL } from "@/utils/socials";
 import FlexSection from "@/components/FlexSection/FlexSection";
-import { JoinSection } from "./join/page";
+import { JoinSection } from "./membership/page";
 
 export default function Home() {
 	return (

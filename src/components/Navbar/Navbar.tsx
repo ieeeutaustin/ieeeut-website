@@ -55,7 +55,6 @@ export default function Navbar() {
 					<Link href="/" className="navbar-logo">
 						<Image
 							src="/assets/images/branding/ieeeut-logo.svg"
-							// src="/assets/images/branding/ieee-logo-white.png"
 							alt="IEEE Logo"
 							width={70}
 							height={70}

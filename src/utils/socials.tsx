@@ -47,6 +47,11 @@ const links: any = {
 		name: "Email",
 		url: "mailto:ieee@ieeeut.org",
 		icon: "/assets/icons/email.svg"
+	},
+	memberform: {
+		name: "Member Form",
+		url: "https://forms.gle/wHJWJv5ZzsSALJnj9",
+		icon: "/assets/icons/resume.svg"
 	}
 };
 

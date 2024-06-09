@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import "./FlexSection.scss";
-
 import Button, { ButtonType } from "../Button/Button";
 
 type SectionType = {

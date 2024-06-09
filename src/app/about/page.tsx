@@ -50,6 +50,7 @@ export default function About() {
 					"Photo from back of classroom with general meeting",
 					"Group photo from a outdoor camping retreat"
 				]}
+				hideAfter={3}
 			/>
 		</>
 	);
