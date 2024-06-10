@@ -3,7 +3,7 @@ import Image from "next/image";
 import "./FlexSection.scss";
 import Button, { ButtonType } from "../Button/Button";
 
-type SectionType = {
+export type FlexSectionType = {
 	title: string;
 	icon?: string;
 	desc?: string | any;
@@ -12,11 +12,11 @@ type SectionType = {
 	bgImageAlt?: string;
 };
 
-export default function FlexSection({ sections } : { sections: SectionType[]}) {
+export default function FlexSection({ sections } : { sections: FlexSectionType[]}) {
 
 	return (
 		<div className="flex-section">
-			{sections.map(section => (
+			{sections.map((section: FlexSectionType) => (
 				<div key={section.title} className="flex-col">
 					{section.icon &&
 						<Image

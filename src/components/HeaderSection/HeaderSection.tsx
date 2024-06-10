@@ -1,9 +1,9 @@
 import "./HeaderSection.scss";
 import Image from "next/image";
 import GridContainer from "@/components/GridContainer/GridContainer";
-import Button, { ButtonType } from "../Button/Button";
+import Button, { ButtonType} from "../Button/Button";
 
-export default function HeaderSection(props: {
+export interface HeaderSectionType {
 	title: string;
 	desc?: string;
 	image?: string;
@@ -11,36 +11,38 @@ export default function HeaderSection(props: {
 	imageStyle?: any;
 	button?: ButtonType;
 	children?: any;
-}) {
+}
+
+export default function HeaderSection(header: HeaderSectionType) {
 	return (
 		<GridContainer>
 			<div className="header-section">
 				<div className="header-content">
-					<h1>{props.title}</h1>
-					{props.desc ? <p>{props.desc}</p> : ""}
-					{props.button?.name ? (
+					<h1>{header.title}</h1>
+					{header.desc ? <p>{header.desc}</p> : ""}
+					{header.button?.name ? (
 						<Button
-							name={props.button?.name}
-							link={props.button.link || "/"}
+							name={header.button?.name}
+							link={header.button.link || "/"}
 							type="outlined"
 							newWindow={
-								props.button.newWindow == undefined
+								header.button.newWindow == undefined
 									? true
-									: props.button.newWindow
+									: header.button.newWindow
 							}
 						/>
 					) : (
 						""
 					)}
-					{props.children}
+					{header.children}
 				</div>
 			</div>
-			{props.image && (
+			{header.image && (
 				<Image
 					className="header-image"
-					src={props.image}
-					alt={props.imageAlt || ""}
-					style={props.imageStyle}
+					src={header.image}
+					alt={header.imageAlt || ""}
+					style={header.imageStyle}
 					width={200}
 					height={200}
 					priority={true}

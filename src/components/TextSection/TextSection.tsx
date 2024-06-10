@@ -2,6 +2,16 @@ import "./TextSection.scss";
 import Image from "next/image";
 import GridContainer from "@/components/GridContainer/GridContainer";
 
+export type TextSectionType = {
+	children: any;
+	textSide: string;
+	textCols?: string;
+	textColor?: string;
+	graphicSrc?: string;
+	graphicAlt?: string;
+	id?: string;
+};
+
 export default function TextSection({
 	children,
 	textSide,
@@ -10,15 +20,7 @@ export default function TextSection({
 	graphicSrc,
 	graphicAlt,
 	id
-}: {
-	children: any;
-	textSide: string;
-	textCols?: string;
-	textColor?: string;
-	graphicSrc?: string;
-	graphicAlt?: string;
-	id?: string;
-}) {
+}: TextSectionType) {
 	if (textSide == "center")
 		return (
 			<div className={"text-section center"} id={id}>

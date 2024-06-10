@@ -15,6 +15,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+	metadataBase: new URL(process.env.URL || "https://ieee.ece.utexas.edu"),
 	title: "IEEE UT",
 	description: "UT Austin's largest ECE student org that combines social, academic, and professional!",
 	openGraph: {

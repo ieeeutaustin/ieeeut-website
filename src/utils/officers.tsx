@@ -1,4 +1,6 @@
-const officers = [
+import { OfficerType } from "@/components/OfficerCard/OfficerCard";
+
+const officers: OfficerType[] = [
     {
         name: "Aastha Agrawal",
         position: "Chair",
@@ -71,21 +73,21 @@ const officers = [
         email: "comms@ieeeut.org",
     },
     {
-        position: "External Activites and Events Assistant Director",
+        position: "External Activities and Events Assistant Director",
         email: "external.ae@ieeeut.org",
     },
     {
-        position: "External Activites and Events Assistant Director",
+        position: "External Activities and Events Assistant Director",
         email: "external.ae@ieeeut.org",
     },
     {
         name: "Nicklas Di Tirro",
-        position: "Internal Activites and Events Assistant Director",
+        position: "Internal Activities and Events Assistant Director",
         email: "internal.ae@ieeeut.org",
         image: "Nicklas.jpg",
     },
     {
-        position: "Internal Activites and Events Assistant Director",
+        position: "Internal Activities and Events Assistant Director",
         email: "internal.ae@ieeeut.org",
     },
     {
@@ -94,6 +96,6 @@ const officers = [
     },
 ];
 
-export function getOfficers() {
+export function getOfficers(): OfficerType[] {
 	return officers;
 }

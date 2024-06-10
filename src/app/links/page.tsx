@@ -5,12 +5,18 @@ export const metadata = {
 	title: "Links | IEEE UT"
 };
 
+export type LinkType = {
+	name: "string",
+	url: "string",
+	icon?: "string"
+};
+
 export default function Links() {
-	const linkValues = Object.values(getLinks());
+	const links: LinkType[] = Object.values(getLinks());
 
 	return (
 		<div>
-			<LinksSection links={linkValues} />
+			<LinksSection links={links} />
 		</div>
 	);
 }

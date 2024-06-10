@@ -13,7 +13,7 @@ import EventEditorCard from "../EventEditorCard/EventEditorCard";
 
 const fetcher = async (url: string) => fetch(url).then(res => res.json());
 
-export default function EventEditorSection(props: any) {
+export default function EventEditorSection() {
 	const { data, mutate } = useSWR("/api/events", fetcher);
 	const [ events, setEvents ] = useState<Event[]>([]);
 

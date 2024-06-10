@@ -1,17 +1,17 @@
 import "./GallerySection.scss";
 import Image from "next/image";
 
-export default function GallerySection({
-	images,
-	alts,
-	hideAfter = images.length,
-	...props
-}: {
+export type GallerySectionType = {
 	images: string[];
 	alts?: string[];
 	hideAfter?: number;
-	props?: any;
-}) {
+};
+
+export default function GallerySection({
+	images,
+	alts,
+	hideAfter = images.length
+}: GallerySectionType) {
 	return (
 		<div className="gallery-section">
 			{images.map((imgSrc: string, index: number) => {

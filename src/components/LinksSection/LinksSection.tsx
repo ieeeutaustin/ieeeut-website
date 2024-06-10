@@ -1,8 +1,9 @@
 import "./LinksSection.scss";
 import Image from "next/image";
 import Button from "../Button/Button";
+import { LinkType } from "@/app/links/page";
 
-export default function LinksSection({ links }: { links: Array<any> }) {
+export default function LinksSection({ links }: { links: LinkType[] }) {
 	return (
 		<div className="links-section">
 			<div className="links-section-content">

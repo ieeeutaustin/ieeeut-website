@@ -13,6 +13,7 @@ export type ButtonType = {
 };
 
 export default function Button({ link, name, newWindow, type, children, icon, ...props }: ButtonType) {
+	// Use <a> tag if link is external
 	if (!link[0].startsWith("/"))
 		return (
 			<a
@@ -35,6 +36,7 @@ export default function Button({ link, name, newWindow, type, children, icon, ..
 			</a>
 		);
 
+	// Use <Link> tag if link is internal
 	return (
 		<Link
 			className={"button " + (type ? type.replace("default", "") : "")}

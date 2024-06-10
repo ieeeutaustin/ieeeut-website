@@ -50,7 +50,7 @@ const links: any = {
 	},
 	memberform: {
 		name: "Member Form",
-		url: "https://forms.gle/wHJWJv5ZzsSALJnj9",
+		url: "/memberform",
 		icon: "/assets/icons/resume.svg"
 	}
 };

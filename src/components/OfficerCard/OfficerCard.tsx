@@ -1,13 +1,20 @@
 import "./OfficerCard.scss";
 import Image from "next/image";
 
-export default function OfficerCard(props: any) {
-	let imageHoverSrc = props?.imageHover;
+export type OfficerType = {
+	name?: string;
+	position: string;
+	email: string;
+	image?: string;
+	imageHover?: string | string[];
+};
 
-	// Random hover image
-	if (imageHoverSrc && Array.isArray(imageHoverSrc)) {
-		const randIndex = Math.floor(Math.random() * imageHoverSrc.length);
-		imageHoverSrc = imageHoverSrc[randIndex];
+export default function OfficerCard({ officer }: { officer: OfficerType }) {
+	let imageHoverSrc = officer?.imageHover;
+
+	// If ImageHover is an array, choose a random image
+	if (Array.isArray(imageHoverSrc)) {
+		imageHoverSrc = imageHoverSrc[Math.floor(Math.random() * imageHoverSrc.length)];
 	}
 	
 	return (
@@ -16,7 +23,7 @@ export default function OfficerCard(props: any) {
 				<div className="officer-card-image-wrapper">
 					<Image
 						className="officer-card-image"
-						src={"/assets/images/headshots/" + (props.image || "default.jpg")}
+						src={"/assets/images/headshots/" + (officer.image || "default.jpg")}
 						alt=""
 						width={150}
 						height={150}
@@ -35,10 +42,10 @@ export default function OfficerCard(props: any) {
 					)}
 				</div>
 				<div className="officer-card-text">
-					<h3>{props.name}</h3>
-					<i>{props.position}</i>
-					<a href={`mailto:${props.email}`} target="_blank">
-						{props.email}
+					<h3>{officer.name}</h3>
+					<i>{officer.position}</i>
+					<a href={`mailto:${officer.email}`} target="_blank">
+						{officer.email}
 					</a>
 				</div>
 			</div>

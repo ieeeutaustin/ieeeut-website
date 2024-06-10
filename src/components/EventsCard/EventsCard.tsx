@@ -3,9 +3,18 @@ import "./EventsCard.scss";
 import Image from "next/image";
 import Button from "../Button/Button";
 
-export default function EventCard(props: any) {
+export type EventType = {
+	title: string;
+	description: string;
+	date: string;
+	time: string;
+	room: string;
+	rsvp: string;
+	image: string;
+}
 
-	const event = props.event;
+export default function EventCard({ event }: { event: EventType }) {
+
 	let formattedDate = "";
 
 	if (event) {

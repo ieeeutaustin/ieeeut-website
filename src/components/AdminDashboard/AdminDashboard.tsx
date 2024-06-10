@@ -7,7 +7,7 @@ import ShortURLTable from "../ShortURLTable/ShortURLTable";
 import EventEditorTable from "../EventEditorTable/EventEditorTable";
 import { GoogleSignOutButton } from "../AuthButtons/AuthButtons";
 
-export default function AdminDashboard(props: any) {
+export default function AdminDashboard() {
 
     const [selected, setSelected] = useState("Short URLs");
 
