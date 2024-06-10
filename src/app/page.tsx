@@ -48,7 +48,7 @@ export default function Home() {
 					Almost all of our events are free (when you RSVP), and we provide food at most of them!
 				</p>
 				<i>
-					We are not particularly project based, however, <a href="https://ras.ece.utexas.edu" target="_blank">IEEE RAS</a> is, if you are interested in robotics!
+					We are not mainly project-based; however, if you are interested in robotics, <a href="https://ras.ece.utexas.edu" target="_blank">IEEE RAS</a> is!
 				</i>
 				<Button name="Learn more" link="/about" />
 			</TextSection>
@@ -154,27 +154,6 @@ export default function Home() {
 				</div>
 			</TextSection>
 			<JoinSection />
-			{/* <TextSection
-				textSide="center"
-				textColor="white"
-				textCols="4"
-				graphicSrc="/assets/images/backgrounds/BlueGradient.jpg"
-			>
-				<h2>Follow our Socials</h2>
-				<p>
-					Our socials are a great place to keep up with what and when
-					we&apos;re hosting events and making content!
-				</p>
-				<IconList
-					icons={[
-						"instagram-white",
-						"tiktok-white",
-						"linkedin-white",
-						"facebook-white",
-						"youtube-white"
-					]}
-				/>
-			</TextSection> */}
 			<EventsSection full={false} />
 		</>
 	);

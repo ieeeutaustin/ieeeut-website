@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 
 import { Poppins } from "next/font/google";
+import { Metadata } from "next";
 
 const poppins = Poppins({
 	subsets: ["latin-ext"],
@@ -13,8 +14,20 @@ const poppins = Poppins({
 	variable: '--custom-font-poppins',
 });
 
-export const metadata = {
-	title: "IEEE UT"
+export const metadata: Metadata = {
+	title: "IEEE UT",
+	description: "UT Austin's largest ECE student org that combines social, academic, and professional!",
+	openGraph: {
+		title: "IEEE UT",
+		description: "UT Austin's largest ECE student org that combines social, academic, and professional!",
+		url: "https://ieee.ece.utexas.edu",
+		images: ["/assets/images/branding/meta-image.jpg"],
+	},
+	twitter: {
+		title: "IEEE UT",
+		description: "UT Austin's largest ECE student org that combines social, academic, and professional!",
+		images: ["/assets/images/branding/meta-image.jpg"],
+	}
 };
 
 export default function RootLayout({
