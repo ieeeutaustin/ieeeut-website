@@ -1,10 +1,10 @@
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
 import TextSection from "@/components/TextSection/TextSection";
 import Button from "@/components/Button/Button";
-import { getURL } from "@/utils/socials";
 
 export const metadata = {
-	title: "Corporate | IEEE UT"
+	title: "Corporate | IEEE UT",
+	description: "Learn about becoming a sponsor of IEEE UT.",
 };
 
 export default function Corporate() {

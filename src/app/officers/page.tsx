@@ -3,7 +3,8 @@ import HeaderSection from "@/components/HeaderSection/HeaderSection";
 import OfficerSection from "@/components/OfficersSection/OfficerSection";
 
 export const metadata = {
-	title: "Officers | IEEE UT"
+	title: "Officers | IEEE UT",
+	description: "Meet the IEEE UT officers for this school year and learn about the application process.",
 };
 
 export default function Officers() {

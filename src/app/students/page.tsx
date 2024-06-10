@@ -1,11 +1,11 @@
-import Link from "next/link";
 import TextSection from "@/components/TextSection/TextSection";
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
 import Button from "@/components/Button/Button";
 import { PerksSection } from "../membership/page";
 
 export const metadata = {
-	title: "Students | IEEE UT"
+	title: "Students | IEEE UT",
+	description: "Learn about what IEEE means to you as a UT Student.",
 };
 
 export default function Students() {

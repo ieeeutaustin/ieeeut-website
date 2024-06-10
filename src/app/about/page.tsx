@@ -1,11 +1,11 @@
-import HeroSection from "@/components/HeroSection/HeroSection";
 import TextSection from "@/components/TextSection/TextSection";
 import Button from "@/components/Button/Button";
 import HeaderSection from "@/components/HeaderSection/HeaderSection";
 import GallerySection from "@/components/GallerySection/GallerySection";
 
 export const metadata = {
-	title: "About | IEEE UT"
+	title: "About | IEEE UT",
+	description: "Learn about IEEE UT, the student branch of IEEE at the UT Austin.",
 };
 
 export default function About() {

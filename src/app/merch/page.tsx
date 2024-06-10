@@ -5,7 +5,8 @@ import Button from "@/components/Button/Button";
 import { getURL } from "@/utils/socials";
 
 export const metadata = {
-	title: "Merch | IEEE UT"
+	title: "Merch | IEEE UT",
+	description: "Check out IEEE UT's merch and get some free merch as a member.",
 };
 
 export default function Merch() {

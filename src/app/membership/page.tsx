@@ -5,7 +5,8 @@ import FlexSection from "@/components/FlexSection/FlexSection";
 import { getURL } from "@/utils/socials";
 
 export const metadata = {
-	title: "Membership | IEEE UT"
+	title: "Membership | IEEE UT",
+	description: "Learn about joining and the perks of being in IEEE UT.",
 };
 
 export default function Membership() {
