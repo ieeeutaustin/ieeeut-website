@@ -3,8 +3,7 @@ import EventsSection from "@/components/EventsSection/EventsSection";
 
 export const metadata = {
 	title: "Events | IEEE UT",
-	description:
-		"Check out some of IEEE UT's upcoming and past events.",
+	description: "Check out some of IEEE UT's upcoming and past events.",
 };
 
 export default function Home() {

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import EventsCard from "../EventsCard/EventsCard";
 import Button from "../Button/Button";
-import { getAll, Event } from "@/database/events";
+import { Event, getRecentEvents, getEventCount } from "@/database/events";
 
 function removeOutdatedRSVPs(events: Event[]) {
 
@@ -24,7 +24,6 @@ function removeOutdatedRSVPs(events: Event[]) {
 
 		if (eventDate < currentDate) event.rsvp = "";
 		
-
 		return event;
 	});
 
@@ -32,12 +31,11 @@ function removeOutdatedRSVPs(events: Event[]) {
 }
 
 export default async function EventsSection(props: any) {
-	const full: boolean = props.full;
-	let events : Event[] = removeOutdatedRSVPs(await getAll());
-	const eventCount = events.length;
 
-	if (!full) events = events.slice(0, 4);
-	else events = events.slice(0, 24);
+	const full: boolean = props.full;
+	const originalEvents = await getRecentEvents(full ? 24 : 4);
+	const events : Event[] = removeOutdatedRSVPs(originalEvents);
+	const eventCount = await getEventCount();
 
 	return (
 		<div className="events-section">

@@ -185,7 +185,7 @@ export default function EventEditorCard(props: any) {
 
 	const handleDuplicate = async () => {
 		
-		const newEvent: Event = { ...event };
+		let newEvent: Event = { ...event };
 
 		newEvent.id = Date.now().toString();
 
@@ -204,7 +204,7 @@ export default function EventEditorCard(props: any) {
 
 		if (!window.confirm("Are you sure you want to delete this event?")) return;
 
-		await fetch(`/api/events/${event.id}`, {
+		await fetch(`/api/events/${event.id}?date=${event.date}`, {
 			method: "DELETE",
 			headers: {
 				"Content-Type": "application/json",

@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
-import { getAll, putEvent, Event } from "@/database/events";
+import { putEvent, Event, getRecentEvents } from "@/database/events";
 
 export async function GET(request : Request) : Promise<NextResponse>{
     try {
-        const events = await getAll();
+        const events = await getRecentEvents();
 
         if (!events) return NextResponse.json({ status: 404 });
     

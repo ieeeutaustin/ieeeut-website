@@ -2,7 +2,6 @@
 
 import useSWR from 'swr';  
 import { useEffect, useState } from 'react';
-import Button from '@mui/joy/Button';
 import IconButton from '@mui/joy/IconButton';
 import AddIcon from '@mui/icons-material/Add';
 
@@ -25,6 +24,7 @@ export default function EventEditorSection() {
 
 	const addEvent = () => {
 		const newEvent: Event = {
+			org: 'ieeeut',
 			id: Date.now().toString(),
 			date: new Date().toISOString(),
 			description: "",

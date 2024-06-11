@@ -3,34 +3,13 @@ import "./HeroSection.scss";
 import Image from "next/image";
 import Button from "@/components/Button/Button";
 import ContinueIcon from "./ContinueIcon";
-import { getAll, Event } from "@/database/events";
+import { Event, getUpcomingEvent } from "@/database/events";
 import HeroTransition from "./HeroTransition";
 
 import HeroBackground from "../../../public/assets/images/backgrounds/HeroBackground.jpg";
 
-function getUpcoming(events: Event[]) {
-
-	const currentDate = new Date();
-	let upcomingEvent = null;
-	let upcomingDate = null;
-
-	for (let i = 0; i < events.length; i++) {
-		const eventDate = new Date(events[i].date.replace(/\//g, "/"));
-
-		eventDate.setHours(19);
-
-		if (eventDate > currentDate && (!upcomingDate || eventDate < upcomingDate)) {
-			upcomingDate = eventDate;
-			upcomingEvent = events[i];
-		}
-	}
-
-	return upcomingEvent;
-}
-
 export default async function HeroSection() {
-	const events: Event[] = await getAll();
-	const upcomingEvent = getUpcoming(events);
+	const upcomingEvent: Event | null = await getUpcomingEvent();
 
 	let eventDate = null;
 	let formattedDate = null;
