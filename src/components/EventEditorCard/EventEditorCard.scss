@@ -2,6 +2,12 @@
 
 .event-card.admin {
 
+    transform-origin: left;
+			
+    &:nth-child(2n) {
+        transform-origin: right;
+    }
+
     .event-content {
 
         gap: 5px;

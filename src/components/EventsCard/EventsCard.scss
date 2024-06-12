@@ -114,6 +114,11 @@
 			animation-timeline: view();
 			transform: scale(0.85);
 			animation-range: entry 0% contain 25%;
+			transform-origin: right;
+			
+			&:nth-child(2n) {
+				transform-origin: left;
+			}
 		}
 	}
 }
