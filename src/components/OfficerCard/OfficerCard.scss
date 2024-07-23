@@ -55,7 +55,7 @@
 			border-radius: 5px;
 
 			img {
-				transform: scale(1.25);
+				transform: scale(1.15);
 				width: 100%;
 				height: 100%;
 				transition: 200ms ease-in-out;
@@ -71,7 +71,7 @@
 	}
 
 	&:hover {
-		transform: scale(1.15);
+		transform: scale(1.1);
 		background-color: $color-ieee-blue-9;
 
 		.officer-card-content {
