@@ -22,12 +22,12 @@ export const metadata: Metadata = {
 		title: "IEEE UT",
 		description: "UT Austin's largest ECE student org that combines social, academic, and professional!",
 		url: "https://ieee.ece.utexas.edu",
-		images: ["/assets/images/branding/meta-image.jpg"],
+		images: ["/assets/images/branding/meta-image-minimal.jpg"],
 	},
 	twitter: {
 		title: "IEEE UT",
 		description: "UT Austin's largest ECE student org that combines social, academic, and professional!",
-		images: ["/assets/images/branding/meta-image.jpg"],
+		images: ["/assets/images/branding/meta-image-minimal.jpg"],
 	}
 };
 
