@@ -1,0 +1,57 @@
+div.point-history {
+    width: 500px;
+    max-width: 80vw;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    h4.entry-date {
+        color: #989898;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 15px 0;
+    }
+}
+
+div.point-entry {
+
+    display: flex;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    box-sizing: content-box;
+    gap: 15px;
+    border-radius: 65px;
+    align-items: center;
+
+    div.entry-circle {
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+    }
+
+    div.entry-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .entry-type {
+            font-weight: 600;
+        }
+
+        .entry-desc {
+            font-size: 0.8rem;
+        }
+    }
+
+    .entry-points {
+        margin-left: auto;
+        margin-right: 15px;
+        font-weight: 700;
+
+        > span {
+            font-size: 0.8rem;
+        }
+    }
+}
