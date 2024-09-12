@@ -17,6 +17,7 @@ export default async function HeroSection() {
 	if (upcomingEvent) {
 		eventDate = new Date(upcomingEvent.date.replace(/\//g, "/"));
 		formattedDate = eventDate.toLocaleDateString('en-US', {
+			timeZone: 'America/Chicago',
 			year: 'numeric',
 			month: 'long',
 			day: 'numeric',
