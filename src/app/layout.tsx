@@ -40,12 +40,12 @@ export default function RootLayout({
 		<html lang="en">
 			<link
 				rel="icon"
-				href="./assets/images/branding/ieeeut-logo.jpg"
+				href="/assets/images/branding/ieeeut-logo.jpg"
 				sizes="any"
 			/>
 			<link
 				rel="shortcut icon"
-				href="./assets/images/branding/ieeeut-logo.jpg"
+				href="/assets/images/branding/ieeeut-logo.jpg"
 			/>
 			<body className={`${poppins.variable}`}>
 				<Navbar />

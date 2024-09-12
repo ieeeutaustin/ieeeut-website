@@ -1,0 +1,68 @@
+div.fam-leaderboard {
+    width: 100%;
+    position: relative;
+    
+    img.background {
+        object-fit: cover;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    div.background-color {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        z-index: -2;
+    }
+
+    div.teams {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        max-width: min(50%, 500px); // Clamp to 500px wide
+        min-width: 300px;
+        margin: 0 auto;
+        gap: 30px;
+
+        div.team {
+
+            position: relative;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+                object-fit: contain;
+                transform: translateY(10px);
+            }
+
+            div.pillar {
+                border-radius: 20px 20px 0 0;
+                text-align: center;
+                padding: 15px 0;
+
+                > span {
+                
+                    &:first-of-type {
+                        font-size: 4rem;
+                        font-weight: 700;
+                        display: block;
+                        line-height: 4.5rem;
+                    }
+
+                    &:nth-of-type(2) {
+                        font-size: 1rem;
+                        display: block;
+                        line-height: 1rem;
+                    }
+                }
+            }
+        }  
+    }
+}

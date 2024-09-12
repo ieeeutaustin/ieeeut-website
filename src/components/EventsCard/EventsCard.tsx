@@ -19,8 +19,9 @@ export default function EventCard({ event }: { event: EventType }) {
 
 	if (event) {
 		const eventDate = new Date(event.date.replace(/\//g, "/"));
-	
+
 		formattedDate = eventDate.toLocaleDateString('en-US', {
+			timeZone: 'America/Chicago',
 			year: 'numeric',
 			month: 'long',
 			day: 'numeric',
