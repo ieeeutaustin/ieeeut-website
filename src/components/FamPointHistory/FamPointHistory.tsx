@@ -6,9 +6,11 @@ import { famConfig } from "@/utils/fam-config";
 import { google } from "googleapis";
 import TextSection from "../TextSection/TextSection";
 
-type FamTeam = {
-    team: string,
-    points: number,
+type FamSpreadsheetPointEntry = {
+    type: string,
+    date: Date,
+    desc: string,
+    points: number
     theme: any
 }
 
@@ -19,14 +21,6 @@ const auth = new google.auth.GoogleAuth({
 });
 
 const sheets = google.sheets({version: "v4", auth: auth});
-
-type FamSpreadsheetPointEntry = {
-    type: string,
-    date: Date,
-    desc: string,
-    points: number
-    theme: any
-}
 
 async function getPointHistory(): Promise<FamSpreadsheetPointEntry[]> {
 
@@ -54,7 +48,7 @@ async function getPointHistory(): Promise<FamSpreadsheetPointEntry[]> {
 export default async function FamPointHistory() {
 
     const pointHistory: FamSpreadsheetPointEntry[] = await getPointHistory();
-    const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+    const dateOptions: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'America/Chicago' };
 
     return (
         <TextSection textSide="center" textCols="4">
@@ -62,7 +56,7 @@ export default async function FamPointHistory() {
             <div className="point-history">
                 {pointHistory.map((entry, index) => (
                     <div key={index}>
-                        {(index == 0 || entry.date.getDate() != pointHistory[index-1].date.getDate()) && <h4 className="entry-date">{entry.date.toLocaleDateString('en-US', options)}</h4>}
+                        {(index == 0 || entry.date.getDate() != pointHistory[index-1].date.getDate()) && <h4 className="entry-date">{entry.date.toLocaleDateString('en-US', dateOptions)}</h4>}
                         <div className="point-entry">
                             <div className="entry-circle" style={{backgroundColor: entry.theme.primaryColor}}/>
                             <div className="entry-info">
