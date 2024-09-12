@@ -28,34 +28,28 @@ export default function Familieee() {
 				graphicAlt="YouTube video promoting IEEE UT"
 				id="join"
 			>
-				<h2>Joining is Easy</h2>
+				<h2>What are Famil(IEEE)s?</h2>
 				<p>
-					As a UT student, you have access to attend nearly all of our events and get food
-					for free! (Just RSVP before)
+					FamilIEEEs are small teams of IEEE members that compete in various events and challenges throughout the semester. The goal is to get to know your team, have fun, and come out on top at the end of the semester. FamilIEEEs are a great way to get involved in IEEE and meet new people!
 				</p>
-				<p> You can go from a guest to an official member by paying dues! Swing by <a href="/officehours">office hours</a> to pay dues in cash or online!</p>
-				<div className="flex gap-3">
-					<Button name="Member Form" link="/memberform" />
-					<Button name="Perks" link="/membership#perks" />
-				</div>
 			</TextSection>
 			<TextSection
 				textSide="right"
 				textCols="4"
-				graphicSrc="/assets/images/glamping-2.jpg"
-				graphicAlt="Members listening to activity instructions in pairs on field"
+				graphicSrc="/assets/images/leadership-retreat.jpg"
+				graphicAlt="YouTube video promoting IEEE UT"
+				id="join"
 			>
-				<h2>Types of Members</h2>
-				<h3>IEEE Guest</h3>
+				<h2>Interested in joining?</h2>
 				<p>
-					Being a guest is completely free! As a guest, you get access
-					to our free events and free food at those events! (As long as
-					you RSVP...)
+					Joining is easy! If school is in session, we&apos;ve likely already started fams, so feel free to join! Head over the to our Discord and send a message to the general channel or to an officer!
 				</p>
-				<h3>IEEE Member</h3>
-				<p>
-					As a member, you get access to tons of perks listed below! All you need to do is pay dues! Swing by <a href="/officehours">office hours</a> to pay dues in cash or online!
-				</p>
+				<Button
+					name="Join our Discord"
+					link="/discord"
+					icon="/assets/icons/discord-white.svg"
+					newWindow={true}
+				/>
 			</TextSection>
 		</>
 	);

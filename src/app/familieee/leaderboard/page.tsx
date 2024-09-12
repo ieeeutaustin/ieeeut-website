@@ -20,3 +20,5 @@ export default function FamilieeeLeaderboard() {
 		</>
 	);
 }
+
+export const revalidate = 300;
