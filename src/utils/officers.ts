@@ -76,8 +76,10 @@ const officers: OfficerType[] = [
         email: "comms@ieeeut.org",
     },
     {
+        name: "Megan Zhong",
         position: "External Activities and Events Assistant Director",
         email: "external.ae@ieeeut.org",
+        image: "Megan.jpg",
     },
     {
         position: "External Activities and Events Assistant Director",
