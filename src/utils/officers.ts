@@ -44,6 +44,12 @@ const officers: OfficerType[] = [
         image: "Anneke.jpg",
     },
     {
+        name: "Nicklas Di Tirro",
+        position: "Internal Activities and Events Director",
+        email: "internal.ae@ieeeut.org",
+        image: "Nicklas.jpg",
+    },
+    {
         name: "Brianna Dickson",
         position: "External Activities and Events Director",
         email: "external.ae@ieeeut.org",
@@ -76,12 +82,6 @@ const officers: OfficerType[] = [
     {
         position: "External Activities and Events Assistant Director",
         email: "external.ae@ieeeut.org",
-    },
-    {
-        name: "Nicklas Di Tirro",
-        position: "Internal Activities and Events Assistant Director",
-        email: "internal.ae@ieeeut.org",
-        image: "Nicklas.jpg",
     },
     {
         position: "Internal Activities and Events Assistant Director",
