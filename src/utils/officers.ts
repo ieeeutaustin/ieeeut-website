@@ -68,12 +68,16 @@ const officers: OfficerType[] = [
         image: "Hannah.jpg",
     },
     {
+        name: "Phoebe Franklin",
         position: "Communications Assistant Director",
         email: "comms@ieeeut.org",
+        image: "Phoebe.jpg",
     },
     {
+        name: "Shreya Shetty",
         position: "Communications Assistant Director",
         email: "comms@ieeeut.org",
+        image: "Shreya.jpg",
     },
     {
         name: "Megan Zhong",
@@ -82,8 +86,10 @@ const officers: OfficerType[] = [
         image: "Megan.jpg",
     },
     {
+        name: "Theo Ding",
         position: "External Activities and Events Assistant Director",
         email: "external.ae@ieeeut.org",
+        image: "Theo.jpg",
     },
     {
         name: "Joey Zhang",
@@ -92,6 +98,7 @@ const officers: OfficerType[] = [
         image: "Joey.jpg",
     },
     {
+        name: "Ashlynn Tusneem",
         position: "Membership and Resources Assistant Director",
         email: "mr@ieeeut.org",
     },
