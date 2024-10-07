@@ -101,6 +101,7 @@ const officers: OfficerType[] = [
         name: "Ashlynn Tusneem",
         position: "Membership and Resources Assistant Director",
         email: "mr@ieeeut.org",
+        image: "Ashlynn.jpg",
     },
 ];
 
