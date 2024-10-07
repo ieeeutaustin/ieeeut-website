@@ -22,7 +22,7 @@ export default function Officers() {
 					school year.
 				</p>
 				<i>
-					Assistant officer applications for the 24-25 school year will open during the first week of the Fall 2024 semester.
+					Assistant officer applications for the 24-25 school year are now closed. Officer applications for 25-26 will be at the end of the 2025 spring semester!
 				</i>
 			</TextSection>
 			<OfficerSection />
