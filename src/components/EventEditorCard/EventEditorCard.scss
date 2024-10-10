@@ -1,7 +1,8 @@
 @import "../../styles/colors.scss";
 
 .event-card.admin {
-
+	flex-grow: 1;
+	flex-direction: column;
     transform-origin: left;
 			
     &:nth-child(2n) {
