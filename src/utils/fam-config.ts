@@ -1,39 +1,55 @@
-export const famConfig = {
+export const famConfig: famConfigType = {
     fams: [
         {
-            name: 'Candy Kingdom',
-            nickname: 'Candy',
-            backgroundImage: '/assets/images/familieee/theme/CandyKingdom.png',
-            mascotImage: '/assets/images/familieee/theme/PrincessBubblegum.png',
-            primaryColor: '#FF9AFF',
-            textColor: '#B109B1',
-            entriesRange: 'Points!B7:G103',
-            pointsRange: 'Points!G7:G103'
+            name: 'Agents',
+            nickname: 'Agents',
+            backgroundImage: '/assets/images/familieee/theme/lab_background.png',
+            mascotImage: '/assets/images/familieee/theme/perry.png',
+            primaryColor: '#41a59f',
+            textColor: '#EEEEEE',
+            entriesRange: 'Points!B7:G103', // Likely don't need to change this
+            pointsRange: 'Points!G7:G103' // Likely don't need to change this
         },
         {
-            name: 'Fire Kingdom',
-            nickname: 'Fire',
-            backgroundImage: '/assets/images/familieee/theme/FireKingdom.png',
-            mascotImage: '/assets/images/familieee/theme/FlamePrincess.png',
-            primaryColor: '#FF3232',
-            textColor: '#FFE3E3',
-            entriesRange: 'Points!I7:N103',
-            pointsRange: 'Points!N7:N103'
+            name: 'Kids',
+            nickname: 'Kids',
+            backgroundImage: '/assets/images/familieee/theme/yard_background.jpg',
+            mascotImage: '/assets/images/familieee/theme/phineas.png',
+            primaryColor: '#eb9500',
+            textColor: '#EEEEEE',
+            entriesRange: 'Points!I7:N103', // Likely don't need to change this
+            pointsRange: 'Points!N7:N103' // Likely don't need to change this
         },
         {
-            name: 'Ice Kingdom',
-            nickname: 'Ice',
-            backgroundImage: '/assets/images/familieee/theme/IceKingdom.png',
-            mascotImage: '/assets/images/familieee/theme/IceKing.png',
-            primaryColor: '#00D5FF',
-            textColor: '#E3FAFF',
-            entriesRange: 'Points!P7:U103',
-            pointsRange: 'Points!U7:U103'
+            name: 'LOVEMUFFIN',
+            nickname: 'LOVEMUFFIN',
+            backgroundImage: '/assets/images/familieee/theme/doof_background.jpg',
+            mascotImage: '/assets/images/familieee/theme/dr_doof.png',
+            primaryColor: '#434343',
+            textColor: '#EEEEEE',
+            entriesRange: 'Points!P7:U103', // Likely don't need to change this
+            pointsRange: 'Points!U7:U103' // Likely don't need to change this
         }
     ],
     /*
         Make sure to share this spreadsheet with the associated Google Cloud service account. As of now that email is:
             'ieee-ut-website@ieee-ut-website.iam.gserviceaccount.com'
     */
-    spreadsheetId: "1r9_Zp1rJn4q4FTCB7hBX0NvF6bfMulWPWlg6BtLyJng"
+    spreadsheetId: "1PubALq-7sWpXj8fmgKDwsc9FLHdZyeDiBHgxR5hQFLA"
+}
+
+type famConfigType = {
+    fams: famThemeType[],
+    spreadsheetId: string
+}
+
+type famThemeType = {
+    name: string,
+    nickname: string,
+    backgroundImage: string,
+    mascotImage: string,
+    primaryColor: string,
+    textColor: string,
+    entriesRange: string,
+    pointsRange: string
 }

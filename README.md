@@ -50,6 +50,36 @@
 - When you are happy with the selected image, press the "Save" button.
 - If you want to revert your change, press the "Cancel" button.
 
+# How to update FamilIEEE leaderboard
+If the [fam leaderboard](https://ieee.ece.utexas.edu/familieee/leaderboard) is still used, and you would like to change the theme of it, this section will cover how to do so. The leaderboard was programmed with changing the theme in mind, so this shouldn't be difficult.
+
+## Quick Overview
+All familieee leaderboard theme configuration will be customized through [src/utils/fam-config.ts](src/utils/fam-config.ts). In theory it should support more than 3 fams, but it has only been tested with 3. The only additional steps outside of customizing this file is (1) changing the images [public/assets/images/familieee/theme/](public/assets/images/familieee/theme/) to match your theme and (2) share the point tracker Google Sheet to Google Cloud service account (ieee-ut-website@ieee-ut-website.iam.gserviceaccount.com).
+
+**Note:** The familieee point tracker gsheet needs to be the same format for the software to read it correctly. You can make edits to the fam-config, but it is easier to leave it as is.
+
+### Create your point tracker Google sheet
+1. Find the FamilIEEE Point Tracker in the Google Drive and make a copy of it.
+2. Clear the entries, change the colors and names.
+3. Press 'Share' at the top right, and share to "ieee-ut-website@ieee-ut-website.iam.gserviceaccount.com" giving the account, full perms (just to be safe). This permits the Google Drive API to view our point tracker.
+
+4. a) Copy the GSheet Id, which you can find in the URL. It will look like this `spreadsheets/d/ID_HERE/edit?...`
+
+    b) Inside the [fam-config.ts](src/utils/fam-config.ts) file, paste the copied string as the spreadsheetId field's value.
+
+### Update the fam names
+1. Go to the [fam-config.ts](src/utils/fam-config.ts) file. *Notice how each fam is an entry in the "fams" array.*
+2. Change the names and nicknames of the fams in each entry to match the fams on your point tracker. Order here does matter, it must match the gsheet.
+
+### Update the fam theme images
+You will need 2 images for each familieee. One for the character/mascot and one for the background that displays when they are winning.
+1. Save your selected images inside the folder [public/assets/images/familieee/theme/](public/assets/images/familieee/theme/), and rename them to something clear to help you out later.
+2. Go to the [fam-config.ts](src/utils/fam-config.ts) file.
+3. For each fam, update the background image and mascot image fields to the image path you saved previously.
+4. Also update the primary and text colors for each fam.
+
+You are done! Your point tracker should now be connected to your themed fam leaderboard! (it can take up to 5 minutes to update sometimes)
+
 # Get started with development
 
 Clone with
