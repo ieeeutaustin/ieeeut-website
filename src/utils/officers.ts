@@ -11,7 +11,7 @@ const officers: OfficerType[] = [
         name: "Jack Son",
         position: "Vice Chair",
         email: "vice@ieeeut.org",
-        image: "Jack.jpeg",
+        image: "Jack.jpg",
     },
     {
         name: "Aaron Sulbaran",
@@ -29,7 +29,7 @@ const officers: OfficerType[] = [
         name: "Ayesha Haider",
         position: "Corporate Liaison",
         email: "liasion@ieeeut.org",
-        image: "Ayesha.jpeg",
+        image: "Ayesha.jpg",
     },
     {
         name: "Amina Meddad",
