@@ -13,16 +13,8 @@ function removeOutdatedRSVPs(events: Event[]) {
 
 		let eventDate = new Date(event.date);
 
-		if (event.time) {
-			const match = event.time.match(/(\d)+/);
-			const startHours = match ? parseInt(match[0]) : 0;
-			const pm = event.time.match(/(pm)/);
-
-			eventDate.setHours(startHours + (pm ? 12 : 0));
-
-		} else eventDate.setHours(19);
-
-		if (eventDate < currentDate) event.rsvp = "";
+		if (!event.time) eventDate.setHours(19);
+		if (eventDate.getTime() < currentDate.getTime()) event.rsvp = "";
 		
 		return event;
 	});
