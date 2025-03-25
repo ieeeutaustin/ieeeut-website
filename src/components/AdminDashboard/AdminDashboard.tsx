@@ -9,7 +9,7 @@ import { GoogleSignOutButton } from "../AuthButtons/AuthButtons";
 
 export default function AdminDashboard() {
 
-    const [selected, setSelected] = useState("Short URLs");
+    const [selected, setSelected] = useState("Events");
 
     return (
         <div className="dashboard-container">

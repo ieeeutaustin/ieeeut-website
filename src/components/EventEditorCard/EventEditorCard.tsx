@@ -15,7 +15,6 @@ import IconButton from '@mui/joy/IconButton';
 
 import DeleteIcon from '@mui/icons-material/Delete';
 import FileUploadIcon from '@mui/icons-material/FileUpload';
-import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 
 import { Event } from "@/database/events";
 
@@ -31,7 +30,6 @@ export default function EventEditorCard(props: any) {
 
 	const [title, setTitle] = useState(event?.title || "");
 	const [desc, setDesc] = useState(event?.description || "");
-	const [date, setDate] = useState(event.date);
 	const [time, setTime] = useState(event?.time || "");
 	const [room, setRoom] = useState(event?.room || "");
 	const [rsvp, setRSVP] = useState(event?.rsvp || "");
@@ -41,7 +39,6 @@ export default function EventEditorCard(props: any) {
 	const [dateShort, setDateShort] = useState("");
 
 	useEffect(() => {
-		// const eventDate = new Date(date.replace(/\//g, "/"));
 		const eventDate = new Date(event.date);
 
 		setDateLong(eventDate.toLocaleDateString('en-US', {
@@ -85,7 +82,6 @@ export default function EventEditorCard(props: any) {
 	const cancelTextEdit = () => {
 		setTitle(event?.title || "No title");
 		setDesc(event?.description || "");
-		setDate(event.date);
 		setTime(event?.time || "");
 		setRoom(event?.room || "");
 
@@ -121,17 +117,6 @@ export default function EventEditorCard(props: any) {
 			event.description = desc;
 			event.time = time;
 			event.room = room;
-
-			if (date != event.date) {
-
-				const match = time.match(/(\d)+/);
-				const startHours = match ? parseInt(match[0]) : 0;
-				const pm = time.match(/(pm)/);
-				const newDate = new Date(date);
-
-				newDate.setHours(startHours + (pm ? 12 : 0));
-				event.date = newDate.toISOString();
-			}
 
 			// Save the changes to the database
 			await fetch("/api/events", {
@@ -179,25 +164,7 @@ export default function EventEditorCard(props: any) {
 			});
 
 			await props.mutate();
-
 		}
-	}
-
-	const handleDuplicate = async () => {
-		
-		let newEvent: Event = { ...event };
-
-		newEvent.id = Date.now().toString();
-
-		await fetch("/api/events", {
-			method: "PUT",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify(newEvent),
-		});
-
-		await props.mutate();
 	}
 
 	const handleDelete = async () => {
@@ -238,7 +205,7 @@ export default function EventEditorCard(props: any) {
 					<div className="event-details">
 						<div className="event-time-loc">
 							{textEditable ?
-								<input className="p" defaultValue={dateShort} placeholder="Date (MM/DD/YY)" onChange={(e) => setDate(e.target.value)} />
+								<input disabled className="p" defaultValue={dateShort} placeholder="Date (MM/DD/YY)" />
 								:
 								<p>{dateLong}</p>
 							}
@@ -290,15 +257,6 @@ export default function EventEditorCard(props: any) {
 					>
 						New Image
 					</ButtonJoy>
-					<IconButton
-						size="sm"
-						variant="solid"
-						color="primary"
-						style={{ marginLeft: "auto" }}
-						onClick={handleDuplicate}
-					>
-						<ContentCopyIcon />
-					</IconButton>
 					<IconButton
 						size="sm"
 						variant="solid"

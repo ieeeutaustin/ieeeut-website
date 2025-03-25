@@ -1,0 +1,46 @@
+form {
+    box-shadow: 0 0px 50px 0px rgba(0,0,0,0.75);
+    background-color: rgba(0, 0, 0, 0.75);   
+    padding: 50px 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 10px;
+    justify-items: center;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+
+    h3 {
+        text-align: center;
+    }
+
+    .form-entry-pair {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .form-entry {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        img {
+            object-fit: contain;
+            width: 150px;
+            height: auto;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+}
