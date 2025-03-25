@@ -96,7 +96,7 @@
 	}
 }
 
-@supports (animation-timeline: view()) {
+@supports (animation-timeline: view()) and (animation-range: entry 0% contain 25%) {
 	@media (prefers-reduced-motion: no-preference) {
 		@keyframes float {
 			from {

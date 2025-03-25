@@ -205,7 +205,7 @@
 	}
 }
 
-@supports (animation-timeline: view()) {
+@supports (animation-timeline: view()) and (animation-range: entry 20% contain 25%) {
 	@media (prefers-reduced-motion: no-preference) {
 		@keyframes appear {
 			from {
@@ -220,10 +220,10 @@
 
 		.hero-event {
 			animation: appear linear forwards;
-			animation-timeline: view();
 			transform: translateY(50px);
 			opacity: 0;
-			animation-range:  entry 20% contain 25%;
+			animation-timeline: view();
+			animation-range: entry 20% contain 25%;
 		}
 	}
 }
