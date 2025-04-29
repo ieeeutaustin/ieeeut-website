@@ -21,7 +21,7 @@ const officers: OfficerType[] = [
     },
     {
         name: "Joaquin Escobar",
-        position: "Internal Director",
+        position: "Internal Director / Webmaster",
         email: "internal.dir@ieeeut.org",
         image: "Joaquin.jpg",
     },
