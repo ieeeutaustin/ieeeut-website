@@ -20,7 +20,7 @@ div.fam-leaderboard {
 
     div.teams {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(6, minmax(0, 1fr));
         max-width: min(50%, 500px); // Clamp to 500px wide
         min-width: 300px;
         margin: 0 auto;
