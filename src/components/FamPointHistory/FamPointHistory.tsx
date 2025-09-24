@@ -33,11 +33,23 @@ async function getPointHistory(): Promise<FamSpreadsheetPointEntry[]> {
             range: fam.entriesRange
         });
 
+        // const response = {
+        //     data: {
+        //         values: [
+        //             [ 'Kickoff', '9/18/2025', 'FALSE', '', '6th Place', '0' ],
+        //             [ 'Weekly', '9/18/2025', 'TRUE', '', 'Fam pose/sign', '5' ],
+        //             [ 'Weekly', '9/23/2025', 'TRUE', '', 'Mascot Drawing', '5' ],
+        //             [ 'Hangout', '9/24/2025', 'TRUE', '', '', '4' ],
+        //             [ 'Weekly', '9/24/2025', 'TRUE', '', 'Study Sesh', '5' ],
+        //         ]
+        //     }
+        // }
+
         response.data.values?.forEach((entry) => entry[0] && pointHistory.push({
             type: entry[0],
-            date: new Date(entry[1]),
+            date: new Date(entry[1] + " CDT"),
             desc: entry[4],
-            points: entry[5],
+            points: Number(entry[5]),
             theme: fam
         }));
     }
