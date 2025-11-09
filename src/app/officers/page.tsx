@@ -18,11 +18,11 @@ export default function Officers() {
 			<TextSection textSide="center" textCols="5">
 				<h2>Meet the 24-25 Officers</h2>
 				<p>
-					These are our lovely IEEE UT officers for the 24-25
+					These are our lovely IEEE UT officers for the 25-26
 					school year.
 				</p>
 				<i>
-					Assistant officer applications for the 24-25 school year are now closed. Officer applications for 25-26 will be at the end of the 2025 spring semester!
+					Assistant officer applications for the 2025-26 school year are now closed. Officer applications for 2026-27 will be at the end of the 2025 spring semester!
 				</i>
 			</TextSection>
 			<OfficerSection />
