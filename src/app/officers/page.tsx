@@ -16,7 +16,7 @@ export default function Officers() {
 				imageAlt="Group photo of IEEE officers of 2022-2023 in an iceskating rink"
 			/>
 			<TextSection textSide="center" textCols="5">
-				<h2>Meet the 24-25 Officers</h2>
+				<h2>Meet the 25-26 Officers</h2>
 				<p>
 					These are our lovely IEEE UT officers for the 25-26
 					school year.
