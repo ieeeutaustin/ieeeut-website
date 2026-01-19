@@ -16,8 +16,8 @@ export default function Corporate() {
 				imageAlt="Photo from the back of a Ericsson general meeting"
 				desc="Learn more about becoming a sponsor:"
 				button={{
-					name: "Corporate Packet 2024-2025",
-					link: "/assets/files/IEEE_Fall_Corporate_Packet_2024-2025.pdf",
+					name: "Corporate Packet 2025-2026",
+					link: "https://docs.google.com/document/d/1deqDi6RfUwBIA71Or_AfLaMKU3RX6Eyl1BjB8iLrJ9s/edit?usp=drivesdk",
 					newWindow: true
 				}}
 			/>
