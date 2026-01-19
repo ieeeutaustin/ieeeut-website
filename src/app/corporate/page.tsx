@@ -17,7 +17,7 @@ export default function Corporate() {
 				desc="Learn more about becoming a sponsor:"
 				button={{
 					name: "Corporate Packet 2025-2026",
-					link: "https://docs.google.com/document/d/1deqDi6RfUwBIA71Or_AfLaMKU3RX6Eyl1BjB8iLrJ9s/edit?usp=drivesdk",
+					link: "/assets/files/IEEE_UT_Corporate_Packet_2025-2026.pdf",
 					newWindow: true
 				}}
 			/>
@@ -79,7 +79,7 @@ export default function Corporate() {
 				textSide="right"
 				textCols="5"
 				graphicSrc="/assets/images/optiver-chat.jpg"
-				graphicAlt="Optiver representative chatting with 2 IEEE members"
+				graphicAlt="Optiver representatizve chatting with 2 IEEE members"
 			>
 				<h2>Workshops</h2>
 				<p>
@@ -105,7 +105,7 @@ export default function Corporate() {
 				</p>
 				<Button
 					name="Corporate Packet 2025-2026"
-					link="https://docs.google.com/document/d/1deqDi6RfUwBIA71Or_AfLaMKU3RX6Eyl1BjB8iLrJ9s/edit?usp=drivesdk"
+					link="/assets/files/IEEE_UT_Corporate_Packet_2025-2026.pdf"
 					newWindow={true}
 					type="outlined"
 				/>
