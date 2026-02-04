@@ -25,7 +25,7 @@ export const famConfig: famConfigType = {
             nickname: "The End",
             backgroundImage: '/assets/images/familieee/theme/the_end.png',
             mascotImage: '/assets/images/familieee/theme/Enderman.png',
-            primaryColor: '##a354ff',
+            primaryColor: '#a354ff',
             textColor: '#EEEEEE',
             entriesRange: 'Points!P7:U103', // Likely don't need to change this
             pointsRange: 'Points!U7:U103' // Likely don't need to change this
