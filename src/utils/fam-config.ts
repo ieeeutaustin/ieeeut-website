@@ -3,7 +3,7 @@ export const famConfig: famConfigType = {
         {
             name: "The Overworld",
             nickname: "The Overworld",
-            backgroundImage: '/assets/images/familieee/theme/the_overworld.jpg',
+            backgroundImage: '/assets/images/familieee/theme/the_overworld.png',
             mascotImage: '/assets/images/familieee/theme/bee.png',
             primaryColor: '#60ff36',
             textColor: '#EEEEEE',
