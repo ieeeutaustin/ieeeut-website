@@ -20,7 +20,7 @@ const links: any = {
 	},
 	gcal: {
 		name: "Google Calendar",
-		url: "https://calendar.google.com/calendar/u/0?cid=Y183NWNmZGJlZGFjNTY2MGZjOTA2MTRlZTRiNTliNzExOTE0MjU1MGIwYmM5MWJlNTgyNmFiNDBlNzQ4MmQ2YjBjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20",
+		url: "https://calendar.google.com/calendar/u/0?cid=c_d04a4f473441507c6636e1e0e152db291431a48d82d1c7ad8c54a1cf5b37482f@group.calendar.google.com",
 		icon: "/assets/icons/gcal.svg"
 	},
 	tiktok: {
