@@ -45,7 +45,7 @@ export const famConfig: famConfigType = {
         Make sure to share this spreadsheet with the associated Google Cloud service account. As of now that email is:
             'ieee-ut-website@ieee-ut-website.iam.gserviceaccount.com'
     */
-    spreadsheetId: "1se1F21f6T2MMfjnbIYExQOhGbW-Cegr-Es1jXjQyVLY"
+    spreadsheetId: "12YZos-1A7hebelOSnEuMMFJJM0zGtbhRBy5fm1EXg-g"
 }
 
 type famConfigType = {
