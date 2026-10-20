@@ -1,8 +1,8 @@
 export const famConfig: famConfigType = {
     fams: [
         {
-            name: "The Overworld",
-            nickname: "The Overworld",
+            name: "Gru's Cru",
+            nickname: "Gru's Cru",
             backgroundImage: '/assets/images/familieee/theme/the_overworld.png',
             mascotImage: '/assets/images/familieee/theme/bee.png',
             primaryColor: '#60ff36',
@@ -11,8 +11,8 @@ export const famConfig: famConfigType = {
             pointsRange: 'Points!G7:G103' // Likely don't need to change this
         },
         {
-            name: "The Nether",
-            nickname: "The Nether",
+            name: "Vector's Villains",
+            nickname: "Vector's Villains",
             backgroundImage: '/assets/images/familieee/theme/the_nether.png',
             mascotImage: '/assets/images/familieee/theme/ghast.png',
             primaryColor: '#ff592e',
@@ -21,14 +21,24 @@ export const famConfig: famConfigType = {
             pointsRange: 'Points!N7:N103' // Likely don't need to change this
         },
         {
-            name: "The End",
-            nickname: "The End",
+            name: "El Macho's Muchachos",
+            nickname: "El Macho's Muchachos",
             backgroundImage: '/assets/images/familieee/theme/the_end.png',
             mascotImage: '/assets/images/familieee/theme/Enderman.png',
             primaryColor: '#a354ff',
             textColor: '#EEEEEE',
             entriesRange: 'Points!P7:U103', // Likely don't need to change this
             pointsRange: 'Points!U7:U103' // Likely don't need to change this
+        },
+        {
+            name: "Balthazar's Baddies",
+            nickname: "Balthazar's Baddies",
+            backgroundImage: '/assets/images/familieee/theme/the_end.png',
+            mascotImage: '/assets/images/familieee/theme/Enderman.png',
+            primaryColor: '#a354ff',
+            textColor: '#EEEEEE',
+            entriesRange: 'Points!W7:AB103', // Likely don't need to change this
+            pointsRange: 'Points!AB7:AB103' // Likely don't need to change this
         },
     ],
     /*
