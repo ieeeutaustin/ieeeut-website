@@ -5,7 +5,7 @@ export const famConfig: famConfigType = {
             nickname: "Gru's Cru",
             backgroundImage: '/assets/images/familieee/theme/grus_bkgnd.png',
             mascotImage: '/assets/images/familieee/theme/grus_icon.png',
-            primaryColor: '##f1c232',
+            primaryColor: '#f1c232',
             textColor: '#EEEEEE',
             entriesRange: 'Points!B7:G103', // Likely don't need to change this
             pointsRange: 'Points!G7:G103' // Likely don't need to change this
