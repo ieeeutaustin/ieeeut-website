@@ -3,8 +3,8 @@ export const famConfig: famConfigType = {
         {
             name: "Gru's Cru",
             nickname: "Gru's Cru",
-            backgroundImage: '/assets/images/familieee/theme/the_overworld.png',
-            mascotImage: '/assets/images/familieee/theme/bee.png',
+            backgroundImage: '/assets/images/familieee/theme/grus_bkgnd.png',
+            mascotImage: '/assets/images/familieee/theme/grus_icon.png',
             primaryColor: '#60ff36',
             textColor: '#EEEEEE',
             entriesRange: 'Points!B7:G103', // Likely don't need to change this
@@ -13,8 +13,8 @@ export const famConfig: famConfigType = {
         {
             name: "Vector's Villains",
             nickname: "Vector's Villains",
-            backgroundImage: '/assets/images/familieee/theme/the_nether.png',
-            mascotImage: '/assets/images/familieee/theme/ghast.png',
+            backgroundImage: '/assets/images/familieee/theme/vectors_bkgnd.png',
+            mascotImage: '/assets/images/familieee/theme/vectors_icon.png',
             primaryColor: '#ff592e',
             textColor: '#EEEEEE',
             entriesRange: 'Points!I7:N103', // Likely don't need to change this
@@ -23,8 +23,8 @@ export const famConfig: famConfigType = {
         {
             name: "El Macho's Muchachos",
             nickname: "El Macho's Muchachos",
-            backgroundImage: '/assets/images/familieee/theme/the_end.png',
-            mascotImage: '/assets/images/familieee/theme/Enderman.png',
+            backgroundImage: '/assets/images/familieee/theme/machos_bkgnd.png',
+            mascotImage: '/assets/images/familieee/theme/machos_icon.png',
             primaryColor: '#a354ff',
             textColor: '#EEEEEE',
             entriesRange: 'Points!P7:U103', // Likely don't need to change this
@@ -33,8 +33,8 @@ export const famConfig: famConfigType = {
         {
             name: "Balthazar's Baddies",
             nickname: "Balthazar's Baddies",
-            backgroundImage: '/assets/images/familieee/theme/the_end.png',
-            mascotImage: '/assets/images/familieee/theme/Enderman.png',
+            backgroundImage: '/assets/images/familieee/theme/machos_bkgnd.png',
+            mascotImage: '/assets/images/familieee/theme/machos_icon.png',
             primaryColor: '#a354ff',
             textColor: '#EEEEEE',
             entriesRange: 'Points!W7:AB103', // Likely don't need to change this
