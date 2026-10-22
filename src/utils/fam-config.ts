@@ -5,7 +5,7 @@ export const famConfig: famConfigType = {
             nickname: "Gru's Cru",
             backgroundImage: '/assets/images/familieee/theme/grus_bkgnd.png',
             mascotImage: '/assets/images/familieee/theme/grus_icon.png',
-            primaryColor: '#60ff36',
+            primaryColor: '##f1c232',
             textColor: '#EEEEEE',
             entriesRange: 'Points!B7:G103', // Likely don't need to change this
             pointsRange: 'Points!G7:G103' // Likely don't need to change this
@@ -25,7 +25,7 @@ export const famConfig: famConfigType = {
             nickname: "El Macho's Muchachos",
             backgroundImage: '/assets/images/familieee/theme/machos_bkgnd.png',
             mascotImage: '/assets/images/familieee/theme/machos_icon.png',
-            primaryColor: '#a354ff',
+            primaryColor: '#980000',
             textColor: '#EEEEEE',
             entriesRange: 'Points!P7:U103', // Likely don't need to change this
             pointsRange: 'Points!U7:U103' // Likely don't need to change this
@@ -35,7 +35,7 @@ export const famConfig: famConfigType = {
             nickname: "Balthazar's Baddies",
             backgroundImage: '/assets/images/familieee/theme/balthazars_bkgnd.png',
             mascotImage: '/assets/images/familieee/theme/balthazars_icon.png',
-            primaryColor: '#a354ff',
+            primaryColor: '#351c75',
             textColor: '#EEEEEE',
             entriesRange: 'Points!W7:AB103', // Likely don't need to change this
             pointsRange: 'Points!AB7:AB103' // Likely don't need to change this
