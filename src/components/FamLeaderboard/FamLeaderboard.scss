@@ -1,7 +1,7 @@
 div.fam-leaderboard {
     width: 100%;
     position: relative;
-    
+
     img.background {
         object-fit: cover;
         opacity: 0.75;
@@ -19,21 +19,22 @@ div.fam-leaderboard {
     }
 
     div.teams {
+        --team-count: 4; // fallback only, the real value is set in the TSX
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        max-width: min(50%, 500px); // Clamp to 500px wide
+        grid-template-columns: repeat(var(--team-count), minmax(0, 1fr));
+        width: min(92%, calc(var(--team-count) * 150px));
         min-width: 300px;
         margin: 0 auto;
-        gap: 30px;
+        gap: clamp(6px, calc(90px / var(--team-count)), 30px);
 
         div.team {
-
+            container-type: inline-size;
             position: relative;
             margin-top: 50px;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-        
+
             img {
                 display: block;
                 margin: 0 auto;
@@ -43,26 +44,26 @@ div.fam-leaderboard {
             }
 
             div.pillar {
-                border-radius: 20px 20px 0 0;
+                border-radius: clamp(6px, 12cqw, 20px) clamp(6px, 12cqw, 20px) 0 0;
                 text-align: center;
-                padding: 15px 0;
+                padding: clamp(6px, 10cqw, 15px) 0;
 
                 > span {
-                
+
                     &:first-of-type {
-                        font-size: 4rem;
+                        font-size: clamp(1rem, 36cqw, 4rem);
                         font-weight: 700;
                         display: block;
-                        line-height: 4.5rem;
+                        line-height: 1.1;
                     }
 
                     &:nth-of-type(2) {
-                        font-size: 1rem;
+                        font-size: clamp(0.5rem, 11cqw, 1rem);
                         display: block;
-                        line-height: 1rem;
+                        line-height: 1.1;
                     }
                 }
             }
-        }  
+        }
     }
 }
