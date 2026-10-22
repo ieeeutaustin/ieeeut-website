@@ -45,13 +45,17 @@ async function getPointHistory(): Promise<FamSpreadsheetPointEntry[]> {
         //     }
         // }
 
-        response.data.values?.forEach((entry) => entry[0] && pointHistory.push({
+        // Now you can have Typed rows with empty entries and the shi still builds:
+        response.data.values?.forEach((entry) => {
+        if (!entry[0] || !entry[1]) return; // skip rows with no type or no date yet
+        pointHistory.push({
             type: entry[0],
             date: new Date(entry[1] + " CDT"),
-            desc: entry[4],
-            points: Number(entry[5]),
+            desc: entry[4] ?? "",
+            points: Number(entry[5]) || 0,
             theme: fam
-        }));
+            });
+        });
     }
 
     return pointHistory.sort((a, b) => b.date.getTime() - a.date.getTime());;
