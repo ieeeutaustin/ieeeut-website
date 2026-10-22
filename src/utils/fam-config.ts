@@ -33,8 +33,8 @@ export const famConfig: famConfigType = {
         {
             name: "Balthazar's Baddies",
             nickname: "Balthazar's Baddies",
-            backgroundImage: '/assets/images/familieee/theme/machos_bkgnd.png',
-            mascotImage: '/assets/images/familieee/theme/machos_icon.png',
+            backgroundImage: '/assets/images/familieee/theme/balthazars_bkgnd.png',
+            mascotImage: '/assets/images/familieee/theme/balthazars_icon.png',
             primaryColor: '#a354ff',
             textColor: '#EEEEEE',
             entriesRange: 'Points!W7:AB103', // Likely don't need to change this
