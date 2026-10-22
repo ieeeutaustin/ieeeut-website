@@ -70,19 +70,26 @@ export default async function FamPointHistory() {
         <TextSection textSide="center" textCols="4">
             <h2>Point History</h2>
             <div className="point-history">
-                {pointHistory.map((entry, index) => (
-                    <div key={index}>
-                        {(index == 0 || entry.date.getDate() != pointHistory[index-1].date.getDate()) && <h4 className="entry-date">{entry.date.toLocaleDateString('en-US', dateOptions)}</h4>}
-                        <div className="point-entry">
-                            <div className="entry-circle" style={{backgroundColor: entry.theme.primaryColor}}/>
-                            <div className="entry-info">
-                                <p className="entry-type">{entry.type}</p>
-                                {entry.desc.length > 0 && <p className="entry-desc">{entry.desc}</p>}
+                {pointHistory.map((entry, index) => {
+                    const dateStr = entry.date.toLocaleDateString('en-US', dateOptions);
+                    const prevDateStr = index > 0
+                        ? pointHistory[index - 1].date.toLocaleDateString('en-US', dateOptions)
+                        : null;
+
+                    return (
+                        <div key={index}>
+                            {dateStr !== prevDateStr && <h4 className="entry-date">{dateStr}</h4>}
+                            <div className="point-entry">
+                                <div className="entry-circle" style={{backgroundColor: entry.theme.primaryColor}}/>
+                                <div className="entry-info">
+                                    <p className="entry-type">{entry.type}</p>
+                                    {entry.desc.length > 0 && <p className="entry-desc">{entry.desc}</p>}
+                                </div>
+                                <p className="entry-points">{entry.points}<span> pts</span></p>
                             </div>
-                            <p className="entry-points">{entry.points}<span> pts</span></p>
                         </div>
-                    </div>
-                ))}
+                    );
+                })}
             </div>
         </TextSection>
     )
