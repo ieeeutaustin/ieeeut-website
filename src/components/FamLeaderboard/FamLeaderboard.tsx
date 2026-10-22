@@ -5,6 +5,7 @@ import { famConfig } from "@/utils/fam-config";
 
 import Image from "next/image";
 import { google } from "googleapis";
+import type { CSSProperties } from "react";
 
 type FamTeam = {
     team: string,
@@ -33,7 +34,7 @@ async function getSortedFams(): Promise<FamTeam[]> {
 
         let points = 0;
 
-        response.data.values?.forEach((point) => points += Number(point[0]));
+        response.data.values?.forEach((point) => points += Number(point[0]) || 0);
 
         fams.push({
             team: fam.name,
@@ -53,7 +54,7 @@ export default async function FamLeaderboard() {
 
     return (
         <div className="fam-leaderboard">
-            <div className="teams">
+            <div className="teams" style={{ "--team-count": fams.length } as CSSProperties}>
                 {fams.map((fam) => (
                     <div key={fam.team} className="team">
                         <Image 
