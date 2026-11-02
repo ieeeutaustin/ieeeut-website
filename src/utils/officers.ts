@@ -95,7 +95,7 @@ const officers: OfficerType[] = [
         name: "Kara Cao",
         position: "External Activities and Events Assistant Director",
         email: "external.ae@ieeeut.org",
-        image: "kara_extAO.org",
+        image: "kara_extAO.JPG",
     },
     {
         name: "Allison Pham",
