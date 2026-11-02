@@ -106,7 +106,7 @@ const officers: OfficerType[] = [
     {
         name: "Jon Villegas Ortiz",
         position: "Internal Activities and Events Assistant Director",
-        email: "",
+        email: "internal.ae@ieeeut.org",
         image: "",
     },
     {
@@ -119,13 +119,13 @@ const officers: OfficerType[] = [
         name: "Ian Sendelbach",
         position: "Projects Assistant Liaison",
         email: "mr@ieeeut.org",
-        image: "",
+        image: "projects.liason@ieeeut.org",
     },
 	{
         name: "Manuel Escobar",
         position: "Projects Assistant Liaison",
         email: "mr@ieeeut.org",
-        image: "",
+        image: "projects.liason@ieeeut.org",
     },
 ];
 
