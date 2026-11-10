@@ -53,7 +53,7 @@ const officers: OfficerType[] = [
         name: "Zion Onwujuba",
         position: "Internal Activities and Events Director",
         email: "internal.ae@ieeeut.org",
-        image: "",
+        image: "zion_intOff",
     },
     {
         name: "Jasper Tang",
@@ -71,7 +71,7 @@ const officers: OfficerType[] = [
         name: "Gayeon Kim",
         position: "Communications Director",
         email: "comms@ieeeut.org",
-        image: "",
+        image: "gayeon_commsOff",
     },
     {
         name: "Allison Sobrinho",
@@ -83,7 +83,7 @@ const officers: OfficerType[] = [
         name: "Illia Denisov",
         position: "Communications Assistant Director",
         email: "comms@ieeeut.org",
-        image: "",
+        image: "illia_commsAO",
     },
     {
         name: "Adnan Chowdhurry",
@@ -101,7 +101,7 @@ const officers: OfficerType[] = [
         name: "Allison Pham",
         position: "Internal Activities and Events Assistant Director",
         email: "internal.ae@ieeeut.org",
-        image: "",
+        image: "allisonPham_intAO",
     },
     {
         name: "Jon Villegas Ortiz",
@@ -119,13 +119,13 @@ const officers: OfficerType[] = [
         name: "Ian Sendelbach",
         position: "Projects Assistant Liaison",
         email: "projects.liason@ieeeut.org",
-        image: "",
+        image: "ian_projAO",
     },
 	{
         name: "Manuel Escobar",
         position: "Projects Assistant Liaison",
         email: "projects.liason@ieeeut.org",
-        image: "",
+        image: "manuel_projAO",
     },
 ];
 
